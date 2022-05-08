@@ -1,19 +1,29 @@
 package com.example.caps;
 
+import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
-
 import android.net.Uri;
 import android.os.Bundle;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
+import java.io.BufferedReader;
+import java.io.InputStreamReader;
+import java.io.OutputStream;
+import java.net.HttpURLConnection;
 import java.util.Enumeration;
 import java.util.Properties;
 import java.net.URLEncoder;
 import android.content.Intent;
+import java.net.ServerSocket;
+import java.net.Socket;
+import java.io.InputStream;
+import java.io.IOException;
+import java.net.URL;
 
 
 public class AuthActivity extends AppCompatActivity {
+    static String access_token = null;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -24,11 +34,28 @@ public class AuthActivity extends AppCompatActivity {
 
 
         Button sign_up = (Button) findViewById(R.id.sign_up);
+
+
         // 회원가입버튼 이벤트 처리
        sign_up.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Auth();
+                Network th = new Network();
+                th.start();
+                try {
+                    th.join();
+                }catch(InterruptedException e)
+                {
+                    e.printStackTrace();
+                }
+                AlertDialog.Builder builder = new AlertDialog.Builder(AuthActivity.this);
+                builder.setTitle("토큰"); //AlertDialog의 제목 부분
+                builder.setMessage(access_token); //AlertDialog의 내용 부분
+                builder.setPositiveButton("예",null);
+                builder.setNegativeButton("아니오",  null);
+                builder.setNeutralButton("취소", null);
+                builder.create().show(); //보이기
             }
         });
 
@@ -86,8 +113,81 @@ public class AuthActivity extends AppCompatActivity {
     }
     public void call(String url)
     {
-        Intent browser = new Intent(Intent.ACTION_VIEW,  Uri.parse(url));
+        Intent browser = new Intent(Intent.ACTION_VIEW, Uri.parse(url));
         startActivity(browser);
     }
+    public String GetCode()
+    {
+        int maxBufferSize = 1024;
+        byte[] recvBuffer = new byte[maxBufferSize];
+        String response = null;
+        try
+        {
+            ServerSocket listener = new ServerSocket(8000);
+            Socket serv_sock = listener.accept();
+            InputStream in = serv_sock.getInputStream();
+            in.read(recvBuffer);
+            response = new String(recvBuffer);
+            listener.close();
+            serv_sock.close();
+            if(response.indexOf("code") >= 0)
+            {
+                response =  response.substring(response.indexOf("code")+5,response.indexOf("&"));
+            }
+            else
+            {
+                response = "Error";
+            }
+        }catch (IOException e)
+        {
+            e.printStackTrace();
+        }
+        return response;
+    }
+
+    public String GetTok(String code)
+    {
+        String address = "https://testapi.openbanking.or.kr/oauth/2.0/token";
+        Properties params = new Properties();
+        params.setProperty("code", code);
+        params.setProperty("client_id", "1eaec044-0b78-41fe-99cd-a6afad2cdeba");
+        params.setProperty("client_secret", "2482daed-0be3-40e2-9b7d-4ad9c632e3e6");
+        params.setProperty("redirect_uri","http://localhost:8000");
+        params.setProperty("grant_type", "authorization_code");
+        String param = encodedString(params);
+        String line = null;
+
+        try
+        {
+            URL url = new URL(address);
+            HttpURLConnection connection = (HttpURLConnection)url.openConnection();
+            connection.setRequestMethod("POST");
+            connection.setRequestProperty("Content-Type", "application/x-www-form-urlencoded");
+            connection.setDoOutput(true);
+            connection.setDoInput(true);
+            try(OutputStream os = connection.getOutputStream())
+            {
+                os.write(param.getBytes());
+            }
+            BufferedReader in = new BufferedReader(new InputStreamReader(connection.getInputStream()));
+            line = in.readLine();
+            access_token = line;
+            in.close();
+        }catch(Exception e)
+        {
+            e.printStackTrace();
+        }
+        return line;
+    }
+    public class Network extends Thread
+    {
+        public void run()
+        {
+            access_token = GetTok(GetCode());
+
+        }
+
+    }
+
 }
 
