@@ -41,6 +41,7 @@ public class AuthActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Auth();
+
                 Network th = new Network();
                 th.start();
                 try {
@@ -155,7 +156,7 @@ public class AuthActivity extends AppCompatActivity {
         params.setProperty("redirect_uri","http://localhost:8000");
         params.setProperty("grant_type", "authorization_code");
         String param = encodedString(params);
-        String line = null;
+        String token = null;
 
         try
         {
@@ -170,24 +171,28 @@ public class AuthActivity extends AppCompatActivity {
                 os.write(param.getBytes());
             }
             BufferedReader in = new BufferedReader(new InputStreamReader(connection.getInputStream()));
-            line = in.readLine();
-            access_token = line;
+            token = in.readLine();
             in.close();
         }catch(Exception e)
         {
             e.printStackTrace();
         }
-        return line;
+        if(token.indexOf("access_token") >= 0)
+        {
+            token =  token.substring(token.indexOf("access_token")+15, token.indexOf(",") -1);
+        }
+        else
+        {
+            token = "Error";
+        }
+        return "Bearer" + token;
     }
     public class Network extends Thread
     {
         public void run()
         {
             access_token = GetTok(GetCode());
-
         }
-
     }
-
 }
 
