@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "85192290764",
+    "project_id": "caps-aff0e",
+    "storage_bucket": "caps-aff0e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:85192290764:android:c04d91c0a5c34e570dad69",
+        "android_client_info": {
+          "package_name": "com.example.caps"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "85192290764-lim7q5e8ts945ng9c3g329jht1qjneb3.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC7r8WQ5v9IO9TQkJKw0HcOLiF0xIdCaZA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "85192290764-lim7q5e8ts945ng9c3g329jht1qjneb3.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

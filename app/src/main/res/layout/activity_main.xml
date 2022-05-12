@@ -45,7 +45,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/start"
+        android:id="@+id/registerButton"
         android:layout_width="match_parent"
         android:layout_height="75dp"
         android:text="시작하기"
@@ -72,7 +72,7 @@
             android:textSize="20dp"
             android:text="이미계정이 있나요?"/>
         <Button
-            android:id="@+id/login"
+            android:id="@+id/loginButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="로그인"
