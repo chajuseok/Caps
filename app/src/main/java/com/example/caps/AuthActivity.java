@@ -39,6 +39,7 @@ import com.google.firebase.database.FirebaseDatabase;
 
 public class AuthActivity extends AppCompatActivity {
     static String access_token = null;
+    static String user_seq_no = null;
     private FirebaseAuth mFirebaseAuth; // 파이버베이스 인증
     private DatabaseReference mDatabaseRef; // 서버와 연동 실시간 db
 
@@ -88,6 +89,7 @@ public class AuthActivity extends AppCompatActivity {
                                 e.printStackTrace();
                             }
                             account.setAccessToken(access_token);
+                            account.setUserSeqNo(user_seq_no);
 
                             mDatabaseRef.child("UserAccount").child(firebaseUser.getUid()).setValue(account);
                             Toast.makeText(AuthActivity.this, "회원가입에 성공하셨습니다", Toast.LENGTH_SHORT).show();
@@ -215,6 +217,7 @@ public class AuthActivity extends AppCompatActivity {
             }
             BufferedReader in = new BufferedReader(new InputStreamReader(connection.getInputStream()));
             token = in.readLine();
+            user_seq_no = GetUserSeqNo(token);
             in.close();
         }catch(Exception e)
         {
@@ -230,6 +233,20 @@ public class AuthActivity extends AppCompatActivity {
         }
         return "Bearer" + token;
     }
+        public String GetUserSeqNo(String message)
+        {
+            String seqNo = null;
+
+            if(message.indexOf("user_seq_no") >= 0)
+            {
+                seqNo = message.substring(message.indexOf("user_seq_no")+14,message.indexOf("user_seq_no")+24);
+            }
+            else
+            {
+                seqNo = "Error";
+            }
+            return seqNo;
+        }
     public class Network extends Thread
     {
         public void run()

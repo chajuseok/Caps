@@ -6,6 +6,7 @@ public class UserAccount {
     private String emailId;
     private String password;
     private String accessToken;
+    private String userSeqNo;
 
     public String getIdToken() {
         return idToken;
@@ -37,5 +38,9 @@ public class UserAccount {
     public String getAccessToken() { return accessToken ;}
 
     public void setAccessToken(String accessToken) {this.accessToken = accessToken; }
+
+    public String getUserSeqNo() { return userSeqNo ;}
+
+    public void setUserSeqNo(String userSeqNo) {this.userSeqNo = userSeqNo; }
 
 }
