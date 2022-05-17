@@ -1,238 +1,274 @@
 [
     {
-        "merged": "D:\\Android\\Caps\\app\\build\\intermediates\\merged_res\\debug\\raw_credential.json.flat",
-        "source": "D:\\Android\\Caps\\app\\src\\main\\res\\raw\\credential.json"
+        "merged": "C:\\Users\\ckwnt\\AndroidStudioProjects\\Caps\\app\\build\\intermediates\\merged_res\\debug\\drawable_solid_button.xml.flat",
+        "source": "C:\\Users\\ckwnt\\AndroidStudioProjects\\Caps\\app\\src\\main\\res\\drawable\\solid_button.xml"
     },
     {
-        "merged": "D:\\Android\\Caps\\app\\build\\intermediates\\merged_res\\debug\\drawable-xxxhdpi_ic_baseline_directions_run_24.png.flat",
-        "source": "D:\\Android\\Caps\\app\\build\\generated\\res\\pngs\\debug\\drawable-xxxhdpi\\ic_baseline_directions_run_24.png"
+        "merged": "C:\\Users\\ckwnt\\AndroidStudioProjects\\Caps\\app\\build\\intermediates\\merged_res\\debug\\drawable-anydpi-v21_ic_baseline_monetization_on_24.xml.flat",
+        "source": "C:\\Users\\ckwnt\\AndroidStudioProjects\\Caps\\app\\build\\generated\\res\\pngs\\debug\\drawable-anydpi-v21\\ic_baseline_monetization_on_24.xml"
     },
     {
-        "merged": "D:\\Android\\Caps\\app\\build\\intermediates\\merged_res\\debug\\drawable-mdpi_ic_baseline_wb_sunny_24.png.flat",
-        "source": "D:\\Android\\Caps\\app\\build\\generated\\res\\pngs\\debug\\drawable-mdpi\\ic_baseline_wb_sunny_24.png"
+        "merged": "C:\\Users\\ckwnt\\AndroidStudioProjects\\Caps\\app\\build\\intermediates\\merged_res\\debug\\layout_activity_account.xml.flat",
+        "source": "C:\\Users\\ckwnt\\AndroidStudioProjects\\Caps\\app\\src\\main\\res\\layout\\activity_account.xml"
     },
     {
-        "merged": "D:\\Android\\Caps\\app\\build\\intermediates\\merged_res\\debug\\drawable-xxhdpi_ic_baseline_chat_24.png.flat",
-        "source": "D:\\Android\\Caps\\app\\build\\generated\\res\\pngs\\debug\\drawable-xxhdpi\\ic_baseline_chat_24.png"
+        "merged": "C:\\Users\\ckwnt\\AndroidStudioProjects\\Caps\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xhdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\ckwnt\\AndroidStudioProjects\\Caps\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher_round.webp"
     },
     {
-        "merged": "D:\\Android\\Caps\\app\\build\\intermediates\\merged_res\\debug\\drawable-anydpi-v21_ic_baseline_wb_sunny_24.xml.flat",
-        "source": "D:\\Android\\Caps\\app\\build\\generated\\res\\pngs\\debug\\drawable-anydpi-v21\\ic_baseline_wb_sunny_24.xml"
+        "merged": "C:\\Users\\ckwnt\\AndroidStudioProjects\\Caps\\app\\build\\intermediates\\merged_res\\debug\\drawable-xxhdpi_ic_baseline_chat_24.png.flat",
+        "source": "C:\\Users\\ckwnt\\AndroidStudioProjects\\Caps\\app\\build\\generated\\res\\pngs\\debug\\drawable-xxhdpi\\ic_baseline_chat_24.png"
     },
     {
-        "merged": "D:\\Android\\Caps\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xhdpi_ic_launcher.webp.flat",
-        "source": "D:\\Android\\Caps\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher.webp"
+        "merged": "C:\\Users\\ckwnt\\AndroidStudioProjects\\Caps\\app\\build\\intermediates\\merged_res\\debug\\layout_activity_adapter.xml.flat",
+        "source": "C:\\Users\\ckwnt\\AndroidStudioProjects\\Caps\\app\\src\\main\\res\\layout\\activity_adapter.xml"
     },
     {
-        "merged": "D:\\Android\\Caps\\app\\build\\intermediates\\merged_res\\debug\\font_na.ttf.flat",
-        "source": "D:\\Android\\Caps\\app\\src\\main\\res\\font\\na.ttf"
+        "merged": "C:\\Users\\ckwnt\\AndroidStudioProjects\\Caps\\app\\build\\intermediates\\merged_res\\debug\\drawable-ldpi_ic_baseline_monetization_on_24.png.flat",
+        "source": "C:\\Users\\ckwnt\\AndroidStudioProjects\\Caps\\app\\build\\generated\\res\\pngs\\debug\\drawable-ldpi\\ic_baseline_monetization_on_24.png"
     },
     {
-        "merged": "D:\\Android\\Caps\\app\\build\\intermediates\\merged_res\\debug\\mipmap-anydpi-v26_ic_launcher.xml.flat",
-        "source": "D:\\Android\\Caps\\app\\src\\main\\res\\mipmap-anydpi-v26\\ic_launcher.xml"
+        "merged": "C:\\Users\\ckwnt\\AndroidStudioProjects\\Caps\\app\\build\\intermediates\\merged_res\\debug\\drawable-xhdpi_ic_baseline_wb_sunny_24.png.flat",
+        "source": "C:\\Users\\ckwnt\\AndroidStudioProjects\\Caps\\app\\build\\generated\\res\\pngs\\debug\\drawable-xhdpi\\ic_baseline_wb_sunny_24.png"
     },
     {
-        "merged": "D:\\Android\\Caps\\app\\build\\intermediates\\merged_res\\debug\\layout_activity_account.xml.flat",
-        "source": "D:\\Android\\Caps\\app\\src\\main\\res\\layout\\activity_account.xml"
+        "merged": "C:\\Users\\ckwnt\\AndroidStudioProjects\\Caps\\app\\build\\intermediates\\merged_res\\debug\\drawable-hdpi_ic_baseline_monetization_on_24.png.flat",
+        "source": "C:\\Users\\ckwnt\\AndroidStudioProjects\\Caps\\app\\build\\generated\\res\\pngs\\debug\\drawable-hdpi\\ic_baseline_monetization_on_24.png"
     },
     {
-        "merged": "D:\\Android\\Caps\\app\\build\\intermediates\\merged_res\\debug\\drawable-hdpi_ic_baseline_chat_24.png.flat",
-        "source": "D:\\Android\\Caps\\app\\build\\generated\\res\\pngs\\debug\\drawable-hdpi\\ic_baseline_chat_24.png"
+        "merged": "C:\\Users\\ckwnt\\AndroidStudioProjects\\Caps\\app\\build\\intermediates\\merged_res\\debug\\drawable-mdpi_ic_launcher_background.png.flat",
+        "source": "C:\\Users\\ckwnt\\AndroidStudioProjects\\Caps\\app\\build\\generated\\res\\pngs\\debug\\drawable-mdpi\\ic_launcher_background.png"
     },
     {
-        "merged": "D:\\Android\\Caps\\app\\build\\intermediates\\merged_res\\debug\\drawable-anydpi-v21_ic_launcher_background.xml.flat",
-        "source": "D:\\Android\\Caps\\app\\build\\generated\\res\\pngs\\debug\\drawable-anydpi-v21\\ic_launcher_background.xml"
+        "merged": "C:\\Users\\ckwnt\\AndroidStudioProjects\\Caps\\app\\build\\intermediates\\merged_res\\debug\\drawable-ldpi_ic_baseline_wb_sunny_24.png.flat",
+        "source": "C:\\Users\\ckwnt\\AndroidStudioProjects\\Caps\\app\\build\\generated\\res\\pngs\\debug\\drawable-ldpi\\ic_baseline_wb_sunny_24.png"
     },
     {
-        "merged": "D:\\Android\\Caps\\app\\build\\intermediates\\merged_res\\debug\\layout_activity_pay.xml.flat",
-        "source": "D:\\Android\\Caps\\app\\src\\main\\res\\layout\\activity_pay.xml"
+        "merged": "C:\\Users\\ckwnt\\AndroidStudioProjects\\Caps\\app\\build\\intermediates\\merged_res\\debug\\mipmap-mdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\ckwnt\\AndroidStudioProjects\\Caps\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher.webp"
     },
     {
-        "merged": "D:\\Android\\Caps\\app\\build\\intermediates\\merged_res\\debug\\mipmap-mdpi_ic_launcher_round.webp.flat",
-        "source": "D:\\Android\\Caps\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher_round.webp"
+        "merged": "C:\\Users\\ckwnt\\AndroidStudioProjects\\Caps\\app\\build\\intermediates\\merged_res\\debug\\drawable-mdpi_ic_baseline_directions_run_24.png.flat",
+        "source": "C:\\Users\\ckwnt\\AndroidStudioProjects\\Caps\\app\\build\\generated\\res\\pngs\\debug\\drawable-mdpi\\ic_baseline_directions_run_24.png"
     },
     {
-        "merged": "D:\\Android\\Caps\\app\\build\\intermediates\\merged_res\\debug\\drawable-ldpi_ic_baseline_chat_24.png.flat",
-        "source": "D:\\Android\\Caps\\app\\build\\generated\\res\\pngs\\debug\\drawable-ldpi\\ic_baseline_chat_24.png"
+        "merged": "C:\\Users\\ckwnt\\AndroidStudioProjects\\Caps\\app\\build\\intermediates\\merged_res\\debug\\drawable_border_layout.xml.flat",
+        "source": "C:\\Users\\ckwnt\\AndroidStudioProjects\\Caps\\app\\src\\main\\res\\drawable\\border_layout.xml"
     },
     {
-        "merged": "D:\\Android\\Caps\\app\\build\\intermediates\\merged_res\\debug\\drawable-xhdpi_ic_baseline_chat_24.png.flat",
-        "source": "D:\\Android\\Caps\\app\\build\\generated\\res\\pngs\\debug\\drawable-xhdpi\\ic_baseline_chat_24.png"
+        "merged": "C:\\Users\\ckwnt\\AndroidStudioProjects\\Caps\\app\\build\\intermediates\\merged_res\\debug\\mipmap-hdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\ckwnt\\AndroidStudioProjects\\Caps\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher_round.webp"
     },
     {
-        "merged": "D:\\Android\\Caps\\app\\build\\intermediates\\merged_res\\debug\\drawable-mdpi_ic_baseline_chat_24.png.flat",
-        "source": "D:\\Android\\Caps\\app\\build\\generated\\res\\pngs\\debug\\drawable-mdpi\\ic_baseline_chat_24.png"
+        "merged": "C:\\Users\\ckwnt\\AndroidStudioProjects\\Caps\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xxxhdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\ckwnt\\AndroidStudioProjects\\Caps\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher_round.webp"
     },
     {
-        "merged": "D:\\Android\\Caps\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xxxhdpi_ic_launcher.webp.flat",
-        "source": "D:\\Android\\Caps\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher.webp"
+        "merged": "C:\\Users\\ckwnt\\AndroidStudioProjects\\Caps\\app\\build\\intermediates\\merged_res\\debug\\drawable-xxxhdpi_ic_launcher_background.png.flat",
+        "source": "C:\\Users\\ckwnt\\AndroidStudioProjects\\Caps\\app\\build\\generated\\res\\pngs\\debug\\drawable-xxxhdpi\\ic_launcher_background.png"
     },
     {
-        "merged": "D:\\Android\\Caps\\app\\build\\intermediates\\merged_res\\debug\\drawable-ldpi_ic_launcher_background.png.flat",
-        "source": "D:\\Android\\Caps\\app\\build\\generated\\res\\pngs\\debug\\drawable-ldpi\\ic_launcher_background.png"
+        "merged": "C:\\Users\\ckwnt\\AndroidStudioProjects\\Caps\\app\\build\\intermediates\\merged_res\\debug\\drawable-xxhdpi_ic_launcher_background.png.flat",
+        "source": "C:\\Users\\ckwnt\\AndroidStudioProjects\\Caps\\app\\build\\generated\\res\\pngs\\debug\\drawable-xxhdpi\\ic_launcher_background.png"
     },
     {
-        "merged": "D:\\Android\\Caps\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xxhdpi_ic_launcher_round.webp.flat",
-        "source": "D:\\Android\\Caps\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher_round.webp"
+        "merged": "C:\\Users\\ckwnt\\AndroidStudioProjects\\Caps\\app\\build\\intermediates\\merged_res\\debug\\drawable-anydpi-v21_ic_baseline_directions_run_24.xml.flat",
+        "source": "C:\\Users\\ckwnt\\AndroidStudioProjects\\Caps\\app\\build\\generated\\res\\pngs\\debug\\drawable-anydpi-v21\\ic_baseline_directions_run_24.xml"
     },
     {
-        "merged": "D:\\Android\\Caps\\app\\build\\intermediates\\merged_res\\debug\\drawable-xhdpi_ic_launcher_background.png.flat",
-        "source": "D:\\Android\\Caps\\app\\build\\generated\\res\\pngs\\debug\\drawable-xhdpi\\ic_launcher_background.png"
+        "merged": "C:\\Users\\ckwnt\\AndroidStudioProjects\\Caps\\app\\build\\intermediates\\merged_res\\debug\\drawable-xxxhdpi_ic_baseline_chat_24.png.flat",
+        "source": "C:\\Users\\ckwnt\\AndroidStudioProjects\\Caps\\app\\build\\generated\\res\\pngs\\debug\\drawable-xxxhdpi\\ic_baseline_chat_24.png"
     },
     {
-        "merged": "D:\\Android\\Caps\\app\\build\\intermediates\\merged_res\\debug\\drawable-xxhdpi_ic_launcher_background.png.flat",
-        "source": "D:\\Android\\Caps\\app\\build\\generated\\res\\pngs\\debug\\drawable-xxhdpi\\ic_launcher_background.png"
+        "merged": "C:\\Users\\ckwnt\\AndroidStudioProjects\\Caps\\app\\build\\intermediates\\merged_res\\debug\\drawable-xxxhdpi_ic_baseline_monetization_on_24.png.flat",
+        "source": "C:\\Users\\ckwnt\\AndroidStudioProjects\\Caps\\app\\build\\generated\\res\\pngs\\debug\\drawable-xxxhdpi\\ic_baseline_monetization_on_24.png"
     },
     {
-        "merged": "D:\\Android\\Caps\\app\\build\\intermediates\\merged_res\\debug\\drawable-xxhdpi_ic_baseline_wb_sunny_24.png.flat",
-        "source": "D:\\Android\\Caps\\app\\build\\generated\\res\\pngs\\debug\\drawable-xxhdpi\\ic_baseline_wb_sunny_24.png"
+        "merged": "C:\\Users\\ckwnt\\AndroidStudioProjects\\Caps\\app\\build\\intermediates\\merged_res\\debug\\drawable-ldpi_ic_baseline_directions_run_24.png.flat",
+        "source": "C:\\Users\\ckwnt\\AndroidStudioProjects\\Caps\\app\\build\\generated\\res\\pngs\\debug\\drawable-ldpi\\ic_baseline_directions_run_24.png"
     },
     {
-        "merged": "D:\\Android\\Caps\\app\\build\\intermediates\\merged_res\\debug\\drawable-mdpi_ic_baseline_directions_run_24.png.flat",
-        "source": "D:\\Android\\Caps\\app\\build\\generated\\res\\pngs\\debug\\drawable-mdpi\\ic_baseline_directions_run_24.png"
+        "merged": "C:\\Users\\ckwnt\\AndroidStudioProjects\\Caps\\app\\build\\intermediates\\merged_res\\debug\\drawable-xhdpi_ic_baseline_chat_24.png.flat",
+        "source": "C:\\Users\\ckwnt\\AndroidStudioProjects\\Caps\\app\\build\\generated\\res\\pngs\\debug\\drawable-xhdpi\\ic_baseline_chat_24.png"
     },
     {
-        "merged": "D:\\Android\\Caps\\app\\build\\intermediates\\merged_res\\debug\\drawable-xhdpi_ic_baseline_monetization_on_24.png.flat",
-        "source": "D:\\Android\\Caps\\app\\build\\generated\\res\\pngs\\debug\\drawable-xhdpi\\ic_baseline_monetization_on_24.png"
+        "merged": "C:\\Users\\ckwnt\\AndroidStudioProjects\\Caps\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xxhdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\ckwnt\\AndroidStudioProjects\\Caps\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher.webp"
     },
     {
-        "merged": "D:\\Android\\Caps\\app\\build\\intermediates\\merged_res\\debug\\drawable-xxhdpi_ic_baseline_monetization_on_24.png.flat",
-        "source": "D:\\Android\\Caps\\app\\build\\generated\\res\\pngs\\debug\\drawable-xxhdpi\\ic_baseline_monetization_on_24.png"
+        "merged": "C:\\Users\\ckwnt\\AndroidStudioProjects\\Caps\\app\\build\\intermediates\\merged_res\\debug\\layout_activity_main3.xml.flat",
+        "source": "C:\\Users\\ckwnt\\AndroidStudioProjects\\Caps\\app\\src\\main\\res\\layout\\activity_main3.xml"
     },
     {
-        "merged": "D:\\Android\\Caps\\app\\build\\intermediates\\merged_res\\debug\\drawable-xxhdpi_ic_baseline_directions_run_24.png.flat",
-        "source": "D:\\Android\\Caps\\app\\build\\generated\\res\\pngs\\debug\\drawable-xxhdpi\\ic_baseline_directions_run_24.png"
+        "merged": "C:\\Users\\ckwnt\\AndroidStudioProjects\\Caps\\app\\build\\intermediates\\merged_res\\debug\\drawable-anydpi-v21_ic_baseline_wb_sunny_24.xml.flat",
+        "source": "C:\\Users\\ckwnt\\AndroidStudioProjects\\Caps\\app\\build\\generated\\res\\pngs\\debug\\drawable-anydpi-v21\\ic_baseline_wb_sunny_24.xml"
     },
     {
-        "merged": "D:\\Android\\Caps\\app\\build\\intermediates\\merged_res\\debug\\layout_activity_login.xml.flat",
-        "source": "D:\\Android\\Caps\\app\\src\\main\\res\\layout\\activity_login.xml"
+        "merged": "C:\\Users\\ckwnt\\AndroidStudioProjects\\Caps\\app\\build\\intermediates\\merged_res\\debug\\drawable-mdpi_ic_baseline_chat_24.png.flat",
+        "source": "C:\\Users\\ckwnt\\AndroidStudioProjects\\Caps\\app\\build\\generated\\res\\pngs\\debug\\drawable-mdpi\\ic_baseline_chat_24.png"
     },
     {
-        "merged": "D:\\Android\\Caps\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xxhdpi_ic_launcher.webp.flat",
-        "source": "D:\\Android\\Caps\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher.webp"
+        "merged": "C:\\Users\\ckwnt\\AndroidStudioProjects\\Caps\\app\\build\\intermediates\\merged_res\\debug\\drawable_border_outline.xml.flat",
+        "source": "C:\\Users\\ckwnt\\AndroidStudioProjects\\Caps\\app\\src\\main\\res\\drawable\\border_outline.xml"
     },
     {
-        "merged": "D:\\Android\\Caps\\app\\build\\intermediates\\merged_res\\debug\\drawable-xhdpi_ic_baseline_wb_sunny_24.png.flat",
-        "source": "D:\\Android\\Caps\\app\\build\\generated\\res\\pngs\\debug\\drawable-xhdpi\\ic_baseline_wb_sunny_24.png"
+        "merged": "C:\\Users\\ckwnt\\AndroidStudioProjects\\Caps\\app\\build\\intermediates\\merged_res\\debug\\drawable-xxhdpi_ic_baseline_directions_run_24.png.flat",
+        "source": "C:\\Users\\ckwnt\\AndroidStudioProjects\\Caps\\app\\build\\generated\\res\\pngs\\debug\\drawable-xxhdpi\\ic_baseline_directions_run_24.png"
     },
     {
-        "merged": "D:\\Android\\Caps\\app\\build\\intermediates\\merged_res\\debug\\drawable-hdpi_ic_baseline_wb_sunny_24.png.flat",
-        "source": "D:\\Android\\Caps\\app\\build\\generated\\res\\pngs\\debug\\drawable-hdpi\\ic_baseline_wb_sunny_24.png"
+        "merged": "C:\\Users\\ckwnt\\AndroidStudioProjects\\Caps\\app\\build\\intermediates\\merged_res\\debug\\drawable-mdpi_ic_baseline_monetization_on_24.png.flat",
+        "source": "C:\\Users\\ckwnt\\AndroidStudioProjects\\Caps\\app\\build\\generated\\res\\pngs\\debug\\drawable-mdpi\\ic_baseline_monetization_on_24.png"
     },
     {
-        "merged": "D:\\Android\\Caps\\app\\build\\intermediates\\merged_res\\debug\\mipmap-hdpi_ic_launcher.webp.flat",
-        "source": "D:\\Android\\Caps\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher.webp"
+        "merged": "C:\\Users\\ckwnt\\AndroidStudioProjects\\Caps\\app\\build\\intermediates\\merged_res\\debug\\drawable_help.png.flat",
+        "source": "C:\\Users\\ckwnt\\AndroidStudioProjects\\Caps\\app\\src\\main\\res\\drawable\\help.png"
     },
     {
-        "merged": "D:\\Android\\Caps\\app\\build\\intermediates\\merged_res\\debug\\layout_activity_auth.xml.flat",
-        "source": "D:\\Android\\Caps\\app\\src\\main\\res\\layout\\activity_auth.xml"
+        "merged": "C:\\Users\\ckwnt\\AndroidStudioProjects\\Caps\\app\\build\\intermediates\\merged_res\\debug\\drawable-xhdpi_ic_baseline_monetization_on_24.png.flat",
+        "source": "C:\\Users\\ckwnt\\AndroidStudioProjects\\Caps\\app\\build\\generated\\res\\pngs\\debug\\drawable-xhdpi\\ic_baseline_monetization_on_24.png"
     },
     {
-        "merged": "D:\\Android\\Caps\\app\\build\\intermediates\\merged_res\\debug\\drawable-mdpi_ic_baseline_monetization_on_24.png.flat",
-        "source": "D:\\Android\\Caps\\app\\build\\generated\\res\\pngs\\debug\\drawable-mdpi\\ic_baseline_monetization_on_24.png"
+        "merged": "C:\\Users\\ckwnt\\AndroidStudioProjects\\Caps\\app\\build\\intermediates\\merged_res\\debug\\layout_activity_auth.xml.flat",
+        "source": "C:\\Users\\ckwnt\\AndroidStudioProjects\\Caps\\app\\src\\main\\res\\layout\\activity_auth.xml"
     },
     {
-        "merged": "D:\\Android\\Caps\\app\\build\\intermediates\\merged_res\\debug\\drawable-xhdpi_ic_baseline_directions_run_24.png.flat",
-        "source": "D:\\Android\\Caps\\app\\build\\generated\\res\\pngs\\debug\\drawable-xhdpi\\ic_baseline_directions_run_24.png"
+        "merged": "C:\\Users\\ckwnt\\AndroidStudioProjects\\Caps\\app\\build\\intermediates\\merged_res\\debug\\drawable_bg_chat_send.xml.flat",
+        "source": "C:\\Users\\ckwnt\\AndroidStudioProjects\\Caps\\app\\src\\main\\res\\drawable\\bg_chat_send.xml"
     },
     {
-        "merged": "D:\\Android\\Caps\\app\\build\\intermediates\\merged_res\\debug\\drawable-mdpi_ic_launcher_background.png.flat",
-        "source": "D:\\Android\\Caps\\app\\build\\generated\\res\\pngs\\debug\\drawable-mdpi\\ic_launcher_background.png"
+        "merged": "C:\\Users\\ckwnt\\AndroidStudioProjects\\Caps\\app\\build\\intermediates\\merged_res\\debug\\drawable-hdpi_ic_launcher_background.png.flat",
+        "source": "C:\\Users\\ckwnt\\AndroidStudioProjects\\Caps\\app\\build\\generated\\res\\pngs\\debug\\drawable-hdpi\\ic_launcher_background.png"
     },
     {
-        "merged": "D:\\Android\\Caps\\app\\build\\intermediates\\merged_res\\debug\\drawable-anydpi-v21_ic_baseline_monetization_on_24.xml.flat",
-        "source": "D:\\Android\\Caps\\app\\build\\generated\\res\\pngs\\debug\\drawable-anydpi-v21\\ic_baseline_monetization_on_24.xml"
+        "merged": "C:\\Users\\ckwnt\\AndroidStudioProjects\\Caps\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xxhdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\ckwnt\\AndroidStudioProjects\\Caps\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher_round.webp"
     },
     {
-        "merged": "D:\\Android\\Caps\\app\\build\\intermediates\\merged_res\\debug\\drawable-hdpi_ic_baseline_directions_run_24.png.flat",
-        "source": "D:\\Android\\Caps\\app\\build\\generated\\res\\pngs\\debug\\drawable-hdpi\\ic_baseline_directions_run_24.png"
+        "merged": "C:\\Users\\ckwnt\\AndroidStudioProjects\\Caps\\app\\build\\intermediates\\merged_res\\debug\\drawable_bg_chat_receive.xml.flat",
+        "source": "C:\\Users\\ckwnt\\AndroidStudioProjects\\Caps\\app\\src\\main\\res\\drawable\\bg_chat_receive.xml"
     },
     {
-        "merged": "D:\\Android\\Caps\\app\\build\\intermediates\\merged_res\\debug\\drawable-xxxhdpi_ic_launcher_background.png.flat",
-        "source": "D:\\Android\\Caps\\app\\build\\generated\\res\\pngs\\debug\\drawable-xxxhdpi\\ic_launcher_background.png"
+        "merged": "C:\\Users\\ckwnt\\AndroidStudioProjects\\Caps\\app\\build\\intermediates\\merged_res\\debug\\drawable-xxxhdpi_ic_baseline_wb_sunny_24.png.flat",
+        "source": "C:\\Users\\ckwnt\\AndroidStudioProjects\\Caps\\app\\build\\generated\\res\\pngs\\debug\\drawable-xxxhdpi\\ic_baseline_wb_sunny_24.png"
     },
     {
-        "merged": "D:\\Android\\Caps\\app\\build\\intermediates\\merged_res\\debug\\mipmap-hdpi_ic_launcher_round.webp.flat",
-        "source": "D:\\Android\\Caps\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher_round.webp"
+        "merged": "C:\\Users\\ckwnt\\AndroidStudioProjects\\Caps\\app\\build\\intermediates\\merged_res\\debug\\drawable-mdpi_ic_baseline_wb_sunny_24.png.flat",
+        "source": "C:\\Users\\ckwnt\\AndroidStudioProjects\\Caps\\app\\build\\generated\\res\\pngs\\debug\\drawable-mdpi\\ic_baseline_wb_sunny_24.png"
     },
     {
-        "merged": "D:\\Android\\Caps\\app\\build\\intermediates\\merged_res\\debug\\drawable_solid_button.xml.flat",
-        "source": "D:\\Android\\Caps\\app\\src\\main\\res\\drawable\\solid_button.xml"
+        "merged": "C:\\Users\\ckwnt\\AndroidStudioProjects\\Caps\\app\\build\\intermediates\\merged_res\\debug\\mipmap-mdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\ckwnt\\AndroidStudioProjects\\Caps\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher_round.webp"
     },
     {
-        "merged": "D:\\Android\\Caps\\app\\build\\intermediates\\merged_res\\debug\\font_custom_font_family.xml.flat",
-        "source": "D:\\Android\\Caps\\app\\src\\main\\res\\font\\custom_font_family.xml"
+        "merged": "C:\\Users\\ckwnt\\AndroidStudioProjects\\Caps\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xxxhdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\ckwnt\\AndroidStudioProjects\\Caps\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher.webp"
     },
     {
-        "merged": "D:\\Android\\Caps\\app\\build\\intermediates\\merged_res\\debug\\drawable-anydpi-v24_ic_launcher_foreground.xml.flat",
-        "source": "D:\\Android\\Caps\\app\\build\\generated\\res\\pngs\\debug\\drawable-anydpi-v24\\ic_launcher_foreground.xml"
+        "merged": "C:\\Users\\ckwnt\\AndroidStudioProjects\\Caps\\app\\build\\intermediates\\merged_res\\debug\\drawable-hdpi_ic_baseline_wb_sunny_24.png.flat",
+        "source": "C:\\Users\\ckwnt\\AndroidStudioProjects\\Caps\\app\\build\\generated\\res\\pngs\\debug\\drawable-hdpi\\ic_baseline_wb_sunny_24.png"
     },
     {
-        "merged": "D:\\Android\\Caps\\app\\build\\intermediates\\merged_res\\debug\\drawable-ldpi_ic_baseline_monetization_on_24.png.flat",
-        "source": "D:\\Android\\Caps\\app\\build\\generated\\res\\pngs\\debug\\drawable-ldpi\\ic_baseline_monetization_on_24.png"
+        "merged": "C:\\Users\\ckwnt\\AndroidStudioProjects\\Caps\\app\\build\\intermediates\\merged_res\\debug\\layout_activity_main2.xml.flat",
+        "source": "C:\\Users\\ckwnt\\AndroidStudioProjects\\Caps\\app\\src\\main\\res\\layout\\activity_main2.xml"
     },
     {
-        "merged": "D:\\Android\\Caps\\app\\build\\intermediates\\merged_res\\debug\\mipmap-anydpi-v26_ic_launcher_round.xml.flat",
-        "source": "D:\\Android\\Caps\\app\\src\\main\\res\\mipmap-anydpi-v26\\ic_launcher_round.xml"
+        "merged": "C:\\Users\\ckwnt\\AndroidStudioProjects\\Caps\\app\\build\\intermediates\\merged_res\\debug\\drawable-anydpi-v21_ic_launcher_background.xml.flat",
+        "source": "C:\\Users\\ckwnt\\AndroidStudioProjects\\Caps\\app\\build\\generated\\res\\pngs\\debug\\drawable-anydpi-v21\\ic_launcher_background.xml"
     },
     {
-        "merged": "D:\\Android\\Caps\\app\\build\\intermediates\\merged_res\\debug\\drawable-anydpi-v21_ic_baseline_chat_24.xml.flat",
-        "source": "D:\\Android\\Caps\\app\\build\\generated\\res\\pngs\\debug\\drawable-anydpi-v21\\ic_baseline_chat_24.xml"
+        "merged": "C:\\Users\\ckwnt\\AndroidStudioProjects\\Caps\\app\\build\\intermediates\\merged_res\\debug\\drawable-xhdpi_ic_baseline_directions_run_24.png.flat",
+        "source": "C:\\Users\\ckwnt\\AndroidStudioProjects\\Caps\\app\\build\\generated\\res\\pngs\\debug\\drawable-xhdpi\\ic_baseline_directions_run_24.png"
     },
     {
-        "merged": "D:\\Android\\Caps\\app\\build\\intermediates\\merged_res\\debug\\layout_activity_main2.xml.flat",
-        "source": "D:\\Android\\Caps\\app\\src\\main\\res\\layout\\activity_main2.xml"
+        "merged": "C:\\Users\\ckwnt\\AndroidStudioProjects\\Caps\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xhdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\ckwnt\\AndroidStudioProjects\\Caps\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher.webp"
     },
     {
-        "merged": "D:\\Android\\Caps\\app\\build\\intermediates\\merged_res\\debug\\drawable-hdpi_ic_baseline_monetization_on_24.png.flat",
-        "source": "D:\\Android\\Caps\\app\\build\\generated\\res\\pngs\\debug\\drawable-hdpi\\ic_baseline_monetization_on_24.png"
+        "merged": "C:\\Users\\ckwnt\\AndroidStudioProjects\\Caps\\app\\build\\intermediates\\merged_res\\debug\\drawable-ldpi_ic_launcher_background.png.flat",
+        "source": "C:\\Users\\ckwnt\\AndroidStudioProjects\\Caps\\app\\build\\generated\\res\\pngs\\debug\\drawable-ldpi\\ic_launcher_background.png"
     },
     {
-        "merged": "D:\\Android\\Caps\\app\\build\\intermediates\\merged_res\\debug\\mipmap-mdpi_ic_launcher.webp.flat",
-        "source": "D:\\Android\\Caps\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher.webp"
+        "merged": "C:\\Users\\ckwnt\\AndroidStudioProjects\\Caps\\app\\build\\intermediates\\merged_res\\debug\\mipmap-hdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\ckwnt\\AndroidStudioProjects\\Caps\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher.webp"
     },
     {
-        "merged": "D:\\Android\\Caps\\app\\build\\intermediates\\merged_res\\debug\\drawable-xxxhdpi_ic_baseline_chat_24.png.flat",
-        "source": "D:\\Android\\Caps\\app\\build\\generated\\res\\pngs\\debug\\drawable-xxxhdpi\\ic_baseline_chat_24.png"
+        "merged": "C:\\Users\\ckwnt\\AndroidStudioProjects\\Caps\\app\\build\\intermediates\\merged_res\\debug\\drawable-anydpi-v21_ic_baseline_chat_24.xml.flat",
+        "source": "C:\\Users\\ckwnt\\AndroidStudioProjects\\Caps\\app\\build\\generated\\res\\pngs\\debug\\drawable-anydpi-v21\\ic_baseline_chat_24.xml"
     },
     {
-        "merged": "D:\\Android\\Caps\\app\\build\\intermediates\\merged_res\\debug\\drawable-ldpi_ic_baseline_wb_sunny_24.png.flat",
-        "source": "D:\\Android\\Caps\\app\\build\\generated\\res\\pngs\\debug\\drawable-ldpi\\ic_baseline_wb_sunny_24.png"
+        "merged": "C:\\Users\\ckwnt\\AndroidStudioProjects\\Caps\\app\\build\\intermediates\\merged_res\\debug\\drawable-hdpi_ic_baseline_directions_run_24.png.flat",
+        "source": "C:\\Users\\ckwnt\\AndroidStudioProjects\\Caps\\app\\build\\generated\\res\\pngs\\debug\\drawable-hdpi\\ic_baseline_directions_run_24.png"
     },
     {
-        "merged": "D:\\Android\\Caps\\app\\build\\intermediates\\merged_res\\debug\\drawable_edit.xml.flat",
-        "source": "D:\\Android\\Caps\\app\\src\\main\\res\\drawable\\edit.xml"
+        "merged": "C:\\Users\\ckwnt\\AndroidStudioProjects\\Caps\\app\\build\\intermediates\\merged_res\\debug\\layout_activity_login.xml.flat",
+        "source": "C:\\Users\\ckwnt\\AndroidStudioProjects\\Caps\\app\\src\\main\\res\\layout\\activity_login.xml"
     },
     {
-        "merged": "D:\\Android\\Caps\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xhdpi_ic_launcher_round.webp.flat",
-        "source": "D:\\Android\\Caps\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher_round.webp"
+        "merged": "C:\\Users\\ckwnt\\AndroidStudioProjects\\Caps\\app\\build\\intermediates\\merged_res\\debug\\raw_credential.json.flat",
+        "source": "C:\\Users\\ckwnt\\AndroidStudioProjects\\Caps\\app\\src\\main\\res\\raw\\credential.json"
     },
     {
-        "merged": "D:\\Android\\Caps\\app\\build\\intermediates\\merged_res\\debug\\drawable-xxxhdpi_ic_baseline_monetization_on_24.png.flat",
-        "source": "D:\\Android\\Caps\\app\\build\\generated\\res\\pngs\\debug\\drawable-xxxhdpi\\ic_baseline_monetization_on_24.png"
+        "merged": "C:\\Users\\ckwnt\\AndroidStudioProjects\\Caps\\app\\build\\intermediates\\merged_res\\debug\\drawable_edit.xml.flat",
+        "source": "C:\\Users\\ckwnt\\AndroidStudioProjects\\Caps\\app\\src\\main\\res\\drawable\\edit.xml"
     },
     {
-        "merged": "D:\\Android\\Caps\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xxxhdpi_ic_launcher_round.webp.flat",
-        "source": "D:\\Android\\Caps\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher_round.webp"
+        "merged": "C:\\Users\\ckwnt\\AndroidStudioProjects\\Caps\\app\\build\\intermediates\\merged_res\\debug\\drawable-anydpi-v24_ic_launcher_foreground.xml.flat",
+        "source": "C:\\Users\\ckwnt\\AndroidStudioProjects\\Caps\\app\\build\\generated\\res\\pngs\\debug\\drawable-anydpi-v24\\ic_launcher_foreground.xml"
     },
     {
-        "merged": "D:\\Android\\Caps\\app\\build\\intermediates\\merged_res\\debug\\layout_activity_main.xml.flat",
-        "source": "D:\\Android\\Caps\\app\\src\\main\\res\\layout\\activity_main.xml"
+        "merged": "C:\\Users\\ckwnt\\AndroidStudioProjects\\Caps\\app\\build\\intermediates\\merged_res\\debug\\drawable-xhdpi_ic_launcher_background.png.flat",
+        "source": "C:\\Users\\ckwnt\\AndroidStudioProjects\\Caps\\app\\build\\generated\\res\\pngs\\debug\\drawable-xhdpi\\ic_launcher_background.png"
     },
     {
-        "merged": "D:\\Android\\Caps\\app\\build\\intermediates\\merged_res\\debug\\drawable-anydpi-v21_ic_baseline_directions_run_24.xml.flat",
-        "source": "D:\\Android\\Caps\\app\\build\\generated\\res\\pngs\\debug\\drawable-anydpi-v21\\ic_baseline_directions_run_24.xml"
+        "merged": "C:\\Users\\ckwnt\\AndroidStudioProjects\\Caps\\app\\build\\intermediates\\merged_res\\debug\\mipmap-anydpi-v26_ic_launcher_round.xml.flat",
+        "source": "C:\\Users\\ckwnt\\AndroidStudioProjects\\Caps\\app\\src\\main\\res\\mipmap-anydpi-v26\\ic_launcher_round.xml"
     },
     {
-        "merged": "D:\\Android\\Caps\\app\\build\\intermediates\\merged_res\\debug\\drawable-xxxhdpi_ic_baseline_wb_sunny_24.png.flat",
-        "source": "D:\\Android\\Caps\\app\\build\\generated\\res\\pngs\\debug\\drawable-xxxhdpi\\ic_baseline_wb_sunny_24.png"
+        "merged": "C:\\Users\\ckwnt\\AndroidStudioProjects\\Caps\\app\\build\\intermediates\\merged_res\\debug\\drawable-xxhdpi_ic_baseline_wb_sunny_24.png.flat",
+        "source": "C:\\Users\\ckwnt\\AndroidStudioProjects\\Caps\\app\\build\\generated\\res\\pngs\\debug\\drawable-xxhdpi\\ic_baseline_wb_sunny_24.png"
     },
     {
-        "merged": "D:\\Android\\Caps\\app\\build\\intermediates\\merged_res\\debug\\drawable-hdpi_ic_launcher_background.png.flat",
-        "source": "D:\\Android\\Caps\\app\\build\\generated\\res\\pngs\\debug\\drawable-hdpi\\ic_launcher_background.png"
+        "merged": "C:\\Users\\ckwnt\\AndroidStudioProjects\\Caps\\app\\build\\intermediates\\merged_res\\debug\\drawable-hdpi_ic_baseline_chat_24.png.flat",
+        "source": "C:\\Users\\ckwnt\\AndroidStudioProjects\\Caps\\app\\build\\generated\\res\\pngs\\debug\\drawable-hdpi\\ic_baseline_chat_24.png"
     },
     {
-        "merged": "D:\\Android\\Caps\\app\\build\\intermediates\\merged_res\\debug\\drawable-ldpi_ic_baseline_directions_run_24.png.flat",
-        "source": "D:\\Android\\Caps\\app\\build\\generated\\res\\pngs\\debug\\drawable-ldpi\\ic_baseline_directions_run_24.png"
+        "merged": "C:\\Users\\ckwnt\\AndroidStudioProjects\\Caps\\app\\build\\intermediates\\merged_res\\debug\\mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "C:\\Users\\ckwnt\\AndroidStudioProjects\\Caps\\app\\src\\main\\res\\mipmap-anydpi-v26\\ic_launcher.xml"
+    },
+    {
+        "merged": "C:\\Users\\ckwnt\\AndroidStudioProjects\\Caps\\app\\build\\intermediates\\merged_res\\debug\\drawable-ldpi_ic_baseline_chat_24.png.flat",
+        "source": "C:\\Users\\ckwnt\\AndroidStudioProjects\\Caps\\app\\build\\generated\\res\\pngs\\debug\\drawable-ldpi\\ic_baseline_chat_24.png"
+    },
+    {
+        "merged": "C:\\Users\\ckwnt\\AndroidStudioProjects\\Caps\\app\\build\\intermediates\\merged_res\\debug\\layout_activity_pay.xml.flat",
+        "source": "C:\\Users\\ckwnt\\AndroidStudioProjects\\Caps\\app\\src\\main\\res\\layout\\activity_pay.xml"
+    },
+    {
+        "merged": "C:\\Users\\ckwnt\\AndroidStudioProjects\\Caps\\app\\build\\intermediates\\merged_res\\debug\\drawable_bot.png.flat",
+        "source": "C:\\Users\\ckwnt\\AndroidStudioProjects\\Caps\\app\\src\\main\\res\\drawable\\bot.png"
+    },
+    {
+        "merged": "C:\\Users\\ckwnt\\AndroidStudioProjects\\Caps\\app\\build\\intermediates\\merged_res\\debug\\font_fon.ttf.flat",
+        "source": "C:\\Users\\ckwnt\\AndroidStudioProjects\\Caps\\app\\src\\main\\res\\font\\fon.ttf"
+    },
+    {
+        "merged": "C:\\Users\\ckwnt\\AndroidStudioProjects\\Caps\\app\\build\\intermediates\\merged_res\\debug\\layout_activity_main.xml.flat",
+        "source": "C:\\Users\\ckwnt\\AndroidStudioProjects\\Caps\\app\\src\\main\\res\\layout\\activity_main.xml"
+    },
+    {
+        "merged": "C:\\Users\\ckwnt\\AndroidStudioProjects\\Caps\\app\\build\\intermediates\\merged_res\\debug\\drawable-xxhdpi_ic_baseline_monetization_on_24.png.flat",
+        "source": "C:\\Users\\ckwnt\\AndroidStudioProjects\\Caps\\app\\build\\generated\\res\\pngs\\debug\\drawable-xxhdpi\\ic_baseline_monetization_on_24.png"
+    },
+    {
+        "merged": "C:\\Users\\ckwnt\\AndroidStudioProjects\\Caps\\app\\build\\intermediates\\merged_res\\debug\\font_custom_font_family.xml.flat",
+        "source": "C:\\Users\\ckwnt\\AndroidStudioProjects\\Caps\\app\\src\\main\\res\\font\\custom_font_family.xml"
+    },
+    {
+        "merged": "C:\\Users\\ckwnt\\AndroidStudioProjects\\Caps\\app\\build\\intermediates\\merged_res\\debug\\drawable_send.png.flat",
+        "source": "C:\\Users\\ckwnt\\AndroidStudioProjects\\Caps\\app\\src\\main\\res\\drawable\\send.png"
+    },
+    {
+        "merged": "C:\\Users\\ckwnt\\AndroidStudioProjects\\Caps\\app\\build\\intermediates\\merged_res\\debug\\drawable-xxxhdpi_ic_baseline_directions_run_24.png.flat",
+        "source": "C:\\Users\\ckwnt\\AndroidStudioProjects\\Caps\\app\\build\\generated\\res\\pngs\\debug\\drawable-xxxhdpi\\ic_baseline_directions_run_24.png"
     }
 ]

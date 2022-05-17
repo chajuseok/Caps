@@ -1,14 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.caps">
     <!-- youtube 보고 추가한것 -->
-    <uses-permission android:name="android.permission.CAMERA"/>
-    <!-- gitgub  보고 추가한거-->
-    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
-    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
-
-    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.CAMERA" /> <!-- gitgub  보고 추가한거 -->
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
 
     <application
         android:allowBackup="true"
@@ -17,39 +14,29 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Caps">
-
-        <meta-data
-            android:name="com.google.android.geo.API_KEY"
-            android:value="AIzaSyAPMvB7c4lUuHkSkLYSudXpaJKqkoEsbLM" />
-
         <activity
-            android:name=".PayActivity" />
-        <activity
-            android:name=".AccountActivity"/>
-        <activity
-            android:name=".LoginActivity">
-        </activity>
-
-        <activity
-            android:name=".AuthActivity">
-        </activity>
-
-        <activity
-            android:name=".MainActivity"
+            android:name=".MainActivity3"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-
         </activity>
 
-        <activity android:name=".MainActivity2">
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyAPMvB7c4lUuHkSkLYSudXpaJKqkoEsbLM" />
+
+        <activity android:name=".PayActivity" />
+        <activity android:name=".AccountActivity" />
+        <activity android:name=".LoginActivity"></activity>
+        <activity android:name=".AuthActivity"></activity>
+        <activity android:name=".MainActivity"></activity>
+        <activity
+            android:name=".MainActivity2">
         </activity>
-
-        <activity android:name="com.theartofdev.edmodo.cropper.CropImageActivity"/>
-
+        <activity android:name="com.theartofdev.edmodo.cropper.CropImageActivity" />
     </application>
 
 </manifest>

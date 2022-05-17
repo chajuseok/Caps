@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "D:\\Android\\Caps\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-es-rGT\\values-es-rGT.xml",
+            "outputFile": "C:\\Users\\ckwnt\\AndroidStudioProjects\\Caps\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-es-rGT\\values-es-rGT.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\20201223\\.gradle\\caches\\transforms-3\\c7ac459317044107e4d40b2dcae8db74\\transformed\\android-image-cropper-2.8.0\\res\\values-es-rGT\\values-es-rGT.xml",
+                    "source": "C:\\Users\\ckwnt\\.gradle\\caches\\transforms-3\\b3d7c048bc3840a9080f0af3307cc48c\\transformed\\android-image-cropper-2.8.0\\res\\values-es-rGT\\values-es-rGT.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10",
                         "startColumns": "4,4,4,4,4,4,4,4,4",

@@ -5,10 +5,10 @@
 
     <!--regular-->
     <font
-        android:font="@font/na"
+        android:font="@font/fon"
         android:fontStyle="normal"
         android:fontWeight="500"
-        app:font="@font/na"
+        app:font="@font/fon"
         app:fontStyle="normal"
         app:fontWeight="500" />
 </font-family>

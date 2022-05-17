@@ -4,6 +4,9 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/Users/ckwnt/AndroidStudioProjects/Caps/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.1" />
+        <entry key="..\:/Users/ckwnt/AndroidStudioProjects/Caps/app/src/main/res/drawable/bg_chat_receive.xml" value="0.1" />
+        <entry key="..\:/Users/ckwnt/AndroidStudioProjects/Caps/app/src/main/res/drawable/bg_chat_send.xml" value="0.1" />
+        <entry key="..\:/Users/ckwnt/AndroidStudioProjects/Caps/app/src/main/res/drawable/border_outline.xml" value="0.305" />
         <entry key="..\:/Users/ckwnt/AndroidStudioProjects/Caps/app/src/main/res/drawable/edit.xml" value="0.1" />
         <entry key="..\:/Users/ckwnt/AndroidStudioProjects/Caps/app/src/main/res/drawable/ic_baseline_directions_run_24.xml" value="0.249" />
         <entry key="..\:/Users/ckwnt/AndroidStudioProjects/Caps/app/src/main/res/drawable/ic_baseline_monetization_on_24.xml" value="0.332" />
@@ -13,12 +16,14 @@
         <entry key="..\:/Users/ckwnt/AndroidStudioProjects/Caps/app/src/main/res/font/custom_font_family.xml" value="0.3807291666666667" />
         <entry key="..\:/Users/ckwnt/AndroidStudioProjects/Caps/app/src/main/res/font/total.xml" value="0.1" />
         <entry key="..\:/Users/ckwnt/AndroidStudioProjects/Caps/app/src/main/res/layout/activity_account.xml" value="0.291005291005291" />
+        <entry key="..\:/Users/ckwnt/AndroidStudioProjects/Caps/app/src/main/res/layout/activity_adapter.xml" value="0.1778115501519757" />
         <entry key="..\:/Users/ckwnt/AndroidStudioProjects/Caps/app/src/main/res/layout/activity_auth.xml" value="0.25" />
         <entry key="..\:/Users/ckwnt/AndroidStudioProjects/Caps/app/src/main/res/layout/activity_auth2.xml" value="0.35052083333333334" />
         <entry key="..\:/Users/ckwnt/AndroidStudioProjects/Caps/app/src/main/res/layout/activity_chat.xml" value="0.18" />
         <entry key="..\:/Users/ckwnt/AndroidStudioProjects/Caps/app/src/main/res/layout/activity_login.xml" value="0.25" />
         <entry key="..\:/Users/ckwnt/AndroidStudioProjects/Caps/app/src/main/res/layout/activity_main.xml" value="0.22" />
         <entry key="..\:/Users/ckwnt/AndroidStudioProjects/Caps/app/src/main/res/layout/activity_main2.xml" value="0.33" />
+        <entry key="..\:/Users/ckwnt/AndroidStudioProjects/Caps/app/src/main/res/layout/activity_main3.xml" value="0.36614583333333334" />
         <entry key="..\:/Users/ckwnt/AndroidStudioProjects/Caps/app/src/main/res/layout/activity_pay.xml" value="0.35052083333333334" />
         <entry key="..\:/Users/ckwnt/AndroidStudioProjects/Caps/app/src/main/res/menu/menu_auth.xml" value="0.23981481481481481" />
         <entry key="..\:/Users/ckwnt/AndroidStudioProjects/Caps/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.1" />
