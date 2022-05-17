@@ -5,7 +5,12 @@ public class UserAccount {
     private String idToken; // firebase user_id  계정 키값
     private String emailId;
     private String password;
+<<<<<<< HEAD
 
+=======
+    private String accessToken;
+    private String userSeqNo;
+>>>>>>> github/master
 
     public String getIdToken() {
         return idToken;
@@ -34,4 +39,15 @@ public class UserAccount {
         this.password = password;
     }
 
+<<<<<<< HEAD
+=======
+    public String getAccessToken() { return accessToken ;}
+
+    public void setAccessToken(String accessToken) {this.accessToken = accessToken; }
+
+    public String getUserSeqNo() { return userSeqNo ;}
+
+    public void setUserSeqNo(String userSeqNo) {this.userSeqNo = userSeqNo; }
+
+>>>>>>> github/master
 }

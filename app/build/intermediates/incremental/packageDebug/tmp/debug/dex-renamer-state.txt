@@ -1,0 +1,16 @@
+#Sat May 14 20:09:26 KST 2022
+path.4=classes5.dex
+path.3=classes4.dex
+path.2=classes3.dex
+path.1=classes2.dex
+path.0=classes.dex
+base.4=D\:\\Android\\Caps\\app\\build\\intermediates\\dex\\debug\\mergeDexDebug\\classes5.dex
+base.3=D\:\\Android\\Caps\\app\\build\\intermediates\\dex\\debug\\mergeDexDebug\\classes4.dex
+base.2=D\:\\Android\\Caps\\app\\build\\intermediates\\dex\\debug\\mergeDexDebug\\classes3.dex
+base.1=D\:\\Android\\Caps\\app\\build\\intermediates\\dex\\debug\\mergeDexDebug\\classes2.dex
+base.0=D\:\\Android\\Caps\\app\\build\\intermediates\\dex\\debug\\mergeDexDebug\\classes.dex
+renamed.3=classes4.dex
+renamed.2=classes3.dex
+renamed.1=classes2.dex
+renamed.0=classes.dex
+renamed.4=classes5.dex

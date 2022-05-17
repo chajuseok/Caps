@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="NONE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="76952efe-a806-4cc9-9319-f69f3a218c98" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BankService(source)/Authorization.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BankService(source)/EncodeString.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BankService(source)/GetCode.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BankService(source)/GetToken.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BankService(source)/STT.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BankService(source)/SavingInquiry.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BankService(source)/WebCall.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BankService(source)/Withdrawl.java" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectId" id="28ol4sqvukYoi33PKWfXujukPnd" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="android.sdk.path" value="$PROJECT_DIR$/../../../../Android/Sdk" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/.." />
+    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.project.gradle" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="76952efe-a806-4cc9-9319-f69f3a218c98" name="Default Changelist" comment="" />
+      <created>1651890630126</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1651890630126</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="932" y="467" key="FileChooserDialogImpl" timestamp="1651891447253">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="932" y="467" key="FileChooserDialogImpl/0.0.2560.1400@0.0.2560.1400" timestamp="1651891447253" />
+    <state x="653" y="371" key="SettingsEditor" timestamp="1651891441880">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="653" y="371" key="SettingsEditor/0.0.2560.1400@0.0.2560.1400" timestamp="1651891441880" />
+  </component>
+</project>
