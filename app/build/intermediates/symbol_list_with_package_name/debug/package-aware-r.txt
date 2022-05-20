@@ -2654,6 +2654,7 @@ id accessibility_custom_action_6
 id accessibility_custom_action_7
 id accessibility_custom_action_8
 id accessibility_custom_action_9
+id accountView
 id actionDown
 id actionDownUp
 id actionUp
@@ -2696,6 +2697,8 @@ id autoComplete
 id autoCompleteToEnd
 id autoCompleteToStart
 id backButton
+id bank1
+id bankInfo
 id barrier
 id baseline
 id beginOnFirstDraw
@@ -2712,6 +2715,8 @@ id browser_actions_menu_item_icon
 id browser_actions_menu_item_text
 id browser_actions_menu_items
 id browser_actions_menu_view
+id btn1
+id btn2
 id btnSend
 id buttonPanel
 id button_capture
@@ -3217,6 +3222,7 @@ layout abc_search_dropdown_item_icons_2line
 layout abc_search_view
 layout abc_select_dialog_material
 layout abc_tooltip
+layout account
 layout activity_account
 layout activity_adapter
 layout activity_auth

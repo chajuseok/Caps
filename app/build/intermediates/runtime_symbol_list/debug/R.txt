@@ -2653,6 +2653,7 @@ int id accessibility_custom_action_6 0x7f09002f
 int id accessibility_custom_action_7 0x7f090030
 int id accessibility_custom_action_8 0x7f090031
 int id accessibility_custom_action_9 0x7f090032
+int id accountView 0x7f090210
 int id actionDown 0x7f090033
 int id actionDownUp 0x7f090034
 int id actionUp 0x7f090035
@@ -2695,6 +2696,8 @@ int id autoComplete 0x7f090059
 int id autoCompleteToEnd 0x7f09005a
 int id autoCompleteToStart 0x7f09005b
 int id backButton 0x7f09005c
+int id bank1 0x7f090211
+int id bankInfo 0x7f090212
 int id barrier 0x7f09005d
 int id baseline 0x7f09005e
 int id beginOnFirstDraw 0x7f09005f
@@ -2711,6 +2714,8 @@ int id browser_actions_menu_item_icon 0x7f090069
 int id browser_actions_menu_item_text 0x7f09006a
 int id browser_actions_menu_items 0x7f09006b
 int id browser_actions_menu_view 0x7f09006c
+int id btn1 0x7f090213
+int id btn2 0x7f090214
 int id btnSend 0x7f09006d
 int id buttonPanel 0x7f09006e
 int id button_capture 0x7f09006f
@@ -3216,6 +3221,7 @@ int layout abc_search_dropdown_item_icons_2line 0x7f0c0018
 int layout abc_search_view 0x7f0c0019
 int layout abc_select_dialog_material 0x7f0c001a
 int layout abc_tooltip 0x7f0c001b
+int layout account 0x7f0c007f
 int layout activity_account 0x7f0c001c
 int layout activity_adapter 0x7f0c001d
 int layout activity_auth 0x7f0c001e

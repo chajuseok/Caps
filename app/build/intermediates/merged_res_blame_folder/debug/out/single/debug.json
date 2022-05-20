@@ -72,6 +72,10 @@
         "source": "C:\\Users\\ckwnt\\AndroidStudioProjects\\Caps\\app\\build\\generated\\res\\pngs\\debug\\drawable-xxhdpi\\ic_launcher_background.png"
     },
     {
+        "merged": "C:\\Users\\ckwnt\\AndroidStudioProjects\\Caps\\app\\build\\intermediates\\merged_res\\debug\\layout_account.xml.flat",
+        "source": "C:\\Users\\ckwnt\\AndroidStudioProjects\\Caps\\app\\src\\main\\res\\layout\\account.xml"
+    },
+    {
         "merged": "C:\\Users\\ckwnt\\AndroidStudioProjects\\Caps\\app\\build\\intermediates\\merged_res\\debug\\drawable-anydpi-v21_ic_baseline_directions_run_24.xml.flat",
         "source": "C:\\Users\\ckwnt\\AndroidStudioProjects\\Caps\\app\\build\\generated\\res\\pngs\\debug\\drawable-anydpi-v21\\ic_baseline_directions_run_24.xml"
     },

@@ -27,7 +27,12 @@ drawable send
 drawable solid_button
 font custom_font_family
 font fon
+id accountView
 id backButton
+id bank1
+id bankInfo
+id btn1
+id btn2
 id btnSend
 id button_capture
 id button_copy
@@ -52,6 +57,7 @@ id registerButton
 id text_data
 id toolbar
 id toolbar0
+layout account
 layout activity_account
 layout activity_adapter
 layout activity_auth

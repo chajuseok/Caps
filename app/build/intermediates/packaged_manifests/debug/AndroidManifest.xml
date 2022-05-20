@@ -24,8 +24,15 @@
         android:supportsRtl="true"
         android:testOnly="true"
         android:theme="@style/Theme.Caps" >
+        <activity android:name="com.example.caps.MainActivity3" >
+        </activity>
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyAPMvB7c4lUuHkSkLYSudXpaJKqkoEsbLM" />
+
         <activity
-            android:name="com.example.caps.MainActivity3"
+            android:name="com.example.caps.PayActivity"
             android:exported="true" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -33,12 +40,6 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
-        <meta-data
-            android:name="com.google.android.geo.API_KEY"
-            android:value="AIzaSyAPMvB7c4lUuHkSkLYSudXpaJKqkoEsbLM" />
-
-        <activity android:name="com.example.caps.PayActivity" />
         <activity android:name="com.example.caps.AccountActivity" />
         <activity android:name="com.example.caps.LoginActivity" />
         <activity android:name="com.example.caps.AuthActivity" />

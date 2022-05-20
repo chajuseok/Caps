@@ -75,8 +75,8 @@ public class MainActivity3 extends AppCompatActivity implements DialogflowBotRep
             @Override
             public void onClick(View view) {
 
-                Intent a = new Intent(MainActivity3.this, LoginActivity.class);
-                MainActivity3.this.startActivity(a);
+                //Intent a = new Intent(MainActivity3.this, LoginActivity.class);
+                //MainActivity3.this.startActivity(a);
                 finish();
             }
         });
@@ -192,6 +192,14 @@ public class MainActivity3 extends AppCompatActivity implements DialogflowBotRep
                 messageList.add(new MessageData(dialogflowBotReply, true));
                 chatAdapter.notifyDataSetChanged();
                 Objects.requireNonNull(chatView.getLayoutManager()).scrollToPosition(messageList.size() - 1);
+
+
+                if(dialogflowBotReply.indexOf("송금") != -1){
+                    Intent a = new Intent(MainActivity3.this, PayActivity.class);
+                    MainActivity3.this.startActivity(a);
+                    finish();
+                }
+
             } else {
                 Toast.makeText(this, "something went wrong", Toast.LENGTH_SHORT).show();
             }
