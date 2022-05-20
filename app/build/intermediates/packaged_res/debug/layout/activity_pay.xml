@@ -46,66 +46,20 @@
         android:layout_marginStart="20dp"
         android:layout_marginTop="20dp"/>
 
-
-    <ListView
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/accountView"
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_weight="1" />
-
-    <LinearLayout
         android:layout_marginTop="50dp"
-        android:layout_width="match_parent"
+        android:layout_weight="1"
+        android:background="@color/white"
+        android:fontFamily="@font/fon"
         android:orientation="vertical"
-        android:layout_height="0dp"
-        android:layout_weight="1">
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:orientation="horizontal"
-            android:layout_height="wrap_content">
-
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:src="@drawable/ic_baseline_monetization_on_24" />
-
-            <TextView
-                android:id="@+id/money"
-                android:layout_width="0dp"
-                android:layout_weight="1"
-                android:layout_height="match_parent"
-                android:text="원"
-                android:textSize="20dp"
-                android:textStyle="bold"
-                android:padding="10dp"
-                android:gravity="center"/>
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:gravity="center">
-
-            <Button
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:text="계좌 조회"
-                android:background="#00ffff"
-                android:textSize="20dp"/>
-
-            <Button
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:layout_marginStart="20dp"
-                android:text="송금"
-                android:background="#00ffff"
-                android:textSize="20dp"
-                />
-        </LinearLayout>
-
-
-    </LinearLayout>
-
+        android:padding="5dp"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        tools:itemCount="3"
+        tools:listitem="@layout/account" />
 
 
 </LinearLayout>
+
