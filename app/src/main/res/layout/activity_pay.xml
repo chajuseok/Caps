@@ -26,6 +26,7 @@
             android:layout_height="match_parent"
             android:text="금융도우미"
             android:textSize="25dp"
+
             />
         <ImageButton
             android:id="@+id/chat"
