@@ -156,7 +156,6 @@ public class PayActivity extends AppCompatActivity {
             connection.setRequestProperty("Authorization", access_token);
             connection.setDoInput(true);
             BufferedReader in = new BufferedReader(new InputStreamReader(connection.getInputStream()));
-            //응답 내용
             line = in.readLine();
             line = line.replace("savings_bank_name", "");
             in.close();
