@@ -53,7 +53,9 @@ public class LoginActivity extends AppCompatActivity {
                         if(task.isSuccessful()){
                             //로그인 성공!!
                             Toast.makeText(LoginActivity.this, "로그인성공", Toast.LENGTH_SHORT).show();
-                            Intent intent = new Intent(LoginActivity.this, AccountActivity.class);
+                            Intent intent = new Intent(LoginActivity.this, PayActivity.class);
+                            String paramId = id;
+                            intent.putExtra("id",paramId);
                             LoginActivity.this.startActivity(intent);
                             finish();
                         }
