@@ -32,7 +32,7 @@
             android:value="AIzaSyAPMvB7c4lUuHkSkLYSudXpaJKqkoEsbLM" />
 
         <activity
-            android:name="com.example.caps.MainActivity"
+            android:name="com.example.caps.PayActivity"
             android:exported="true" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -43,7 +43,7 @@
         <activity android:name="com.example.caps.AccountActivity" />
         <activity android:name="com.example.caps.LoginActivity" />
         <activity android:name="com.example.caps.AuthActivity" />
-        <activity android:name="com.example.caps.PayActivity" />
+        <activity android:name="com.example.caps.MainActivity" />
         <activity android:name="com.example.caps.MainActivity2" >
         </activity>
         <activity android:name="com.theartofdev.edmodo.cropper.CropImageActivity" />

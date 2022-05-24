@@ -37,7 +37,7 @@
             android:text="Capture"
             android:layout_margin="8dp"/>
         <Button
-            android:visibility="gone"
+
             android:id="@+id/button_copy"
             android:layout_width="0dp"
             android:layout_height="wrap_content"

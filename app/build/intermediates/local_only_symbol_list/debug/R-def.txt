@@ -54,6 +54,8 @@ id message_send
 id money
 id passwordText
 id registerButton
+id sttResult
+id sttStart
 id text_data
 id toolbar
 id toolbar0
@@ -65,6 +67,7 @@ layout activity_login
 layout activity_main
 layout activity_main2
 layout activity_main3
+layout activity_main4
 layout activity_pay
 mipmap ic_launcher
 mipmap ic_launcher_round

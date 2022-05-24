@@ -94,6 +94,7 @@ public class MainActivity2 extends AppCompatActivity {
             SparseArray<TextBlock> textBlockSparseArray = recognizer.detect(frame);
             StringBuilder stringBuilder = new StringBuilder();
             for(int i =0; i<textBlockSparseArray.size();i++){
+
                 TextBlock textBlock = textBlockSparseArray.valueAt(i);
                 stringBuilder.append(textBlock.getValue());
                 stringBuilder.append("\n");

@@ -3057,6 +3057,8 @@ id staticLayout
 id staticPostLayout
 id stop
 id stretch
+id sttResult
+id sttStart
 id submenuarrow
 id submit_area
 id supportScrollUp
@@ -3230,6 +3232,7 @@ layout activity_login
 layout activity_main
 layout activity_main2
 layout activity_main3
+layout activity_main4
 layout activity_pay
 layout browser_actions_context_menu_page
 layout browser_actions_context_menu_row

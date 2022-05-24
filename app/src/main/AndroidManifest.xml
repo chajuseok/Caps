@@ -15,7 +15,8 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Caps">
         <activity
-            android:name=".MainActivity3">
+            android:name=".MainActivity3"
+            android:theme="@style/Base.Theme.AppCompat" android:label="크롭 액티비티">
 
         </activity>
 
@@ -24,7 +25,7 @@
             android:value="AIzaSyAPMvB7c4lUuHkSkLYSudXpaJKqkoEsbLM" />
 
         <activity
-            android:name=".MainActivity"
+            android:name=".PayActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -36,7 +37,7 @@
         <activity android:name=".AccountActivity" />
         <activity android:name=".LoginActivity"></activity>
         <activity android:name=".AuthActivity"></activity>
-        <activity android:name=".PayActivity"></activity>
+        <activity android:name=".MainActivity"></activity>
         <activity
             android:name=".MainActivity2">
         </activity>
