@@ -168,6 +168,10 @@
         "source": "C:\\Users\\ckwnt\\AndroidStudioProjects\\Caps\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher_round.webp"
     },
     {
+        "merged": "C:\\Users\\ckwnt\\AndroidStudioProjects\\Caps\\app\\build\\intermediates\\merged_res\\debug\\layout_activity_inquiry.xml.flat",
+        "source": "C:\\Users\\ckwnt\\AndroidStudioProjects\\Caps\\app\\src\\main\\res\\layout\\activity_inquiry.xml"
+    },
+    {
         "merged": "C:\\Users\\ckwnt\\AndroidStudioProjects\\Caps\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xxxhdpi_ic_launcher.webp.flat",
         "source": "C:\\Users\\ckwnt\\AndroidStudioProjects\\Caps\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher.webp"
     },
@@ -216,6 +220,10 @@
         "source": "C:\\Users\\ckwnt\\AndroidStudioProjects\\Caps\\app\\src\\main\\res\\raw\\credential.json"
     },
     {
+        "merged": "C:\\Users\\ckwnt\\AndroidStudioProjects\\Caps\\app\\build\\intermediates\\merged_res\\debug\\layout_spinner_item.xml.flat",
+        "source": "C:\\Users\\ckwnt\\AndroidStudioProjects\\Caps\\app\\src\\main\\res\\layout\\spinner_item.xml"
+    },
+    {
         "merged": "C:\\Users\\ckwnt\\AndroidStudioProjects\\Caps\\app\\build\\intermediates\\merged_res\\debug\\drawable_edit.xml.flat",
         "source": "C:\\Users\\ckwnt\\AndroidStudioProjects\\Caps\\app\\src\\main\\res\\drawable\\edit.xml"
     },
@@ -254,6 +262,10 @@
     {
         "merged": "C:\\Users\\ckwnt\\AndroidStudioProjects\\Caps\\app\\build\\intermediates\\merged_res\\debug\\drawable_bot.png.flat",
         "source": "C:\\Users\\ckwnt\\AndroidStudioProjects\\Caps\\app\\src\\main\\res\\drawable\\bot.png"
+    },
+    {
+        "merged": "C:\\Users\\ckwnt\\AndroidStudioProjects\\Caps\\app\\build\\intermediates\\merged_res\\debug\\layout_activity_with_draw.xml.flat",
+        "source": "C:\\Users\\ckwnt\\AndroidStudioProjects\\Caps\\app\\src\\main\\res\\layout\\activity_with_draw.xml"
     },
     {
         "merged": "C:\\Users\\ckwnt\\AndroidStudioProjects\\Caps\\app\\build\\intermediates\\merged_res\\debug\\font_fon.ttf.flat",

@@ -63,6 +63,7 @@ animator mtrl_fab_hide_motion_spec
 animator mtrl_fab_show_motion_spec
 animator mtrl_fab_transformation_sheet_collapse_spec
 animator mtrl_fab_transformation_sheet_expand_spec
+array my_array
 attr SharedValue
 attr SharedValueId
 attr actionBarDivider
@@ -2962,6 +2963,7 @@ id north
 id notification_background
 id notification_main_column
 id notification_main_column_container
+id ocr
 id off
 id on
 id onInterceptTouchReturnSwipe
@@ -3039,6 +3041,7 @@ id snapMargins
 id south
 id spacer
 id special_effects_controller_view_tag
+id spinner
 id spline
 id split_action_bar
 id spread
@@ -3131,6 +3134,7 @@ id visible_removing_fragment_view_tag
 id west
 id wide
 id withText
+id withdraw
 id withinBounds
 id wrap
 id wrap_content
@@ -3228,12 +3232,14 @@ layout account
 layout activity_account
 layout activity_adapter
 layout activity_auth
+layout activity_inquiry
 layout activity_login
 layout activity_main
 layout activity_main2
 layout activity_main3
 layout activity_main4
 layout activity_pay
+layout activity_with_draw
 layout browser_actions_context_menu_page
 layout browser_actions_context_menu_row
 layout crop_image_activity
@@ -3309,6 +3315,7 @@ layout notification_template_part_time
 layout select_dialog_item_material
 layout select_dialog_multichoice_material
 layout select_dialog_singlechoice_material
+layout spinner_item
 layout support_simple_spinner_dropdown_item
 layout test_action_chip
 layout test_chip_zero_corner_radius

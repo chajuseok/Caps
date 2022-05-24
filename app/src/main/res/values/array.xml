@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+    <string-array name="my_array">
+        <item>보내실 은행을 선택해주세요</item>
+        <item>국민은행</item>
+        <item>카카오뱅크</item>
+        <item>기업은행</item>
+        <item>광주은행</item>
+        <item>농협</item>
+
+    </string-array>
+</resources>

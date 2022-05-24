@@ -1,5 +1,6 @@
 R_DEF: Internal format may change without notice
 local
+array my_array
 color black
 color darkmint
 color mint
@@ -52,23 +53,29 @@ id logo
 id message_receive
 id message_send
 id money
+id ocr
 id passwordText
 id registerButton
+id spinner
 id sttResult
 id sttStart
 id text_data
 id toolbar
 id toolbar0
+id withdraw
 layout account
 layout activity_account
 layout activity_adapter
 layout activity_auth
+layout activity_inquiry
 layout activity_login
 layout activity_main
 layout activity_main2
 layout activity_main3
 layout activity_main4
 layout activity_pay
+layout activity_with_draw
+layout spinner_item
 mipmap ic_launcher
 mipmap ic_launcher_round
 raw credential
