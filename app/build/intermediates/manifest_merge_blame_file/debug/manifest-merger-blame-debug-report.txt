@@ -28,20 +28,20 @@
 16
 17    <application
 17-->C:\Users\ckwnt\AndroidStudioProjects\Caps\app\src\main\AndroidManifest.xml:10:5-47:19
-18        android:allowBackup="true"
-18-->C:\Users\ckwnt\AndroidStudioProjects\Caps\app\src\main\AndroidManifest.xml:11:9-35
-19        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
-19-->[androidx.core:core:1.7.0] C:\Users\ckwnt\.gradle\caches\transforms-3\964de6663d96b8fbbe80e2079e2d64f4\transformed\core-1.7.0\AndroidManifest.xml:24:18-86
-20        android:debuggable="true"
-21        android:icon="@mipmap/ic_launcher"
-21-->C:\Users\ckwnt\AndroidStudioProjects\Caps\app\src\main\AndroidManifest.xml:12:9-43
-22        android:label="@string/app_name"
-22-->C:\Users\ckwnt\AndroidStudioProjects\Caps\app\src\main\AndroidManifest.xml:13:9-41
-23        android:roundIcon="@mipmap/ic_launcher_round"
-23-->C:\Users\ckwnt\AndroidStudioProjects\Caps\app\src\main\AndroidManifest.xml:14:9-54
-24        android:supportsRtl="true"
-24-->C:\Users\ckwnt\AndroidStudioProjects\Caps\app\src\main\AndroidManifest.xml:15:9-35
-25        android:testOnly="true"
+18        android:name="androidx.multidex.MultiDexApplication"
+19        android:allowBackup="true"
+19-->C:\Users\ckwnt\AndroidStudioProjects\Caps\app\src\main\AndroidManifest.xml:11:9-35
+20        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+20-->[androidx.core:core:1.7.0] C:\Users\ckwnt\.gradle\caches\transforms-3\964de6663d96b8fbbe80e2079e2d64f4\transformed\core-1.7.0\AndroidManifest.xml:24:18-86
+21        android:debuggable="true"
+22        android:icon="@mipmap/ic_launcher"
+22-->C:\Users\ckwnt\AndroidStudioProjects\Caps\app\src\main\AndroidManifest.xml:12:9-43
+23        android:label="@string/app_name"
+23-->C:\Users\ckwnt\AndroidStudioProjects\Caps\app\src\main\AndroidManifest.xml:13:9-41
+24        android:roundIcon="@mipmap/ic_launcher_round"
+24-->C:\Users\ckwnt\AndroidStudioProjects\Caps\app\src\main\AndroidManifest.xml:14:9-54
+25        android:supportsRtl="true"
+25-->C:\Users\ckwnt\AndroidStudioProjects\Caps\app\src\main\AndroidManifest.xml:15:9-35
 26        android:theme="@style/Theme.Caps" >
 26-->C:\Users\ckwnt\AndroidStudioProjects\Caps\app\src\main\AndroidManifest.xml:16:9-42
 27        <activity android:name="com.example.caps.inquiryActivity" />
