@@ -112,15 +112,27 @@ public class PayActivity extends AppCompatActivity {
         AccountAdapter.setOnItemClickListener1(new AccountAdapter.OnItemClickListener() {
             @Override
             public void onItemClick(View v, int pos) {
+                Toast.makeText(PayActivity.this, "송금페이지로 이동", Toast.LENGTH_SHORT).show();
                 //
-                Toast.makeText(PayActivity.this, "ba", Toast.LENGTH_SHORT).show();
+                Intent intent = new Intent(PayActivity.this, WithDrawActivity.class);
+                //String paramId = id;
+                //intent.putExtra("id",paramId);
+                PayActivity.this.startActivity(intent);
+                finish();
+
             }
         });
         AccountAdapter.setOnItemClickListener2(new AccountAdapter.OnItemClickListener() {
             @Override
             public void onItemClick(View v, int pos) {
                 //
-                Toast.makeText(PayActivity.this, "ab", Toast.LENGTH_SHORT).show();
+                Toast.makeText(PayActivity.this, "잔액조회페이지로 이동", Toast.LENGTH_SHORT).show();
+
+                Intent intent = new Intent(PayActivity.this, inquiryActivity.class);
+                //String paramId = id;
+                //intent.putExtra("id",paramId);
+                PayActivity.this.startActivity(intent);
+                finish();
 
             }
         });
