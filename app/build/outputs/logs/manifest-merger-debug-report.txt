@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from C:\Users\ckwnt\AndroidStudioProjects\Caps\app\src\main\AndroidManifest.xml:2:1-47:12
-INJECTED from C:\Users\ckwnt\AndroidStudioProjects\Caps\app\src\main\AndroidManifest.xml:2:1-47:12
-INJECTED from C:\Users\ckwnt\AndroidStudioProjects\Caps\app\src\main\AndroidManifest.xml:2:1-47:12
-INJECTED from C:\Users\ckwnt\AndroidStudioProjects\Caps\app\src\main\AndroidManifest.xml:2:1-47:12
+ADDED from C:\Users\ckwnt\AndroidStudioProjects\Caps\app\src\main\AndroidManifest.xml:2:1-49:12
+INJECTED from C:\Users\ckwnt\AndroidStudioProjects\Caps\app\src\main\AndroidManifest.xml:2:1-49:12
+INJECTED from C:\Users\ckwnt\AndroidStudioProjects\Caps\app\src\main\AndroidManifest.xml:2:1-49:12
+INJECTED from C:\Users\ckwnt\AndroidStudioProjects\Caps\app\src\main\AndroidManifest.xml:2:1-49:12
 MERGED from [com.google.android.material:material:1.5.0] C:\Users\ckwnt\.gradle\caches\transforms-3\deed3bf9cf76733a5c91b235dea902a7\transformed\material-1.5.0\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.constraintlayout:constraintlayout:2.1.3] C:\Users\ckwnt\.gradle\caches\transforms-3\b37b6af63b297a0aed5adb36140e5104\transformed\constraintlayout-2.1.3\AndroidManifest.xml:2:1-11:12
 MERGED from [com.theartofdev.edmodo:android-image-cropper:2.8.0] C:\Users\ckwnt\.gradle\caches\transforms-3\b3d7c048bc3840a9080f0af3307cc48c\transformed\android-image-cropper-2.8.0\AndroidManifest.xml:2:1-11:12
@@ -67,20 +67,20 @@ MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\ckwnt\.gradle\ca
 MERGED from [androidx.documentfile:documentfile:1.0.0] C:\Users\ckwnt\.gradle\caches\transforms-3\12f35b8758055f9fc3b230453a94dd44\transformed\documentfile-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.print:print:1.0.0] C:\Users\ckwnt\.gradle\caches\transforms-3\f0d548a7aedba31f8a9f972ed826c794\transformed\print-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.annotation:annotation-experimental:1.1.0] C:\Users\ckwnt\.gradle\caches\transforms-3\9996b1cf09c0b2f2814aa5a5cb6c74ed\transformed\annotation-experimental-1.1.0\AndroidManifest.xml:17:1-24:12
-INJECTED from C:\Users\ckwnt\AndroidStudioProjects\Caps\app\src\main\AndroidManifest.xml:2:1-47:12
-INJECTED from C:\Users\ckwnt\AndroidStudioProjects\Caps\app\src\main\AndroidManifest.xml:2:1-47:12
-INJECTED from C:\Users\ckwnt\AndroidStudioProjects\Caps\app\src\main\AndroidManifest.xml:2:1-47:12
+INJECTED from C:\Users\ckwnt\AndroidStudioProjects\Caps\app\src\main\AndroidManifest.xml:2:1-49:12
+INJECTED from C:\Users\ckwnt\AndroidStudioProjects\Caps\app\src\main\AndroidManifest.xml:2:1-49:12
+INJECTED from C:\Users\ckwnt\AndroidStudioProjects\Caps\app\src\main\AndroidManifest.xml:2:1-49:12
 	package
 		ADDED from C:\Users\ckwnt\AndroidStudioProjects\Caps\app\src\main\AndroidManifest.xml:3:5-31
 		INJECTED from C:\Users\ckwnt\AndroidStudioProjects\Caps\app\src\main\AndroidManifest.xml
 		INJECTED from C:\Users\ckwnt\AndroidStudioProjects\Caps\app\src\main\AndroidManifest.xml
 	android:versionName
 		INJECTED from C:\Users\ckwnt\AndroidStudioProjects\Caps\app\src\main\AndroidManifest.xml
-		ADDED from C:\Users\ckwnt\AndroidStudioProjects\Caps\app\src\main\AndroidManifest.xml:2:1-47:12
+		ADDED from C:\Users\ckwnt\AndroidStudioProjects\Caps\app\src\main\AndroidManifest.xml:2:1-49:12
 		INJECTED from C:\Users\ckwnt\AndroidStudioProjects\Caps\app\src\main\AndroidManifest.xml
 	android:versionCode
 		INJECTED from C:\Users\ckwnt\AndroidStudioProjects\Caps\app\src\main\AndroidManifest.xml
-		ADDED from C:\Users\ckwnt\AndroidStudioProjects\Caps\app\src\main\AndroidManifest.xml:2:1-47:12
+		ADDED from C:\Users\ckwnt\AndroidStudioProjects\Caps\app\src\main\AndroidManifest.xml:2:1-49:12
 		INJECTED from C:\Users\ckwnt\AndroidStudioProjects\Caps\app\src\main\AndroidManifest.xml
 	xmlns:android
 		ADDED from C:\Users\ckwnt\AndroidStudioProjects\Caps\app\src\main\AndroidManifest.xml:2:11-69
@@ -105,7 +105,7 @@ MERGED from [com.google.firebase:firebase-database:20.0.5] C:\Users\ckwnt\.gradl
 	android:name
 		ADDED from C:\Users\ckwnt\AndroidStudioProjects\Caps\app\src\main\AndroidManifest.xml:8:22-64
 application
-ADDED from C:\Users\ckwnt\AndroidStudioProjects\Caps\app\src\main\AndroidManifest.xml:10:5-45:19
+ADDED from C:\Users\ckwnt\AndroidStudioProjects\Caps\app\src\main\AndroidManifest.xml:10:5-47:19
 MERGED from [com.google.android.material:material:1.5.0] C:\Users\ckwnt\.gradle\caches\transforms-3\deed3bf9cf76733a5c91b235dea902a7\transformed\material-1.5.0\AndroidManifest.xml:22:5-20
 MERGED from [com.google.android.material:material:1.5.0] C:\Users\ckwnt\.gradle\caches\transforms-3\deed3bf9cf76733a5c91b235dea902a7\transformed\material-1.5.0\AndroidManifest.xml:22:5-20
 MERGED from [androidx.constraintlayout:constraintlayout:2.1.3] C:\Users\ckwnt\.gradle\caches\transforms-3\b37b6af63b297a0aed5adb36140e5104\transformed\constraintlayout-2.1.3\AndroidManifest.xml:9:5-20
@@ -161,69 +161,67 @@ MERGED from [androidx.startup:startup-runtime:1.0.0] C:\Users\ckwnt\.gradle\cach
 	android:theme
 		ADDED from C:\Users\ckwnt\AndroidStudioProjects\Caps\app\src\main\AndroidManifest.xml:16:9-42
 activity#com.example.caps.inquiryActivity
-ADDED from C:\Users\ckwnt\AndroidStudioProjects\Caps\app\src\main\AndroidManifest.xml:17:9-19:40
-	android:exported
-		ADDED from C:\Users\ckwnt\AndroidStudioProjects\Caps\app\src\main\AndroidManifest.xml:19:13-37
+ADDED from C:\Users\ckwnt\AndroidStudioProjects\Caps\app\src\main\AndroidManifest.xml:17:9-18:47
 	android:name
 		ADDED from C:\Users\ckwnt\AndroidStudioProjects\Caps\app\src\main\AndroidManifest.xml:18:13-44
 activity#com.example.caps.WithDrawActivity
-ADDED from C:\Users\ckwnt\AndroidStudioProjects\Caps\app\src\main\AndroidManifest.xml:20:9-28:20
-	android:exported
-		ADDED from C:\Users\ckwnt\AndroidStudioProjects\Caps\app\src\main\AndroidManifest.xml:22:13-36
+ADDED from C:\Users\ckwnt\AndroidStudioProjects\Caps\app\src\main\AndroidManifest.xml:19:9-22:20
 	android:name
-		ADDED from C:\Users\ckwnt\AndroidStudioProjects\Caps\app\src\main\AndroidManifest.xml:21:13-45
-intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from C:\Users\ckwnt\AndroidStudioProjects\Caps\app\src\main\AndroidManifest.xml:23:13-27:29
-action#android.intent.action.MAIN
-ADDED from C:\Users\ckwnt\AndroidStudioProjects\Caps\app\src\main\AndroidManifest.xml:24:17-69
-	android:name
-		ADDED from C:\Users\ckwnt\AndroidStudioProjects\Caps\app\src\main\AndroidManifest.xml:24:25-66
-category#android.intent.category.LAUNCHER
-ADDED from C:\Users\ckwnt\AndroidStudioProjects\Caps\app\src\main\AndroidManifest.xml:26:17-77
-	android:name
-		ADDED from C:\Users\ckwnt\AndroidStudioProjects\Caps\app\src\main\AndroidManifest.xml:26:27-74
+		ADDED from C:\Users\ckwnt\AndroidStudioProjects\Caps\app\src\main\AndroidManifest.xml:20:13-45
 activity#com.example.caps.MainActivity3
-ADDED from C:\Users\ckwnt\AndroidStudioProjects\Caps\app\src\main\AndroidManifest.xml:29:9-32:68
-	android:label
-		ADDED from C:\Users\ckwnt\AndroidStudioProjects\Caps\app\src\main\AndroidManifest.xml:31:13-36
-	android:theme
-		ADDED from C:\Users\ckwnt\AndroidStudioProjects\Caps\app\src\main\AndroidManifest.xml:32:13-56
+ADDED from C:\Users\ckwnt\AndroidStudioProjects\Caps\app\src\main\AndroidManifest.xml:23:9-25:20
 	android:name
-		ADDED from C:\Users\ckwnt\AndroidStudioProjects\Caps\app\src\main\AndroidManifest.xml:30:13-42
+		ADDED from C:\Users\ckwnt\AndroidStudioProjects\Caps\app\src\main\AndroidManifest.xml:24:13-42
 meta-data#com.google.android.geo.API_KEY
-ADDED from C:\Users\ckwnt\AndroidStudioProjects\Caps\app\src\main\AndroidManifest.xml:34:9-36:71
+ADDED from C:\Users\ckwnt\AndroidStudioProjects\Caps\app\src\main\AndroidManifest.xml:27:9-29:71
 	android:value
-		ADDED from C:\Users\ckwnt\AndroidStudioProjects\Caps\app\src\main\AndroidManifest.xml:36:13-68
+		ADDED from C:\Users\ckwnt\AndroidStudioProjects\Caps\app\src\main\AndroidManifest.xml:29:13-68
 	android:name
-		ADDED from C:\Users\ckwnt\AndroidStudioProjects\Caps\app\src\main\AndroidManifest.xml:35:13-58
+		ADDED from C:\Users\ckwnt\AndroidStudioProjects\Caps\app\src\main\AndroidManifest.xml:28:13-58
 activity#com.example.caps.PayActivity
-ADDED from C:\Users\ckwnt\AndroidStudioProjects\Caps\app\src\main\AndroidManifest.xml:38:9-58
+ADDED from C:\Users\ckwnt\AndroidStudioProjects\Caps\app\src\main\AndroidManifest.xml:31:9-58
 	android:name
-		ADDED from C:\Users\ckwnt\AndroidStudioProjects\Caps\app\src\main\AndroidManifest.xml:38:19-46
+		ADDED from C:\Users\ckwnt\AndroidStudioProjects\Caps\app\src\main\AndroidManifest.xml:31:19-46
 activity#com.example.caps.AccountActivity
-ADDED from C:\Users\ckwnt\AndroidStudioProjects\Caps\app\src\main\AndroidManifest.xml:39:9-53
+ADDED from C:\Users\ckwnt\AndroidStudioProjects\Caps\app\src\main\AndroidManifest.xml:32:9-53
 	android:name
-		ADDED from C:\Users\ckwnt\AndroidStudioProjects\Caps\app\src\main\AndroidManifest.xml:39:19-50
+		ADDED from C:\Users\ckwnt\AndroidStudioProjects\Caps\app\src\main\AndroidManifest.xml:32:19-50
 activity#com.example.caps.LoginActivity
-ADDED from C:\Users\ckwnt\AndroidStudioProjects\Caps\app\src\main\AndroidManifest.xml:40:9-51
+ADDED from C:\Users\ckwnt\AndroidStudioProjects\Caps\app\src\main\AndroidManifest.xml:33:9-51
 	android:name
-		ADDED from C:\Users\ckwnt\AndroidStudioProjects\Caps\app\src\main\AndroidManifest.xml:40:19-48
+		ADDED from C:\Users\ckwnt\AndroidStudioProjects\Caps\app\src\main\AndroidManifest.xml:33:19-48
 activity#com.example.caps.AuthActivity
-ADDED from C:\Users\ckwnt\AndroidStudioProjects\Caps\app\src\main\AndroidManifest.xml:41:9-50
+ADDED from C:\Users\ckwnt\AndroidStudioProjects\Caps\app\src\main\AndroidManifest.xml:34:9-50
 	android:name
-		ADDED from C:\Users\ckwnt\AndroidStudioProjects\Caps\app\src\main\AndroidManifest.xml:41:19-47
+		ADDED from C:\Users\ckwnt\AndroidStudioProjects\Caps\app\src\main\AndroidManifest.xml:34:19-47
 activity#com.example.caps.MainActivity
-ADDED from C:\Users\ckwnt\AndroidStudioProjects\Caps\app\src\main\AndroidManifest.xml:42:9-50
+ADDED from C:\Users\ckwnt\AndroidStudioProjects\Caps\app\src\main\AndroidManifest.xml:35:9-42:20
+	android:exported
+		ADDED from C:\Users\ckwnt\AndroidStudioProjects\Caps\app\src\main\AndroidManifest.xml:36:13-36
 	android:name
-		ADDED from C:\Users\ckwnt\AndroidStudioProjects\Caps\app\src\main\AndroidManifest.xml:42:19-47
+		ADDED from C:\Users\ckwnt\AndroidStudioProjects\Caps\app\src\main\AndroidManifest.xml:35:19-47
+intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
+ADDED from C:\Users\ckwnt\AndroidStudioProjects\Caps\app\src\main\AndroidManifest.xml:37:13-41:29
+action#android.intent.action.MAIN
+ADDED from C:\Users\ckwnt\AndroidStudioProjects\Caps\app\src\main\AndroidManifest.xml:38:17-69
+	android:name
+		ADDED from C:\Users\ckwnt\AndroidStudioProjects\Caps\app\src\main\AndroidManifest.xml:38:25-66
+category#android.intent.category.LAUNCHER
+ADDED from C:\Users\ckwnt\AndroidStudioProjects\Caps\app\src\main\AndroidManifest.xml:40:17-77
+	android:name
+		ADDED from C:\Users\ckwnt\AndroidStudioProjects\Caps\app\src\main\AndroidManifest.xml:40:27-74
 activity#com.example.caps.MainActivity2
-ADDED from C:\Users\ckwnt\AndroidStudioProjects\Caps\app\src\main\AndroidManifest.xml:43:9-51
+ADDED from C:\Users\ckwnt\AndroidStudioProjects\Caps\app\src\main\AndroidManifest.xml:43:9-45:59
+	android:label
+		ADDED from C:\Users\ckwnt\AndroidStudioProjects\Caps\app\src\main\AndroidManifest.xml:44:13-36
+	android:theme
+		ADDED from C:\Users\ckwnt\AndroidStudioProjects\Caps\app\src\main\AndroidManifest.xml:45:13-56
 	android:name
 		ADDED from C:\Users\ckwnt\AndroidStudioProjects\Caps\app\src\main\AndroidManifest.xml:43:19-48
 activity#com.theartofdev.edmodo.cropper.CropImageActivity
-ADDED from C:\Users\ckwnt\AndroidStudioProjects\Caps\app\src\main\AndroidManifest.xml:44:9-85
+ADDED from C:\Users\ckwnt\AndroidStudioProjects\Caps\app\src\main\AndroidManifest.xml:46:9-85
 	android:name
-		ADDED from C:\Users\ckwnt\AndroidStudioProjects\Caps\app\src\main\AndroidManifest.xml:44:19-82
+		ADDED from C:\Users\ckwnt\AndroidStudioProjects\Caps\app\src\main\AndroidManifest.xml:46:19-82
 uses-sdk
 INJECTED from C:\Users\ckwnt\AndroidStudioProjects\Caps\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from C:\Users\ckwnt\AndroidStudioProjects\Caps\app\src\main\AndroidManifest.xml

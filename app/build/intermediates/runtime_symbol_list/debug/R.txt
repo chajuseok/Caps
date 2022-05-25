@@ -2508,6 +2508,7 @@ int drawable btn_radio_off_mtrl 0x7f070061
 int drawable btn_radio_off_to_on_mtrl_animation 0x7f070062
 int drawable btn_radio_on_mtrl 0x7f070063
 int drawable btn_radio_on_to_off_mtrl_animation 0x7f070064
+int drawable camera 0x7f0700c2
 int drawable common_full_open_on_phone 0x7f070065
 int drawable common_google_signin_btn_icon_dark 0x7f070066
 int drawable common_google_signin_btn_icon_dark_focused 0x7f070067
@@ -2539,6 +2540,7 @@ int drawable edit 0x7f070080
 int drawable googleg_disabled_color_18 0x7f070081
 int drawable googleg_standard_color_18 0x7f070082
 int drawable help 0x7f070083
+int drawable ic_baseline_camera_alt_24 0x7f0700c3
 int drawable ic_baseline_chat_24 0x7f070084
 int drawable ic_baseline_directions_run_24 0x7f070085
 int drawable ic_baseline_monetization_on_24 0x7f070086
@@ -2861,6 +2863,7 @@ int id imageButton 0x7f0900fe
 int id immediateStop 0x7f0900ff
 int id included 0x7f090100
 int id info 0x7f090101
+int id inquiryList 0x7f09021b
 int id invisible 0x7f090102
 int id inward 0x7f090103
 int id italic 0x7f090104
@@ -3259,6 +3262,7 @@ int layout design_navigation_menu 0x7f0c0036
 int layout design_navigation_menu_item 0x7f0c0037
 int layout design_text_input_end_icon 0x7f0c0038
 int layout design_text_input_start_icon 0x7f0c0039
+int layout inquiry 0x7f0c0084
 int layout m3_alert_dialog 0x7f0c003a
 int layout m3_alert_dialog_actions 0x7f0c003b
 int layout m3_alert_dialog_title 0x7f0c003c

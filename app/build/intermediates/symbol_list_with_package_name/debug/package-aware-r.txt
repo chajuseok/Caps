@@ -2509,6 +2509,7 @@ drawable btn_radio_off_mtrl
 drawable btn_radio_off_to_on_mtrl_animation
 drawable btn_radio_on_mtrl
 drawable btn_radio_on_to_off_mtrl_animation
+drawable camera
 drawable common_full_open_on_phone
 drawable common_google_signin_btn_icon_dark
 drawable common_google_signin_btn_icon_dark_focused
@@ -2540,6 +2541,7 @@ drawable edit
 drawable googleg_disabled_color_18
 drawable googleg_standard_color_18
 drawable help
+drawable ic_baseline_camera_alt_24
 drawable ic_baseline_chat_24
 drawable ic_baseline_directions_run_24
 drawable ic_baseline_monetization_on_24
@@ -2862,6 +2864,7 @@ id imageButton
 id immediateStop
 id included
 id info
+id inquiryList
 id invisible
 id inward
 id italic
@@ -3260,6 +3263,7 @@ layout design_navigation_menu
 layout design_navigation_menu_item
 layout design_text_input_end_icon
 layout design_text_input_start_icon
+layout inquiry
 layout m3_alert_dialog
 layout m3_alert_dialog_actions
 layout m3_alert_dialog_title

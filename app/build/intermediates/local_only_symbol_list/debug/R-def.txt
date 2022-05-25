@@ -16,8 +16,10 @@ drawable bg_chat_send
 drawable border_layout
 drawable border_outline
 drawable bot
+drawable camera
 drawable edit
 drawable help
+drawable ic_baseline_camera_alt_24
 drawable ic_baseline_chat_24
 drawable ic_baseline_directions_run_24
 drawable ic_baseline_monetization_on_24
@@ -47,6 +49,7 @@ id editMessage
 id helpButton
 id idText
 id imageButton
+id inquiryList
 id linear_holder
 id loginButton
 id logo
@@ -75,6 +78,7 @@ layout activity_main3
 layout activity_main4
 layout activity_pay
 layout activity_with_draw
+layout inquiry
 layout spinner_item
 mipmap ic_launcher
 mipmap ic_launcher_round
