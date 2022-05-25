@@ -26,6 +26,7 @@ drawable ic_baseline_monetization_on_24
 drawable ic_baseline_wb_sunny_24
 drawable ic_launcher_background
 drawable ic_launcher_foreground
+drawable mic
 drawable send
 drawable solid_button
 font custom_font_family
@@ -50,7 +51,7 @@ id editMessage
 id helpButton
 id idText
 id imageButton
-id inquiryList
+id inquiryView
 id linear_holder
 id loginButton
 id logo
@@ -60,12 +61,16 @@ id money
 id ocr
 id passwordText
 id registerButton
+id restMoney
 id spinner
 id sttResult
 id sttStart
+id temp
 id text_data
 id toolbar
 id toolbar0
+id useMoney
+id useName
 id withdraw
 layout account
 layout activity_account

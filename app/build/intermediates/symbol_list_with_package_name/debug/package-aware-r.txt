@@ -2575,6 +2575,7 @@ drawable material_ic_keyboard_arrow_previous_black_24dp
 drawable material_ic_keyboard_arrow_right_black_24dp
 drawable material_ic_menu_arrow_down_black_24dp
 drawable material_ic_menu_arrow_up_black_24dp
+drawable mic
 drawable mtrl_dialog_background
 drawable mtrl_dropdown_arrow
 drawable mtrl_ic_arrow_drop_down
@@ -2865,7 +2866,7 @@ id imageButton
 id immediateStop
 id included
 id info
-id inquiryList
+id inquiryView
 id invisible
 id inward
 id italic
@@ -2998,6 +2999,7 @@ id ratio
 id rectangle
 id rectangles
 id registerButton
+id restMoney
 id reverseSawtooth
 id right
 id rightToLeft
@@ -3083,6 +3085,7 @@ id tag_transition_group
 id tag_unhandled_key_event_manager
 id tag_unhandled_key_listeners
 id tag_window_insets_animation_callback
+id temp
 id test_checkbox_android_button_tint
 id test_checkbox_app_button_tint
 id test_radiobutton_android_button_tint
@@ -3127,6 +3130,8 @@ id uniform
 id unlabeled
 id up
 id useLogo
+id useMoney
+id useName
 id vertical_only
 id view_offset_helper
 id view_transition

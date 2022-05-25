@@ -28,6 +28,10 @@
         "source": "C:\\Users\\ckwnt\\AndroidStudioProjects\\Caps\\app\\build\\generated\\res\\pngs\\debug\\drawable-xxhdpi\\ic_baseline_chat_24.png"
     },
     {
+        "merged": "C:\\Users\\ckwnt\\AndroidStudioProjects\\Caps\\app\\build\\intermediates\\merged_res\\debug\\drawable-xhdpi_mic.png.flat",
+        "source": "C:\\Users\\ckwnt\\AndroidStudioProjects\\Caps\\app\\build\\generated\\res\\pngs\\debug\\drawable-xhdpi\\mic.png"
+    },
+    {
         "merged": "C:\\Users\\ckwnt\\AndroidStudioProjects\\Caps\\app\\build\\intermediates\\merged_res\\debug\\layout_activity_main4.xml.flat",
         "source": "C:\\Users\\ckwnt\\AndroidStudioProjects\\Caps\\app\\src\\main\\res\\layout\\activity_main4.xml"
     },
@@ -108,6 +112,10 @@
         "source": "C:\\Users\\ckwnt\\AndroidStudioProjects\\Caps\\app\\build\\generated\\res\\pngs\\debug\\drawable-xxxhdpi\\ic_baseline_chat_24.png"
     },
     {
+        "merged": "C:\\Users\\ckwnt\\AndroidStudioProjects\\Caps\\app\\build\\intermediates\\merged_res\\debug\\drawable-xxhdpi_mic.png.flat",
+        "source": "C:\\Users\\ckwnt\\AndroidStudioProjects\\Caps\\app\\build\\generated\\res\\pngs\\debug\\drawable-xxhdpi\\mic.png"
+    },
+    {
         "merged": "C:\\Users\\ckwnt\\AndroidStudioProjects\\Caps\\app\\build\\intermediates\\merged_res\\debug\\drawable-xxxhdpi_ic_baseline_monetization_on_24.png.flat",
         "source": "C:\\Users\\ckwnt\\AndroidStudioProjects\\Caps\\app\\build\\generated\\res\\pngs\\debug\\drawable-xxxhdpi\\ic_baseline_monetization_on_24.png"
     },
@@ -158,6 +166,18 @@
     {
         "merged": "C:\\Users\\ckwnt\\AndroidStudioProjects\\Caps\\app\\build\\intermediates\\merged_res\\debug\\drawable-xhdpi_ic_baseline_monetization_on_24.png.flat",
         "source": "C:\\Users\\ckwnt\\AndroidStudioProjects\\Caps\\app\\build\\generated\\res\\pngs\\debug\\drawable-xhdpi\\ic_baseline_monetization_on_24.png"
+    },
+    {
+        "merged": "C:\\Users\\ckwnt\\AndroidStudioProjects\\Caps\\app\\build\\intermediates\\merged_res\\debug\\drawable-anydpi-v21_mic.xml.flat",
+        "source": "C:\\Users\\ckwnt\\AndroidStudioProjects\\Caps\\app\\build\\generated\\res\\pngs\\debug\\drawable-anydpi-v21\\mic.xml"
+    },
+    {
+        "merged": "C:\\Users\\ckwnt\\AndroidStudioProjects\\Caps\\app\\build\\intermediates\\merged_res\\debug\\drawable-ldpi_mic.png.flat",
+        "source": "C:\\Users\\ckwnt\\AndroidStudioProjects\\Caps\\app\\build\\generated\\res\\pngs\\debug\\drawable-ldpi\\mic.png"
+    },
+    {
+        "merged": "C:\\Users\\ckwnt\\AndroidStudioProjects\\Caps\\app\\build\\intermediates\\merged_res\\debug\\drawable-xxxhdpi_mic.png.flat",
+        "source": "C:\\Users\\ckwnt\\AndroidStudioProjects\\Caps\\app\\build\\generated\\res\\pngs\\debug\\drawable-xxxhdpi\\mic.png"
     },
     {
         "merged": "C:\\Users\\ckwnt\\AndroidStudioProjects\\Caps\\app\\build\\intermediates\\merged_res\\debug\\drawable_bg_chat_send.xml.flat",
@@ -292,6 +312,10 @@
         "source": "C:\\Users\\ckwnt\\AndroidStudioProjects\\Caps\\app\\src\\main\\res\\mipmap-anydpi-v26\\ic_launcher_round.xml"
     },
     {
+        "merged": "C:\\Users\\ckwnt\\AndroidStudioProjects\\Caps\\app\\build\\intermediates\\merged_res\\debug\\drawable-mdpi_mic.png.flat",
+        "source": "C:\\Users\\ckwnt\\AndroidStudioProjects\\Caps\\app\\build\\generated\\res\\pngs\\debug\\drawable-mdpi\\mic.png"
+    },
+    {
         "merged": "C:\\Users\\ckwnt\\AndroidStudioProjects\\Caps\\app\\build\\intermediates\\merged_res\\debug\\drawable-xxxhdpi_ic_baseline_camera_alt_24.png.flat",
         "source": "C:\\Users\\ckwnt\\AndroidStudioProjects\\Caps\\app\\build\\generated\\res\\pngs\\debug\\drawable-xxxhdpi\\ic_baseline_camera_alt_24.png"
     },
@@ -346,6 +370,10 @@
     {
         "merged": "C:\\Users\\ckwnt\\AndroidStudioProjects\\Caps\\app\\build\\intermediates\\merged_res\\debug\\drawable_send.png.flat",
         "source": "C:\\Users\\ckwnt\\AndroidStudioProjects\\Caps\\app\\src\\main\\res\\drawable\\send.png"
+    },
+    {
+        "merged": "C:\\Users\\ckwnt\\AndroidStudioProjects\\Caps\\app\\build\\intermediates\\merged_res\\debug\\drawable-hdpi_mic.png.flat",
+        "source": "C:\\Users\\ckwnt\\AndroidStudioProjects\\Caps\\app\\build\\generated\\res\\pngs\\debug\\drawable-hdpi\\mic.png"
     },
     {
         "merged": "C:\\Users\\ckwnt\\AndroidStudioProjects\\Caps\\app\\build\\intermediates\\merged_res\\debug\\drawable-xxxhdpi_ic_baseline_directions_run_24.png.flat",

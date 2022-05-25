@@ -73,11 +73,9 @@ public class PayActivity extends AppCompatActivity {
             public void onDataChange(@NonNull DataSnapshot snapshot) {
                 String value = snapshot.getValue().toString();
                 user_seq_no = value.substring(value.indexOf(id) - 20,value.indexOf(id) -10);
-                access_token = value.substring(value.indexOf(id) + id.length()+14, value.indexOf(id) + id.length()+ 313 );
+                //access_token = value.substring(value.indexOf(id) + id.length()+14, value.indexOf(id) + id.length()+ 313 );
 
-                //access_token = "BearereyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhdWQiOiIxMTAxMDA1MzUwIiwic2NvcGUiOlsiaW5xdWlyeSIsImxvZ2luIiwidHJhbnNmZXIiXSwiaXNzIjoiaHR0cHM6Ly93d3cub3BlbmJhbmtpbmcub3Iua3IiLCJleHAiOjE2NjEyNjQ5NDUsImp0aSI6IjEyOTJmOWI1LWQyYjEtNDI4MC04MGQ2LTFmNTBlYTg0OGM3MCJ9.rF9iPqAKBsChLTAOP8rpZggZWfmV8w5fmtsDI4ho8QM";
-                System.out.println(access_token);
-                System.out.println("####################");
+                access_token = "BearereyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhdWQiOiIxMTAxMDA1MzUwIiwic2NvcGUiOlsiaW5xdWlyeSIsImxvZ2luIiwidHJhbnNmZXIiXSwiaXNzIjoiaHR0cHM6Ly93d3cub3BlbmJhbmtpbmcub3Iua3IiLCJleHAiOjE2NjE0NDMzOTcsImp0aSI6IjNhYjYxNWFmLTUwMTMtNGEyNS1iNzg4LTRhM2RjZTMzYTdkZCJ9.-Nu4Jf_yX6F_CN4N73jlJ-4I1WAz8ZIfz-rRsOi1ckA";
 
                 Log.d("value", ""+ value);
                 Log.d("tok", ""+ access_token);
@@ -123,6 +121,8 @@ public class PayActivity extends AppCompatActivity {
             public void onItemClick(View v, int pos) {
                 //
                 Intent intent = new Intent(PayActivity.this, inquiryActivity.class);
+                intent.putExtra("access_token", access_token);
+                intent.putExtra("fintech_use_num", fintechNum.get(pos));
                 PayActivity.this.startActivity(intent);
             }
         });
@@ -144,6 +144,8 @@ public class PayActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(PayActivity.this, MainActivity3.class);
+                intent.putExtra("access_token", access_token);
+                intent.putExtra("fintech_use_num", fintechNum.get(0)); // 주계좌를 0번
                 PayActivity.this.startActivity(intent);
             }
         });
@@ -176,6 +178,8 @@ public class PayActivity extends AppCompatActivity {
         while(line.indexOf("fintech_use_num", base) >= 0)
         {
             fintechNum.add(line.substring(line.indexOf("fintech_use_num", base)+18,line.indexOf("fintech_use_num", base)+42));
+//            System.out.println(line.substring(line.indexOf("fintech_use_num", base)+18,line.indexOf("fintech_use_num", base)+42));
+//            System.out.println("###################################");
             bankName.add(line.substring(line.indexOf("bank_name", base)+12, line.indexOf("account_num_masked", base)-3));
             accountNum.add(line.substring(line.indexOf("account_num_masked", base)+21, line.indexOf("account_holder_name", base)-3));
             base = line.indexOf("account_holder_type", base) + 20;

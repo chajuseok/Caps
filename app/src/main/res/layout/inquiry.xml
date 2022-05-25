@@ -14,18 +14,34 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="이용금액"
-            android:textSize="20dp"/>
+            android:text="이용내역 : "
+            android:id="@+id/temp"
+            android:textSize="15dp"/>
+        <TextView
+            android:layout_marginStart="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:id="@+id/useName"
+            android:textSize="15dp"/>
         <View
             android:layout_width="0dp"
             android:layout_height="0dp"
             android:layout_weight="1"/>
+
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:text="이용금액 : "
+            android:textSize="15dp"/>
 
-            android:text="남은 금액"
-            android:textSize="20dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/useMoney"
+            android:text="  "
+            android:textSize="15dp"/>
+
     </LinearLayout>
 
 

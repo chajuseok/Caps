@@ -94,6 +94,7 @@ public class AuthActivity extends AppCompatActivity {
 
                             mDatabaseRef.child("UserAccount").child(firebaseUser.getUid()).setValue(account);
                             Toast.makeText(AuthActivity.this, "회원가입에 성공하셨습니다", Toast.LENGTH_SHORT).show();
+
                             Intent intent = new Intent(AuthActivity.this, PayActivity.class);
                             String paramId = id;
                             intent.putExtra("id",paramId);
