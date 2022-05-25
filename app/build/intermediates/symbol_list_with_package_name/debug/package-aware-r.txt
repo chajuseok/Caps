@@ -2702,6 +2702,7 @@ id autoCompleteToStart
 id backButton
 id bank1
 id bankInfo
+id bank_number
 id barrier
 id baseline
 id beginOnFirstDraw

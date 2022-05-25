@@ -75,8 +75,10 @@ public class LoginActivity extends AppCompatActivity {
         switch (item.getItemId()) {
             case android.R.id.home: { //toolbar의 back키 눌렀을 때 동작
                 // 액티비티 이동
+                Intent intent =new Intent(this, MainActivity.class);
+                startActivity(intent);
                 finish();
-                return true;
+
             }
         }
         return super.onOptionsItemSelected(item);

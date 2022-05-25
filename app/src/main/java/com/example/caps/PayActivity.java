@@ -73,7 +73,14 @@ public class PayActivity extends AppCompatActivity {
             public void onDataChange(@NonNull DataSnapshot snapshot) {
                 String value = snapshot.getValue().toString();
                 user_seq_no = value.substring(value.indexOf(id) - 20,value.indexOf(id) -10);
-                access_token = value.substring(value.indexOf(id) + 27, value.indexOf(id) + 326 );
+                access_token = value.substring(value.indexOf(id) + id.length()+14, value.indexOf(id) + id.length()+ 313 );
+
+                //access_token = "BearereyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhdWQiOiIxMTAxMDA1MzUwIiwic2NvcGUiOlsiaW5xdWlyeSIsImxvZ2luIiwidHJhbnNmZXIiXSwiaXNzIjoiaHR0cHM6Ly93d3cub3BlbmJhbmtpbmcub3Iua3IiLCJleHAiOjE2NjEyNjQ5NDUsImp0aSI6IjEyOTJmOWI1LWQyYjEtNDI4MC04MGQ2LTFmNTBlYTg0OGM3MCJ9.rF9iPqAKBsChLTAOP8rpZggZWfmV8w5fmtsDI4ho8QM";
+                System.out.println(access_token);
+                System.out.println("####################");
+
+                Log.d("value", ""+ value);
+                Log.d("tok", ""+ access_token);
                 UserInq user = new UserInq();
                 user.start();
                 try {
@@ -102,6 +109,8 @@ public class PayActivity extends AppCompatActivity {
                 accountView.addItemDecoration(spaceDecoration);
             }
 
+
+
             @Override
             public void onCancelled(@NonNull DatabaseError error) {
                 Log.w("Database", "Failed to read value.", error.toException());
@@ -112,28 +121,17 @@ public class PayActivity extends AppCompatActivity {
         AccountAdapter.setOnItemClickListener1(new AccountAdapter.OnItemClickListener() {
             @Override
             public void onItemClick(View v, int pos) {
-                Toast.makeText(PayActivity.this, "송금페이지로 이동", Toast.LENGTH_SHORT).show();
                 //
-                Intent intent = new Intent(PayActivity.this, WithDrawActivity.class);
-                //String paramId = id;
-                //intent.putExtra("id",paramId);
+                Intent intent = new Intent(PayActivity.this, inquiryActivity.class);
                 PayActivity.this.startActivity(intent);
-                finish();
-
             }
         });
         AccountAdapter.setOnItemClickListener2(new AccountAdapter.OnItemClickListener() {
             @Override
             public void onItemClick(View v, int pos) {
                 //
-                Toast.makeText(PayActivity.this, "잔액조회페이지로 이동", Toast.LENGTH_SHORT).show();
-
-                Intent intent = new Intent(PayActivity.this, inquiryActivity.class);
-                //String paramId = id;
-                //intent.putExtra("id",paramId);
+                Intent intent = new Intent(PayActivity.this, WithDrawActivity.class);
                 PayActivity.this.startActivity(intent);
-                finish();
-
             }
         });
 

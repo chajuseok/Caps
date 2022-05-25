@@ -34,6 +34,7 @@ id accountView
 id backButton
 id bank1
 id bankInfo
+id bank_number
 id btn1
 id btn2
 id btnSend

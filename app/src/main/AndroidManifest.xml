@@ -18,7 +18,6 @@
             android:name=".inquiryActivity" />
         <activity
             android:name=".WithDrawActivity">
-
         </activity>
         <activity
             android:name=".MainActivity3">
@@ -41,9 +40,12 @@
             </intent-filter>
         </activity>
         <activity android:name=".MainActivity2"
-            android:label="크롭 액티비티"
-            android:theme="@style/Base.Theme.AppCompat" />
-        <activity android:name="com.theartofdev.edmodo.cropper.CropImageActivity" />
+
+            />
+
+
+        <activity android:name="com.theartofdev.edmodo.cropper.CropImageActivity"
+            android:theme="@style/Base.Theme.AppCompat"/>
     </application>
 
 </manifest>

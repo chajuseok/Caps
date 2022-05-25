@@ -21,6 +21,7 @@ import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
+import android.widget.EditText;
 import android.widget.ImageButton;
 import android.widget.Spinner;
 import android.widget.TextView;
@@ -42,6 +43,7 @@ public class WithDrawActivity extends AppCompatActivity {
     ImageButton ocr;
     Button withdraw;
     Bitmap bitmap;
+    EditText bank;
     private static final int REQUEST_CAMERA_CODE = 100;
 
     @Override
@@ -51,7 +53,7 @@ public class WithDrawActivity extends AppCompatActivity {
         ocr = findViewById(R.id.ocr);
         withdraw = findViewById(R.id.withdraw);
 
-
+        bank = findViewById(R.id.bank_number);
         setSupportActionBar(findViewById(R.id.toolbar));
         getSupportActionBar().setDisplayShowTitleEnabled(false);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true); // 뒤로가기 버튼, 디폴트로 true만 해도 백버튼이 생김
@@ -89,7 +91,6 @@ public class WithDrawActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 CropImage.activity().setGuidelines(CropImageView.Guidelines.ON).start(WithDrawActivity.this);
-
             }
         });
 
@@ -139,6 +140,7 @@ public class WithDrawActivity extends AppCompatActivity {
                // stringBuilder.append("\n");
             }
             bank_number = stringBuilder.toString(); //계좌번호인식
+            bank.setText(bank_number.replaceAll(" ", ""));
 
         }
     }
@@ -154,4 +156,6 @@ public class WithDrawActivity extends AppCompatActivity {
         }
         return super.onOptionsItemSelected(item);
     }
+
+
 }
