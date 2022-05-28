@@ -112,6 +112,7 @@ public class WithDrawActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 money = moneye.getText().toString();
+                bank_number = bank.getText().toString();
                 Withdraw th = new Withdraw();
                 th.start();
                 try {
@@ -181,7 +182,7 @@ public class WithDrawActivity extends AppCompatActivity {
         String PostBody = "{\r\n"
                 + "    \"bank_tran_id\": \""+GenTranId()+"\",\r\n"
                 + "    \"cntr_account_type\": \"N\",\r\n"
-                + "    \"cntr_account_num\": \"3021011435911\",\r\n"
+                + "    \"cntr_account_num\": \""+bank_number+"\",\r\n"
                 + "    \"dps_print_content\": \"테스트\",\r\n"
                 + "    \"fintech_use_num\": \""+fintech_use_num+"\",\r\n"
                 + "    \"tran_amt\": \""+money+"\",\r\n"
@@ -201,7 +202,7 @@ public class WithDrawActivity extends AppCompatActivity {
             connection.setRequestMethod("POST");
             connection.setRequestProperty("Content-Type", "application/json; UTF-8");
             connection.setRequestProperty("Accept", "application/json");
-            connection.setRequestProperty("Authorization","BearereyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhdWQiOiIxMTAxMDA1MjM5Iiwic2NvcGUiOlsiaW5xdWlyeSIsImxvZ2luIiwidHJhbnNmZXIiXSwiaXNzIjoiaHR0cHM6Ly93d3cub3BlbmJhbmtpbmcub3Iua3IiLCJleHAiOjE2NjE0NzU1NDIsImp0aSI6ImQ4NmE2NTAwLTNlNmQtNDVkZC1iNjA3LWE4YTZmMTM4NGM2ZCJ9.SPCFlv3RCxgv7gryV5AwHLiRZ4xVpxBG6Ee1eJ9-8Vw");
+            connection.setRequestProperty("Authorization",access_token);
             connection.setDoOutput(true);
             connection.setDoInput(true);
             try(OutputStream os = connection.getOutputStream())
