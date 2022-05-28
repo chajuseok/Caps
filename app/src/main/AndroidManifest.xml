@@ -15,8 +15,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Caps">
         <activity
-            android:name=".OkActivity"
-            android:exported="false" />
+            android:name=".OkActivity">
+
+        </activity>
         <activity android:name=".inquiryActivity" />
         <activity android:name=".WithDrawActivity"></activity>
         <activity android:name=".MainActivity3"></activity>

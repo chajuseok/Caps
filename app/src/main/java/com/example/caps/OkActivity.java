@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
@@ -16,31 +17,33 @@ public class OkActivity extends AppCompatActivity {
     TextView nameText;
     Button finishButton;
     String money;
-    String name;
+    String recv_user;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_ok);
-        moneyText = findViewById(R.id.moneyText);
-        nameText = findViewById(R.id.nameText);
-        finishButton = findViewById(R.id.okButton);
-
 
         setSupportActionBar(findViewById(R.id.toolbar));
         getSupportActionBar().setDisplayShowTitleEnabled(false);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true); // 뒤로가기 버튼, 디폴트로 true만 해도 백버튼이 생김
 
+        moneyText = findViewById(R.id.moneyText);
+        nameText = findViewById(R.id.nameText);
+        finishButton = findViewById(R.id.okButton);
 
         Intent intent = getIntent();
+
         money = intent.getStringExtra("money"); // 보낸 금액
-        name = intent.getStringExtra("name"); // 받는 분
+        recv_user = intent.getStringExtra("recv_user"); // 받는 분
+        recv_user = "차주석";
+        nameText.setText(recv_user);
+        moneyText.setText(money + "원");
 
         finishButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(OkActivity.this, PayActivity.class);
-                OkActivity.this.startActivity(intent);
+
                 finish();
             }
         });

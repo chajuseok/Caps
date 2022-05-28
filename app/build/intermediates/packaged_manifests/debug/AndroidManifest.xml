@@ -24,9 +24,8 @@
         android:supportsRtl="true"
         android:testOnly="true"
         android:theme="@style/Theme.Caps" >
-        <activity
-            android:name="com.example.caps.OkActivity"
-            android:exported="false" />
+        <activity android:name="com.example.caps.OkActivity" >
+        </activity>
         <activity android:name="com.example.caps.inquiryActivity" />
         <activity android:name="com.example.caps.WithDrawActivity" />
         <activity android:name="com.example.caps.MainActivity3" />
