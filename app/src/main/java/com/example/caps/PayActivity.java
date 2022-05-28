@@ -73,12 +73,7 @@ public class PayActivity extends AppCompatActivity {
             public void onDataChange(@NonNull DataSnapshot snapshot) {
                 String value = snapshot.getValue().toString();
                 user_seq_no = value.substring(value.indexOf(id) - 20,value.indexOf(id) -10);
-                //access_token = value.substring(value.indexOf(id) + id.length()+14, value.indexOf(id) + id.length()+ 313 );
-
-                access_token = "BearereyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhdWQiOiIxMTAxMDA1MzUwIiwic2NvcGUiOlsiaW5xdWlyeSIsImxvZ2luIiwidHJhbnNmZXIiXSwiaXNzIjoiaHR0cHM6Ly93d3cub3BlbmJhbmtpbmcub3Iua3IiLCJleHAiOjE2NjE0NDMzOTcsImp0aSI6IjNhYjYxNWFmLTUwMTMtNGEyNS1iNzg4LTRhM2RjZTMzYTdkZCJ9.-Nu4Jf_yX6F_CN4N73jlJ-4I1WAz8ZIfz-rRsOi1ckA";
-
-                Log.d("value", ""+ value);
-                Log.d("tok", ""+ access_token);
+                access_token = value.substring(value.indexOf(id) + id.length()+14, value.indexOf(id) + id.length()+ 313 );
                 UserInq user = new UserInq();
                 user.start();
                 try {
@@ -133,7 +128,6 @@ public class PayActivity extends AppCompatActivity {
                 Intent intent = new Intent(PayActivity.this, WithDrawActivity.class);
                 intent.putExtra("access_token", access_token);
                 intent.putExtra("fintech_use_num", fintechNum.get(pos));
-
                 PayActivity.this.startActivity(intent);
             }
         });
@@ -269,5 +263,3 @@ public class PayActivity extends AppCompatActivity {
         }
     }
 }
-
-
