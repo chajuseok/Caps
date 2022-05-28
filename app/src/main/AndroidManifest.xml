@@ -15,23 +15,22 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Caps">
         <activity
-            android:name=".inquiryActivity" />
-        <activity
-            android:name=".WithDrawActivity">
-        </activity>
-        <activity
-            android:name=".MainActivity3">
-        </activity>
+            android:name=".OkActivity"
+            android:exported="false" />
+        <activity android:name=".inquiryActivity" />
+        <activity android:name=".WithDrawActivity"></activity>
+        <activity android:name=".MainActivity3"></activity>
 
         <meta-data
             android:name="com.google.android.geo.API_KEY"
             android:value="AIzaSyAPMvB7c4lUuHkSkLYSudXpaJKqkoEsbLM" />
 
-        <activity android:name=".PayActivity"></activity>
+        <activity android:name=".PayActivity" />
         <activity android:name=".AccountActivity" />
         <activity android:name=".LoginActivity" />
         <activity android:name=".AuthActivity" />
-        <activity android:name=".MainActivity"
+        <activity
+            android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -39,15 +38,11 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".MainActivity2"
-
-            />
-        <activity android:name=".MainActivity4">
-
-        </activity>
-
-        <activity android:name="com.theartofdev.edmodo.cropper.CropImageActivity"
-            android:theme="@style/Base.Theme.AppCompat"/>
+        <activity android:name=".MainActivity2" />
+        <activity android:name=".MainActivity4"></activity>
+        <activity
+            android:name="com.theartofdev.edmodo.cropper.CropImageActivity"
+            android:theme="@style/Base.Theme.AppCompat" />
     </application>
 
 </manifest>

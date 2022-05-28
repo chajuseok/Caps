@@ -70,8 +70,7 @@ public class WithDrawActivity extends AppCompatActivity {
         spinner.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             @Override
             public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
-                bank_id = spinner.getSelectedItem().toString();
-
+                bank_id = spinner.getSelectedItem().toString(); // 은행명
 
             } //이 오버라이드 메소드에서 position은 몇번째 값이 클릭됬는지 알 수 있습니다.
             //getItemAtPosition(position)를 통해서 해당 값을 받아올수있습니다.

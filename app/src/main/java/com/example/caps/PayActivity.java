@@ -129,8 +129,11 @@ public class PayActivity extends AppCompatActivity {
         AccountAdapter.setOnItemClickListener2(new AccountAdapter.OnItemClickListener() {
             @Override
             public void onItemClick(View v, int pos) {
-                //
+
                 Intent intent = new Intent(PayActivity.this, WithDrawActivity.class);
+                intent.putExtra("access_token", access_token);
+                intent.putExtra("fintech_use_num", fintechNum.get(pos));
+
                 PayActivity.this.startActivity(intent);
             }
         });

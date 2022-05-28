@@ -27,7 +27,7 @@
 15-->[com.google.firebase:firebase-auth:21.0.3] C:\Users\ckwnt\.gradle\caches\transforms-3\b29cf2d1c3e4994214967f4ad363839e\transformed\firebase-auth-21.0.3\AndroidManifest.xml:24:22-76
 16
 17    <application
-17-->C:\Users\ckwnt\AndroidStudioProjects\Caps\app\src\main\AndroidManifest.xml:10:5-51:19
+17-->C:\Users\ckwnt\AndroidStudioProjects\Caps\app\src\main\AndroidManifest.xml:10:5-46:19
 18        android:allowBackup="true"
 18-->C:\Users\ckwnt\AndroidStudioProjects\Caps\app\src\main\AndroidManifest.xml:11:9-35
 19        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
@@ -44,67 +44,70 @@
 25        android:testOnly="true"
 26        android:theme="@style/Theme.Caps" >
 26-->C:\Users\ckwnt\AndroidStudioProjects\Caps\app\src\main\AndroidManifest.xml:16:9-42
-27        <activity android:name="com.example.caps.inquiryActivity" />
-27-->C:\Users\ckwnt\AndroidStudioProjects\Caps\app\src\main\AndroidManifest.xml:17:9-18:47
-27-->C:\Users\ckwnt\AndroidStudioProjects\Caps\app\src\main\AndroidManifest.xml:18:13-44
-28        <activity android:name="com.example.caps.WithDrawActivity" >
-28-->C:\Users\ckwnt\AndroidStudioProjects\Caps\app\src\main\AndroidManifest.xml:19:9-21:20
-28-->C:\Users\ckwnt\AndroidStudioProjects\Caps\app\src\main\AndroidManifest.xml:20:13-45
-29        </activity>
-30        <activity android:name="com.example.caps.MainActivity3" >
-30-->C:\Users\ckwnt\AndroidStudioProjects\Caps\app\src\main\AndroidManifest.xml:22:9-24:20
-30-->C:\Users\ckwnt\AndroidStudioProjects\Caps\app\src\main\AndroidManifest.xml:23:13-42
-31        </activity>
-32
-33        <meta-data
-33-->C:\Users\ckwnt\AndroidStudioProjects\Caps\app\src\main\AndroidManifest.xml:26:9-28:71
-34            android:name="com.google.android.geo.API_KEY"
-34-->C:\Users\ckwnt\AndroidStudioProjects\Caps\app\src\main\AndroidManifest.xml:27:13-58
-35            android:value="AIzaSyAPMvB7c4lUuHkSkLYSudXpaJKqkoEsbLM" />
-35-->C:\Users\ckwnt\AndroidStudioProjects\Caps\app\src\main\AndroidManifest.xml:28:13-68
-36
-37        <activity android:name="com.example.caps.PayActivity" />
-37-->C:\Users\ckwnt\AndroidStudioProjects\Caps\app\src\main\AndroidManifest.xml:30:9-58
-37-->C:\Users\ckwnt\AndroidStudioProjects\Caps\app\src\main\AndroidManifest.xml:30:19-46
-38        <activity android:name="com.example.caps.AccountActivity" />
-38-->C:\Users\ckwnt\AndroidStudioProjects\Caps\app\src\main\AndroidManifest.xml:31:9-53
-38-->C:\Users\ckwnt\AndroidStudioProjects\Caps\app\src\main\AndroidManifest.xml:31:19-50
-39        <activity android:name="com.example.caps.LoginActivity" />
-39-->C:\Users\ckwnt\AndroidStudioProjects\Caps\app\src\main\AndroidManifest.xml:32:9-51
-39-->C:\Users\ckwnt\AndroidStudioProjects\Caps\app\src\main\AndroidManifest.xml:32:19-48
-40        <activity android:name="com.example.caps.AuthActivity" />
-40-->C:\Users\ckwnt\AndroidStudioProjects\Caps\app\src\main\AndroidManifest.xml:33:9-50
-40-->C:\Users\ckwnt\AndroidStudioProjects\Caps\app\src\main\AndroidManifest.xml:33:19-47
-41        <activity
-41-->C:\Users\ckwnt\AndroidStudioProjects\Caps\app\src\main\AndroidManifest.xml:34:9-41:20
-42            android:name="com.example.caps.MainActivity"
-42-->C:\Users\ckwnt\AndroidStudioProjects\Caps\app\src\main\AndroidManifest.xml:34:19-47
-43            android:exported="true" >
-43-->C:\Users\ckwnt\AndroidStudioProjects\Caps\app\src\main\AndroidManifest.xml:35:13-36
-44            <intent-filter>
-44-->C:\Users\ckwnt\AndroidStudioProjects\Caps\app\src\main\AndroidManifest.xml:36:13-40:29
-45                <action android:name="android.intent.action.MAIN" />
-45-->C:\Users\ckwnt\AndroidStudioProjects\Caps\app\src\main\AndroidManifest.xml:37:17-69
-45-->C:\Users\ckwnt\AndroidStudioProjects\Caps\app\src\main\AndroidManifest.xml:37:25-66
-46
-47                <category android:name="android.intent.category.LAUNCHER" />
-47-->C:\Users\ckwnt\AndroidStudioProjects\Caps\app\src\main\AndroidManifest.xml:39:17-77
-47-->C:\Users\ckwnt\AndroidStudioProjects\Caps\app\src\main\AndroidManifest.xml:39:27-74
-48            </intent-filter>
-49        </activity>
-50        <activity android:name="com.example.caps.MainActivity2" />
-50-->C:\Users\ckwnt\AndroidStudioProjects\Caps\app\src\main\AndroidManifest.xml:42:9-44:15
-50-->C:\Users\ckwnt\AndroidStudioProjects\Caps\app\src\main\AndroidManifest.xml:42:19-48
-51        <activity android:name="com.example.caps.MainActivity4" >
-51-->C:\Users\ckwnt\AndroidStudioProjects\Caps\app\src\main\AndroidManifest.xml:45:9-47:20
-51-->C:\Users\ckwnt\AndroidStudioProjects\Caps\app\src\main\AndroidManifest.xml:45:19-48
-52        </activity>
+27        <activity
+27-->C:\Users\ckwnt\AndroidStudioProjects\Caps\app\src\main\AndroidManifest.xml:17:9-19:40
+28            android:name="com.example.caps.OkActivity"
+28-->C:\Users\ckwnt\AndroidStudioProjects\Caps\app\src\main\AndroidManifest.xml:18:13-39
+29            android:exported="false" />
+29-->C:\Users\ckwnt\AndroidStudioProjects\Caps\app\src\main\AndroidManifest.xml:19:13-37
+30        <activity android:name="com.example.caps.inquiryActivity" />
+30-->C:\Users\ckwnt\AndroidStudioProjects\Caps\app\src\main\AndroidManifest.xml:20:9-53
+30-->C:\Users\ckwnt\AndroidStudioProjects\Caps\app\src\main\AndroidManifest.xml:20:19-50
+31        <activity android:name="com.example.caps.WithDrawActivity" />
+31-->C:\Users\ckwnt\AndroidStudioProjects\Caps\app\src\main\AndroidManifest.xml:21:9-63
+31-->C:\Users\ckwnt\AndroidStudioProjects\Caps\app\src\main\AndroidManifest.xml:21:19-51
+32        <activity android:name="com.example.caps.MainActivity3" />
+32-->C:\Users\ckwnt\AndroidStudioProjects\Caps\app\src\main\AndroidManifest.xml:22:9-60
+32-->C:\Users\ckwnt\AndroidStudioProjects\Caps\app\src\main\AndroidManifest.xml:22:19-48
+33
+34        <meta-data
+34-->C:\Users\ckwnt\AndroidStudioProjects\Caps\app\src\main\AndroidManifest.xml:24:9-26:71
+35            android:name="com.google.android.geo.API_KEY"
+35-->C:\Users\ckwnt\AndroidStudioProjects\Caps\app\src\main\AndroidManifest.xml:25:13-58
+36            android:value="AIzaSyAPMvB7c4lUuHkSkLYSudXpaJKqkoEsbLM" />
+36-->C:\Users\ckwnt\AndroidStudioProjects\Caps\app\src\main\AndroidManifest.xml:26:13-68
+37
+38        <activity android:name="com.example.caps.PayActivity" />
+38-->C:\Users\ckwnt\AndroidStudioProjects\Caps\app\src\main\AndroidManifest.xml:28:9-49
+38-->C:\Users\ckwnt\AndroidStudioProjects\Caps\app\src\main\AndroidManifest.xml:28:19-46
+39        <activity android:name="com.example.caps.AccountActivity" />
+39-->C:\Users\ckwnt\AndroidStudioProjects\Caps\app\src\main\AndroidManifest.xml:29:9-53
+39-->C:\Users\ckwnt\AndroidStudioProjects\Caps\app\src\main\AndroidManifest.xml:29:19-50
+40        <activity android:name="com.example.caps.LoginActivity" />
+40-->C:\Users\ckwnt\AndroidStudioProjects\Caps\app\src\main\AndroidManifest.xml:30:9-51
+40-->C:\Users\ckwnt\AndroidStudioProjects\Caps\app\src\main\AndroidManifest.xml:30:19-48
+41        <activity android:name="com.example.caps.AuthActivity" />
+41-->C:\Users\ckwnt\AndroidStudioProjects\Caps\app\src\main\AndroidManifest.xml:31:9-50
+41-->C:\Users\ckwnt\AndroidStudioProjects\Caps\app\src\main\AndroidManifest.xml:31:19-47
+42        <activity
+42-->C:\Users\ckwnt\AndroidStudioProjects\Caps\app\src\main\AndroidManifest.xml:32:9-40:20
+43            android:name="com.example.caps.MainActivity"
+43-->C:\Users\ckwnt\AndroidStudioProjects\Caps\app\src\main\AndroidManifest.xml:33:13-41
+44            android:exported="true" >
+44-->C:\Users\ckwnt\AndroidStudioProjects\Caps\app\src\main\AndroidManifest.xml:34:13-36
+45            <intent-filter>
+45-->C:\Users\ckwnt\AndroidStudioProjects\Caps\app\src\main\AndroidManifest.xml:35:13-39:29
+46                <action android:name="android.intent.action.MAIN" />
+46-->C:\Users\ckwnt\AndroidStudioProjects\Caps\app\src\main\AndroidManifest.xml:36:17-69
+46-->C:\Users\ckwnt\AndroidStudioProjects\Caps\app\src\main\AndroidManifest.xml:36:25-66
+47
+48                <category android:name="android.intent.category.LAUNCHER" />
+48-->C:\Users\ckwnt\AndroidStudioProjects\Caps\app\src\main\AndroidManifest.xml:38:17-77
+48-->C:\Users\ckwnt\AndroidStudioProjects\Caps\app\src\main\AndroidManifest.xml:38:27-74
+49            </intent-filter>
+50        </activity>
+51        <activity android:name="com.example.caps.MainActivity2" />
+51-->C:\Users\ckwnt\AndroidStudioProjects\Caps\app\src\main\AndroidManifest.xml:41:9-51
+51-->C:\Users\ckwnt\AndroidStudioProjects\Caps\app\src\main\AndroidManifest.xml:41:19-48
+52        <activity android:name="com.example.caps.MainActivity4" />
+52-->C:\Users\ckwnt\AndroidStudioProjects\Caps\app\src\main\AndroidManifest.xml:42:9-60
+52-->C:\Users\ckwnt\AndroidStudioProjects\Caps\app\src\main\AndroidManifest.xml:42:19-48
 53        <activity
-53-->C:\Users\ckwnt\AndroidStudioProjects\Caps\app\src\main\AndroidManifest.xml:49:9-50:58
+53-->C:\Users\ckwnt\AndroidStudioProjects\Caps\app\src\main\AndroidManifest.xml:43:9-45:59
 54            android:name="com.theartofdev.edmodo.cropper.CropImageActivity"
-54-->C:\Users\ckwnt\AndroidStudioProjects\Caps\app\src\main\AndroidManifest.xml:49:19-82
+54-->C:\Users\ckwnt\AndroidStudioProjects\Caps\app\src\main\AndroidManifest.xml:44:13-76
 55            android:theme="@style/Base.Theme.AppCompat" />
-55-->C:\Users\ckwnt\AndroidStudioProjects\Caps\app\src\main\AndroidManifest.xml:50:13-56
+55-->C:\Users\ckwnt\AndroidStudioProjects\Caps\app\src\main\AndroidManifest.xml:45:13-56
 56        <activity
 56-->[com.google.firebase:firebase-auth:21.0.3] C:\Users\ckwnt\.gradle\caches\transforms-3\b29cf2d1c3e4994214967f4ad363839e\transformed\firebase-auth-21.0.3\AndroidManifest.xml:27:9-44:20
 57            android:name="com.google.firebase.auth.internal.GenericIdpActivity"
