@@ -54,6 +54,7 @@ public class WithDrawActivity extends AppCompatActivity {
     EditText moneye;
     String fintech_use_num;
     String access_token;
+    String recv_user;
     private static final int REQUEST_CAMERA_CODE = 100;
 
     @Override
@@ -67,7 +68,6 @@ public class WithDrawActivity extends AppCompatActivity {
         access_token = intent.getStringExtra("access_token");
         bank = findViewById(R.id.bank_number);
         moneye= findViewById(R.id.money);
-
         setSupportActionBar(findViewById(R.id.toolbar));
         getSupportActionBar().setDisplayShowTitleEnabled(false);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true); // 뒤로가기 버튼, 디폴트로 true만 해도 백버튼이 생김
@@ -120,6 +120,10 @@ public class WithDrawActivity extends AppCompatActivity {
                 {
                     e.printStackTrace();
                 }
+                Intent intent = new Intent(WithDrawActivity.this, OkActivity.class);
+                intent.putExtra("money", money);
+                intent.putExtra("recv_user", recv_user);
+                WithDrawActivity.this.startActivity(intent);
             }
         });
 
@@ -213,10 +217,8 @@ public class WithDrawActivity extends AppCompatActivity {
 
             //응답 내용
             String line = null;
-            while((line = in.readLine()) != null)
-            {
-                System.out.println(line);
-            }
+            line = in.readLine();
+            recv_user = line.substring(line.indexOf("dps_account_holder_name") + 26, line.indexOf("bank_tran_id") -3 );
             in.close();
         }catch(Exception e)
         {
