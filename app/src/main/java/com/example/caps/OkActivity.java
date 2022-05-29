@@ -36,7 +36,6 @@ public class OkActivity extends AppCompatActivity {
 
         money = intent.getStringExtra("money"); // 보낸 금액
         recv_user = intent.getStringExtra("recv_user"); // 받는 분
-        recv_user = "차주석";
         nameText.setText(recv_user);
         moneyText.setText(money + "원");
 

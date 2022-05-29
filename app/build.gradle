@@ -15,8 +15,8 @@ android {
         exclude 'META-INF/ASL2.0'
         exclude 'META-INF/INDEX.LIST'
     }
+    compileSdk 31
 
-    compileSdk 32
 
     defaultConfig {
         applicationId "com.example.caps"
