@@ -76,8 +76,6 @@ public class PayActivity extends AppCompatActivity {
                 int base = value.indexOf(id);
                 user_seq_no = value.substring(value.indexOf(id) - 20,value.indexOf(id) -10);
                 access_token = value.substring(value.indexOf(id) + id.length()+14, value.indexOf(id) + id.length()+ 313 );
-                Log.d("user_seq_no", "" + user_seq_no);
-                Log.d("access_token", "" + access_token);
                 // access_token = "BearereyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhdWQiOiIxMTAxMDA1MjM5Iiwic2NvcGUiOlsiaW5xdWlyeSIsImxvZ2luIiwidHJhbnNmZXIiXSwiaXNzIjoiaHR0cHM6Ly93d3cub3BlbmJhbmtpbmcub3Iua3IiLCJleHAiOjE2NjE0NzU1NDIsImp0aSI6ImQ4NmE2NTAwLTNlNmQtNDVkZC1iNjA3LWE4YTZmMTM4NGM2ZCJ9.SPCFlv3RCxgv7gryV5AwHLiRZ4xVpxBG6Ee1eJ9-8Vw";
                 UserInq user = new UserInq();
                 user.start();

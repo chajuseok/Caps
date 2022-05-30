@@ -42,8 +42,8 @@
 24        android:supportsRtl="true"
 24-->D:\Android\Caps\app\src\main\AndroidManifest.xml:15:9-35
 25        android:testOnly="true"
-26        android:theme="@style/Theme.Design.NoActionBar" >
-26-->D:\Android\Caps\app\src\main\AndroidManifest.xml:16:9-56
+26        android:theme="@style/Theme.AppCompat.Light.NoActionBar" >
+26-->D:\Android\Caps\app\src\main\AndroidManifest.xml:16:9-65
 27        <activity android:name="com.example.caps.OkActivity" >
 27-->D:\Android\Caps\app\src\main\AndroidManifest.xml:17:9-20:20
 27-->D:\Android\Caps\app\src\main\AndroidManifest.xml:18:13-39

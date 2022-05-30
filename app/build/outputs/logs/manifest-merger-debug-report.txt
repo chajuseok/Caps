@@ -159,7 +159,7 @@ MERGED from [androidx.startup:startup-runtime:1.0.0] C:\Users\20201223\.gradle\c
 	android:allowBackup
 		ADDED from D:\Android\Caps\app\src\main\AndroidManifest.xml:11:9-35
 	android:theme
-		ADDED from D:\Android\Caps\app\src\main\AndroidManifest.xml:16:9-56
+		ADDED from D:\Android\Caps\app\src\main\AndroidManifest.xml:16:9-65
 activity#com.example.caps.OkActivity
 ADDED from D:\Android\Caps\app\src\main\AndroidManifest.xml:17:9-20:20
 	android:name
