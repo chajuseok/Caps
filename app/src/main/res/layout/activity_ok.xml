@@ -32,6 +32,7 @@
         android:layout_width="match_parent"
         android:layout_height="60dp"
         android:text="원"
+        android:fontFamily= "@font/fon"
         android:textStyle="bold"
         android:textSize="20dp"
         android:gravity="center"
@@ -42,6 +43,7 @@
         android:layout_height="60dp"
         android:text="송금 완료"
         android:textSize="20dp"
+        android:fontFamily= "@font/fon"
         android:textStyle="bold"
         android:gravity="center"
         />
@@ -56,6 +58,7 @@
             android:layout_height="match_parent"
             android:textAlignment="center"
             android:gravity="center"
+            android:fontFamily= "@font/fon"
             android:textSize="35dp"
             android:text="받는 분"/>
 
@@ -80,6 +83,7 @@
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:text="확 인"
+        android:fontFamily= "@font/fon"
         android:layout_margin="20dp"
         android:textStyle="bold"
         android:textSize="20dp"

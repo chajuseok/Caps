@@ -11,6 +11,11 @@
     <uses-permission android:name="android.permission.CAMERA" /> <!-- gitgub  보고 추가한거 -->
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="true" />
+
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
 
@@ -23,7 +28,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:testOnly="true"
-        android:theme="@style/Theme.Design.NoActionBar" >
+        android:theme="@style/Theme.AppCompat.Light.NoActionBar" >
         <activity android:name="com.example.caps.OkActivity" >
         </activity>
         <activity android:name="com.example.caps.inquiryActivity" />
@@ -47,8 +52,10 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name="com.example.caps.MainActivity2" />
-        <activity android:name="com.example.caps.MainActivity4" />
+        <activity android:name="com.example.caps.MainActivity2" >
+        </activity>
+        <activity android:name="com.example.caps.MainActivity4" >
+        </activity>
         <activity
             android:name="com.theartofdev.edmodo.cropper.CropImageActivity"
             android:theme="@style/Base.Theme.AppCompat" />

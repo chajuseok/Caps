@@ -110,6 +110,7 @@
                 android:layout_height="wrap_content"
                 android:layout_margin="3dp"
                 android:background="@color/white"
+                android:fontFamily= "@font/fon"
                 android:ems="10"
                 android:hint="필요하신 사항을 입려해주세요"
                 android:inputType="textPersonName"

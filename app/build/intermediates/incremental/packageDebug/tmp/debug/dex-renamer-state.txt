@@ -1,4 +1,4 @@
-#Sun May 29 18:30:48 KST 2022
+#Fri Jun 03 02:14:53 KST 2022
 path.4=3/classes.dex
 path.3=2/classes.dex
 path.2=12/classes.dex
@@ -7,19 +7,19 @@ path.7=classes4.dex
 path.6=classes3.dex
 path.5=classes2.dex
 path.0=classes.dex
-base.4=D\:\\Android\\Caps\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\3\\classes.dex
-base.3=D\:\\Android\\Caps\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\2\\classes.dex
-base.2=D\:\\Android\\Caps\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\12\\classes.dex
-base.1=D\:\\Android\\Caps\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\0\\classes.dex
-base.0=D\:\\Android\\Caps\\app\\build\\intermediates\\dex\\debug\\mergeExtDexDebug\\classes.dex
+base.4=C\:\\Users\\ckwnt\\AndroidStudioProjects\\Caps\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\3\\classes.dex
+base.3=C\:\\Users\\ckwnt\\AndroidStudioProjects\\Caps\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\2\\classes.dex
+base.2=C\:\\Users\\ckwnt\\AndroidStudioProjects\\Caps\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\12\\classes.dex
+base.1=C\:\\Users\\ckwnt\\AndroidStudioProjects\\Caps\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\0\\classes.dex
+base.0=C\:\\Users\\ckwnt\\AndroidStudioProjects\\Caps\\app\\build\\intermediates\\dex\\debug\\mergeExtDexDebug\\classes.dex
 renamed.3=classes4.dex
 renamed.2=classes3.dex
 renamed.1=classes2.dex
 renamed.0=classes.dex
 renamed.7=classes8.dex
 renamed.6=classes7.dex
-base.7=D\:\\Android\\Caps\\app\\build\\intermediates\\dex\\debug\\mergeExtDexDebug\\classes4.dex
+base.7=C\:\\Users\\ckwnt\\AndroidStudioProjects\\Caps\\app\\build\\intermediates\\dex\\debug\\mergeExtDexDebug\\classes4.dex
 renamed.5=classes6.dex
-base.6=D\:\\Android\\Caps\\app\\build\\intermediates\\dex\\debug\\mergeExtDexDebug\\classes3.dex
+base.6=C\:\\Users\\ckwnt\\AndroidStudioProjects\\Caps\\app\\build\\intermediates\\dex\\debug\\mergeExtDexDebug\\classes3.dex
 renamed.4=classes5.dex
-base.5=D\:\\Android\\Caps\\app\\build\\intermediates\\dex\\debug\\mergeExtDexDebug\\classes2.dex
+base.5=C\:\\Users\\ckwnt\\AndroidStudioProjects\\Caps\\app\\build\\intermediates\\dex\\debug\\mergeExtDexDebug\\classes2.dex

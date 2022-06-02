@@ -55,6 +55,7 @@
             android:id="@+id/btn1"
             android:layout_margin="5dp"
             android:background="#00ffff"
+            android:fontFamily= "@font/fon"
             android:text="계좌 조회"
             android:textSize="15dp" />
 
@@ -63,7 +64,7 @@
             android:layout_width="wrap_content"
             android:id="@+id/btn2"
             android:layout_height="match_parent"
-
+            android:fontFamily= "@font/fon"
             android:layout_margin="5dp"
             android:background="#00ffff"
             android:text="송금"

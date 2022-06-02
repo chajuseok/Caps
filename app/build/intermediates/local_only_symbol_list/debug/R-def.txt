@@ -36,6 +36,7 @@ id accountView
 id backButton
 id bank1
 id bankInfo
+id bank_name
 id bank_number
 id btn1
 id btn2
@@ -67,7 +68,6 @@ id okButton
 id passwordText
 id registerButton
 id restMoney
-id spinner
 id sttResult
 id sttStart
 id temp
@@ -103,7 +103,7 @@ string google_app_id
 string google_crash_reporting_api_key
 string google_storage_bucket
 string project_id
-style Theme.Caps
+style AppTheme
 style customButtonFontStyle
 style customEditTextFontStyle
 style customTextViewFontStyle

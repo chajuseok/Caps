@@ -15,6 +15,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="이용내역 : "
+            android:fontFamily= "@font/fon"
             android:id="@+id/temp"
             android:textSize="15dp"/>
         <TextView
@@ -22,6 +23,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text=""
+            android:fontFamily= "@font/fon"
             android:id="@+id/useName"
             android:textSize="15dp"/>
         <View
@@ -33,6 +35,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="이용금액 : "
+            android:fontFamily= "@font/fon"
             android:textSize="15dp"/>
 
         <TextView
@@ -40,6 +43,7 @@
             android:layout_height="wrap_content"
             android:id="@+id/useMoney"
             android:text="  "
+            android:fontFamily= "@font/fon"
             android:textSize="15dp"/>
 
     </LinearLayout>

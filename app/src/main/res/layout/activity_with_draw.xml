@@ -39,17 +39,16 @@
         android:orientation="vertical"
         android:layout_weight="1">
 
-        <Spinner
-            android:layout_marginTop="10dp"
-            android:id="@+id/spinner"
-            android:layout_width="match_parent"
-            android:layout_height="90dp"
-            android:spinnerMode="dropdown"
-            android:popupBackground="#ffffff"/>
-
-
         <EditText
             android:layout_marginTop="50dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:id="@+id/bank_name"
+            android:hint="은행 입력"/>
+
+        <EditText
+            android:layout_marginTop="10dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:inputType="number"
@@ -58,8 +57,8 @@
 
         <ImageButton
             android:id="@+id/ocr"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
             android:layout_gravity="center"
             android:src="@android:drawable/ic_menu_camera"/>
 

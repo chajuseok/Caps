@@ -2704,6 +2704,7 @@ id autoCompleteToStart
 id backButton
 id bank1
 id bankInfo
+id bank_name
 id bank_number
 id barrier
 id baseline
@@ -3051,7 +3052,6 @@ id snapMargins
 id south
 id spacer
 id special_effects_controller_view_tag
-id spinner
 id spline
 id split_action_bar
 id spread
@@ -3529,6 +3529,7 @@ style Animation_AppCompat_DropDownUp
 style Animation_AppCompat_Tooltip
 style Animation_Design_BottomSheetDialog
 style Animation_MaterialComponents_BottomSheetDialog
+style AppTheme
 style Base_AlertDialog_AppCompat
 style Base_AlertDialog_AppCompat_Light
 style Base_Animation_AppCompat_Dialog
@@ -4015,7 +4016,6 @@ style Theme_AppCompat_Light_Dialog_MinWidth
 style Theme_AppCompat_Light_DialogWhenLarge
 style Theme_AppCompat_Light_NoActionBar
 style Theme_AppCompat_NoActionBar
-style Theme_Caps
 style Theme_Design
 style Theme_Design_BottomSheetDialog
 style Theme_Design_Light

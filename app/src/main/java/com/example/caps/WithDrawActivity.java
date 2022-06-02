@@ -34,23 +34,36 @@ import com.google.android.gms.vision.text.TextRecognizer;
 import com.theartofdev.edmodo.cropper.CropImage;
 import com.theartofdev.edmodo.cropper.CropImageView;
 
+import org.json.JSONArray;
+import org.json.JSONObject;
+
 import java.io.BufferedReader;
+import java.io.ByteArrayOutputStream;
+import java.io.DataOutputStream;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.io.OutputStream;
 import java.net.HttpURLConnection;
 import java.net.URL;
+import java.util.ArrayList;
 
 public class WithDrawActivity extends AppCompatActivity {
 
-    Spinner spinner;
+    final String boundary = "*******";
+    final String crlf = "\r\n";
+    final String twoHyphens = "--";
+
+    ArrayList<String> list = new ArrayList<>(); // 타입 생략 가능
+
+
     String bank_number; // 계좌번호
     String bank_id;
     String money;
-    ImageButton ocr;
+    ImageButton ocrButton;
     Button withdraw;
     Bitmap bitmap;
-    EditText bank;
+    EditText bank_name; //은행명
+    EditText bank; //계좌번호
     EditText moneye;
     String fintech_use_num;
     String access_token;
@@ -61,7 +74,8 @@ public class WithDrawActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_with_draw);
-        ocr = findViewById(R.id.ocr);
+        bank_name = findViewById(R.id.bank_name);
+        ocrButton = findViewById(R.id.ocr);
         withdraw = findViewById(R.id.withdraw);
         Intent intent = getIntent();
         fintech_use_num = intent.getStringExtra("fintech_use_num");
@@ -73,34 +87,13 @@ public class WithDrawActivity extends AppCompatActivity {
         getSupportActionBar().setDisplayHomeAsUpEnabled(true); // 뒤로가기 버튼, 디폴트로 true만 해도 백버튼이 생김
 
 
-        spinner = findViewById(R.id.spinner);
-
-        ArrayAdapter monthAdapter = ArrayAdapter.createFromResource(this, R.array.my_array, R.layout.spinner_item);
-        //R.array.test는 저희가 정의해놓은 1월~12월 / android.R.layout.simple_spinner_dropdown_item은 기본으로 제공해주는 형식입니다.
-        monthAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
-        spinner.setAdapter(monthAdapter); //어댑터에 연결해줍니다.
-
-
-        spinner.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
-            @Override
-            public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
-                bank_id = spinner.getSelectedItem().toString(); // 은행명
-
-            } //이 오버라이드 메소드에서 position은 몇번째 값이 클릭됬는지 알 수 있습니다.
-            //getItemAtPosition(position)를 통해서 해당 값을 받아올수있습니다.
-
-            @Override
-            public void onNothingSelected(AdapterView<?> parent) {
-            }
-        });
-
         if (ContextCompat.checkSelfPermission(WithDrawActivity.this, Manifest.permission.CAMERA) != PackageManager.PERMISSION_GRANTED) {
             ActivityCompat.requestPermissions(WithDrawActivity.this, new String[]{
                     Manifest.permission.CAMERA
             }, REQUEST_CAMERA_CODE);
         }
 
-        ocr.setOnClickListener(new View.OnClickListener() { //ocr이벤트처리
+        ocrButton.setOnClickListener(new View.OnClickListener() { //ocr이벤트처리
             @Override
             public void onClick(View view) {
                 CropImage.activity().setGuidelines(CropImageView.Guidelines.ON).start(WithDrawActivity.this);
@@ -124,6 +117,7 @@ public class WithDrawActivity extends AppCompatActivity {
                 intent.putExtra("money", money);
                 intent.putExtra("recv_user", recv_user);
                 WithDrawActivity.this.startActivity(intent);
+                finish();
             }
         });
 
@@ -138,7 +132,25 @@ public class WithDrawActivity extends AppCompatActivity {
                 Uri resultUri = result.getUri();
                 try {
                     bitmap = MediaStore.Images.Media.getBitmap(this.getContentResolver(),resultUri);
-                    getTextFromImage(bitmap);
+                    Ocr ocr = new Ocr(bitmap);
+                    ocr.start();
+                    try {
+                        ocr.join();
+                    }catch(InterruptedException e)
+                    {
+                        e.printStackTrace();
+                    }
+                    for(int i = 0; i<list.size(); i++){
+                        String temp = list.get(i);
+                        if(temp.contains("은행")){
+                            bank_id = temp; // 은행
+                            bank_number = list.get(i+1).replaceAll("-", ""); // 계좌번호
+                        }
+                    }
+
+                    bank_name.setText(bank_id);
+                    bank.setText(bank_number);
+
                 } catch (IOException e) {
                     e.printStackTrace();
                 }
@@ -146,26 +158,7 @@ public class WithDrawActivity extends AppCompatActivity {
         }
     }
 
-    private void getTextFromImage(Bitmap bitmap){
-        TextRecognizer recognizer = new TextRecognizer.Builder(this).build();
-        if(!recognizer.isOperational()){
-            Toast.makeText(WithDrawActivity.this, "Error Occurred!!!",Toast.LENGTH_SHORT ).show();
-        }
-        else{
-            Frame frame = new Frame.Builder().setBitmap(bitmap).build();
-            SparseArray<TextBlock> textBlockSparseArray = recognizer.detect(frame);
-            StringBuilder stringBuilder = new StringBuilder();
-            for(int i =0; i<textBlockSparseArray.size();i++){
 
-                TextBlock textBlock = textBlockSparseArray.valueAt(i);
-                stringBuilder.append(textBlock.getValue());
-               // stringBuilder.append("\n");
-            }
-            bank_number = stringBuilder.toString(); //계좌번호인식
-            bank.setText(bank_number.replaceAll(" ", ""));
-
-        }
-    }
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
@@ -243,5 +236,78 @@ public class WithDrawActivity extends AppCompatActivity {
         }
     }
 
+    public void kakao(Bitmap bit) {
 
+        String line = null;
+
+        try {
+
+            //image = BitmapFactory.decodeResource(getResources(), R.drawable.a);
+            byte[] byteArray = bitmapToByteArray(bit);
+            URL url = new URL("https://dapi.kakao.com/v2/vision/text/ocr");
+            HttpURLConnection httpConn = (HttpURLConnection) url.openConnection();
+
+            httpConn.setUseCaches(false);
+            httpConn.setDoOutput(true);
+            httpConn.setDoInput(true);
+            httpConn.setRequestMethod("POST");
+            httpConn.setRequestProperty("Authorization", "KakaoAK 6930a3c7b2d5fe8fc46218cc15bc3e89");
+            httpConn.setRequestProperty("Content-Type", "multipart/form-data;boundary=" + this.boundary);
+
+
+            OutputStream httpConnOutputStream = httpConn.getOutputStream();
+            DataOutputStream request = new DataOutputStream(httpConnOutputStream);
+
+
+            request.writeBytes(this.twoHyphens + this.boundary + this.crlf);
+            request.writeBytes("Content-Disposition: form-data; name=\"image\";filename=\""+ "a.png"+"\"" + this.crlf);
+            request.writeBytes(this.crlf);
+            request.write(byteArray);
+            request.writeBytes(this.crlf);
+            request.writeBytes(this.twoHyphens + this.boundary +
+                    this.twoHyphens + this.crlf);
+            request.flush();
+            request.close();
+
+            BufferedReader in = new BufferedReader(new InputStreamReader(httpConn.getInputStream()));
+            line = in.readLine();
+            in.close();
+            System.out.println((String)line);
+            JSONObject obj = new JSONObject(line);
+            JSONArray a = (JSONArray) obj.get("result");
+            for(int i =0; i<a.length(); i++) {
+
+                JSONObject jsonObject = (JSONObject)a.get(i);
+                JSONArray name = (JSONArray)jsonObject.get("recognition_words");
+                list.add((String)name.get(0));
+            }
+
+
+        }catch(Exception e)
+        {
+            e.printStackTrace();
+        }
+
+
+
+    }
+
+    public class Ocr extends Thread
+    {
+        Bitmap bit;
+        public Ocr(Bitmap bit){
+            this.bit = bit;
+        }
+        public void run()
+        {
+            kakao(bit);
+        }
+    }
+
+    public byte[] bitmapToByteArray( Bitmap bitmap ) {
+        ByteArrayOutputStream stream = new ByteArrayOutputStream() ;
+        bitmap.compress( Bitmap.CompressFormat.PNG, 90, stream) ;
+        byte[] byteArray = stream.toByteArray() ;
+        return byteArray ;
+    }
 }

@@ -62,6 +62,11 @@ public class PayActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_pay);
+
+        setSupportActionBar(findViewById(R.id.toolbar));
+        getSupportActionBar().setDisplayShowTitleEnabled(false);
+        getSupportActionBar().setDisplayHomeAsUpEnabled(false); // 뒤로가기 버튼, 디폴트로 true만 해도 백버튼이 생김
+
         Intent intent = getIntent();
         String id =  intent.getStringExtra("id");
 
@@ -75,7 +80,8 @@ public class PayActivity extends AppCompatActivity {
                 String value = snapshot.getValue().toString();
                 int base = value.indexOf(id);
                 user_seq_no = value.substring(value.indexOf(id) - 20,value.indexOf(id) -10);
-                access_token = value.substring(value.indexOf(id) + id.length()+14, value.indexOf(id) + id.length()+ 313 );
+                access_token = "BearereyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhdWQiOiIxMTAxMDA1MzUwIiwic2NvcGUiOlsiaW5xdWlyeSIsImxvZ2luIiwidHJhbnNmZXIiXSwiaXNzIjoiaHR0cHM6Ly93d3cub3BlbmJhbmtpbmcub3Iua3IiLCJleHAiOjE2NjE0NDMzOTcsImp0aSI6IjNhYjYxNWFmLTUwMTMtNGEyNS1iNzg4LTRhM2RjZTMzYTdkZCJ9.-Nu4Jf_yX6F_CN4N73jlJ-4I1WAz8ZIfz-rRsOi1ckA";
+               // access_token = value.substring(value.indexOf(id) + id.length()+14, value.indexOf(id) + id.length()+ 313 );
                 Log.d("user_seq_no", "" + user_seq_no);
                 Log.d("access_token", "" + access_token);
                 // access_token = "BearereyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhdWQiOiIxMTAxMDA1MjM5Iiwic2NvcGUiOlsiaW5xdWlyeSIsImxvZ2luIiwidHJhbnNmZXIiXSwiaXNzIjoiaHR0cHM6Ly93d3cub3BlbmJhbmtpbmcub3Iua3IiLCJleHAiOjE2NjE0NzU1NDIsImp0aSI6ImQ4NmE2NTAwLTNlNmQtNDVkZC1iNjA3LWE4YTZmMTM4NGM2ZCJ9.SPCFlv3RCxgv7gryV5AwHLiRZ4xVpxBG6Ee1eJ9-8Vw";
@@ -181,8 +187,6 @@ public class PayActivity extends AppCompatActivity {
         while(line.indexOf("fintech_use_num", base) >= 0)
         {
             fintechNum.add(line.substring(line.indexOf("fintech_use_num", base)+18,line.indexOf("fintech_use_num", base)+42));
-//            System.out.println(line.substring(line.indexOf("fintech_use_num", base)+18,line.indexOf("fintech_use_num", base)+42));
-//            System.out.println("###################################");
             bankName.add(line.substring(line.indexOf("bank_name", base)+12, line.indexOf("account_num_masked", base)-3));
             accountNum.add(line.substring(line.indexOf("account_num_masked", base)+21, line.indexOf("account_holder_name", base)-3));
             base = line.indexOf("account_holder_type", base) + 20;
