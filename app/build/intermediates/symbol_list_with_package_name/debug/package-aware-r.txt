@@ -63,6 +63,11 @@ animator mtrl_fab_hide_motion_spec
 animator mtrl_fab_show_motion_spec
 animator mtrl_fab_transformation_sheet_collapse_spec
 animator mtrl_fab_transformation_sheet_expand_spec
+array assume_strong_biometrics_models
+array crypto_fingerprint_fallback_prefixes
+array crypto_fingerprint_fallback_vendors
+array delay_showing_prompt_models
+array hide_fingerprint_instantly_prefixes
 array my_array
 attr SharedValue
 attr SharedValueId
@@ -1250,6 +1255,7 @@ color background_floating_material_dark
 color background_floating_material_light
 color background_material_dark
 color background_material_light
+color biometric_error_color
 color black
 color bright_foreground_disabled_material_dark
 color bright_foreground_disabled_material_light
@@ -1981,6 +1987,7 @@ dimen disabled_alpha_material_light
 dimen fastscroll_default_thickness
 dimen fastscroll_margin
 dimen fastscroll_minimum_range
+dimen fingerprint_icon_size
 dimen highlight_alpha_material_colored
 dimen highlight_alpha_material_dark
 dimen highlight_alpha_material_light
@@ -2538,6 +2545,8 @@ drawable design_ic_visibility_off
 drawable design_password_eye
 drawable design_snackbar_background
 drawable edit
+drawable fingerprint_dialog_error
+drawable fingerprint_dialog_fp_icon
 drawable googleg_disabled_color_18
 drawable googleg_standard_color_18
 drawable help
@@ -2725,6 +2734,7 @@ id browser_actions_menu_view
 id btn1
 id btn2
 id btnSend
+id buttonAuthWithFingerprint
 id buttonPanel
 id button_capture
 id button_copy
@@ -2832,6 +2842,10 @@ id fill
 id fill_horizontal
 id fill_vertical
 id filled
+id fingerprint_description
+id fingerprint_error
+id fingerprint_icon
+id fingerprint_subtitle
 id fitCenter
 id fitToContents
 id fixed
@@ -3245,6 +3259,7 @@ layout account
 layout activity_account
 layout activity_adapter
 layout activity_auth
+layout activity_fingerprint
 layout activity_inquiry
 layout activity_login
 layout activity_main
@@ -3274,6 +3289,7 @@ layout design_navigation_menu
 layout design_navigation_menu_item
 layout design_text_input_end_icon
 layout design_text_input_start_icon
+layout fingerprint_dialog_layout
 layout inquiry
 layout m3_alert_dialog
 layout m3_alert_dialog_actions
@@ -3410,6 +3426,7 @@ string common_google_play_services_wear_update_text
 string common_open_on_phone
 string common_signin_button_text
 string common_signin_button_text_long
+string confirm_device_credential_password
 string crop_image_activity_no_permissions
 string crop_image_activity_title
 string crop_image_menu_crop
@@ -3418,12 +3435,23 @@ string crop_image_menu_flip_horizontally
 string crop_image_menu_flip_vertically
 string crop_image_menu_rotate_left
 string crop_image_menu_rotate_right
+string default_error_msg
 string default_web_client_id
 string error_icon_content_description
 string exposed_dropdown_menu_content_description
 string fab_transformation_scrim_behavior
 string fab_transformation_sheet_behavior
+string fingerprint_dialog_touch_sensor
+string fingerprint_error_hw_not_available
+string fingerprint_error_hw_not_present
+string fingerprint_error_lockout
+string fingerprint_error_no_fingerprints
+string fingerprint_error_user_canceled
+string fingerprint_not_recognized
 string gcm_defaultSenderId
+string generic_error_no_device_credential
+string generic_error_no_keyguard
+string generic_error_user_canceled
 string google_api_key
 string google_app_id
 string google_crash_reporting_api_key

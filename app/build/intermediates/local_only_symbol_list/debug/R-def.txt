@@ -41,6 +41,7 @@ id bank_number
 id btn1
 id btn2
 id btnSend
+id buttonAuthWithFingerprint
 id button_capture
 id button_copy
 id chat
@@ -81,6 +82,7 @@ layout account
 layout activity_account
 layout activity_adapter
 layout activity_auth
+layout activity_fingerprint
 layout activity_inquiry
 layout activity_login
 layout activity_main
