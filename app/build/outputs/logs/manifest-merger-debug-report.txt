@@ -222,12 +222,12 @@ activity#com.example.caps.AuthActivity
 ADDED from D:\Android\Caps\app\src\main\AndroidManifest.xml:39:9-50
 	android:name
 		ADDED from D:\Android\Caps\app\src\main\AndroidManifest.xml:39:19-47
-activity#com.example.caps.FingerPrintActivity
+activity#com.example.caps.MainActivity
 ADDED from D:\Android\Caps\app\src\main\AndroidManifest.xml:40:9-48:20
 	android:exported
 		ADDED from D:\Android\Caps\app\src\main\AndroidManifest.xml:42:13-36
 	android:name
-		ADDED from D:\Android\Caps\app\src\main\AndroidManifest.xml:41:13-48
+		ADDED from D:\Android\Caps\app\src\main\AndroidManifest.xml:41:13-41
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
 ADDED from D:\Android\Caps\app\src\main\AndroidManifest.xml:43:13-47:29
 action#android.intent.action.MAIN

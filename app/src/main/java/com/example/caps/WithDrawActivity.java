@@ -56,8 +56,8 @@ public class WithDrawActivity extends AppCompatActivity {
     ArrayList<String> list = new ArrayList<>(); // 타입 생략 가능
 
 
-    String bank_number; // 계좌번호
-    String bank_id;
+    String bank_number = ""; // 계좌번호
+    String bank_id = "";
     String money;
     ImageButton ocrButton;
     Button withdraw;
@@ -68,6 +68,7 @@ public class WithDrawActivity extends AppCompatActivity {
     String fintech_use_num;
     String access_token;
     String recv_user;
+    String bank_info = "";
     private static final int REQUEST_CAMERA_CODE = 100;
 
     @Override
@@ -140,13 +141,29 @@ public class WithDrawActivity extends AppCompatActivity {
                     {
                         e.printStackTrace();
                     }
-                    for(int i = 0; i<list.size(); i++){
-                        String temp = list.get(i);
-                        if(temp.contains("은행")){
-                            bank_id = temp; // 은행
-                            bank_number = list.get(i+1).replaceAll("-", ""); // 계좌번호
+                    for(int i = 0; i<list.size(); i++)
+                    {
+                        bank_info += list.get(i);
+                    }
+                    Log.d("bank_info" , "" + bank_info);
+                    for(int i=0; i<bank_info.length(); i++)
+                    {
+                        char temp = bank_info.charAt(i);
+                        if(temp >= '0' && temp <= '9')
+                        {
+                            bank_number += temp;
+                        }
+                        else if(temp == '-' || temp == ' ')
+                        {
+                            continue;
+                        }
+                        else
+                        {
+                            bank_id += temp;
                         }
                     }
+                    Log.d("bank_number", "" + bank_number);
+                    Log.d("bank_id" , "" + bank_id);
 
                     bank_name.setText(bank_id);
                     bank.setText(bank_number);

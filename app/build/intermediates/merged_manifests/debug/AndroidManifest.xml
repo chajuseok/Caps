@@ -52,7 +52,7 @@
         <activity android:name="com.example.caps.LoginActivity" />
         <activity android:name="com.example.caps.AuthActivity" />
         <activity
-            android:name="com.example.caps.FingerPrintActivity"
+            android:name="com.example.caps.MainActivity"
             android:exported="true" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

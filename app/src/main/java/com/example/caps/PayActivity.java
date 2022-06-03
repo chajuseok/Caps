@@ -80,8 +80,9 @@ public class PayActivity extends AppCompatActivity {
                 String value = snapshot.getValue().toString();
                 int base = value.indexOf(id);
                 user_seq_no = value.substring(value.indexOf(id) - 20,value.indexOf(id) -10);
-                //access_token = "BearereyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhdWQiOiIxMTAxMDA1MzUwIiwic2NvcGUiOlsiaW5xdWlyeSIsImxvZ2luIiwidHJhbnNmZXIiXSwiaXNzIjoiaHR0cHM6Ly93d3cub3BlbmJhbmtpbmcub3Iua3IiLCJleHAiOjE2NjE0NDMzOTcsImp0aSI6IjNhYjYxNWFmLTUwMTMtNGEyNS1iNzg4LTRhM2RjZTMzYTdkZCJ9.-Nu4Jf_yX6F_CN4N73jlJ-4I1WAz8ZIfz-rRsOi1ckA";
-                access_token = value.substring(value.indexOf(id) + id.length()+14, value.indexOf(id) + id.length()+ 313 );
+                //access_token = "BearereyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhdWQiOiIxMTAxMDA1MzUwIiwic2NvcGUiOlsiaW5xdWlyeSIsImxvZ2luIiwidHJhbnNmZXIiXSwiaXNzIjoiaHR0cHM6Ly93d3cub3BlbmJhbmtpbmcub3Iua3IiLCJleHAiOjE2NjE0NDMzOTcsImp0aSI6IjNhYjYxNWFmLTUwMTMtNGEyNS1iNzg4LTRhM2RjZTMzYTdkZCJ9.-Nu4Jf_yX6F_CN4N73jlJ-4I1WAz8ZIfz-rRsOi1ckA"; 주석
+                access_token = "BearereyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhdWQiOiIxMTAxMDA1MjM5Iiwic2NvcGUiOlsiaW5xdWlyeSIsImxvZ2luIiwidHJhbnNmZXIiXSwiaXNzIjoiaHR0cHM6Ly93d3cub3BlbmJhbmtpbmcub3Iua3IiLCJleHAiOjE2NjE0NzU1NDIsImp0aSI6ImQ4NmE2NTAwLTNlNmQtNDVkZC1iNjA3LWE4YTZmMTM4NGM2ZCJ9.SPCFlv3RCxgv7gryV5AwHLiRZ4xVpxBG6Ee1eJ9-8Vw"; // 주열
+                //access_token = value.substring(value.indexOf(id) + id.length()+14, value.indexOf(id) + id.length()+ 313 );
                 Log.d("user_seq_no", "" + user_seq_no);
                 Log.d("access_token", "" + access_token);
                 UserInq user = new UserInq();
