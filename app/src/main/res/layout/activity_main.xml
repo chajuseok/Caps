@@ -84,9 +84,15 @@
             android:fontFamily= "@font/fon"
             android:background="#ffffff"
             android:textColor="#82D127"/>
-        
-        
-        
+
+        <Button
+            android:id="@+id/fingerPrint"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="FingerPrint" />
+
+
     </LinearLayout>
 
 

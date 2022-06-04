@@ -2841,6 +2841,7 @@ int id fill 0x7f0a00dd
 int id fill_horizontal 0x7f0a00de
 int id fill_vertical 0x7f0a00df
 int id filled 0x7f0a00e0
+int id fingerPrint 0x7f0a0229
 int id fingerprint_description 0x7f0a00e1
 int id fingerprint_error 0x7f0a00e2
 int id fingerprint_icon 0x7f0a00e3

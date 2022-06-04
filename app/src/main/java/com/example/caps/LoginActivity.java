@@ -53,7 +53,7 @@ public class LoginActivity extends AppCompatActivity {
                     public void onComplete(@NonNull Task<AuthResult> task) {
                         if(task.isSuccessful()){
                             //로그인 성공!!
-                            Toast.makeText(LoginActivity.this, "로그인성공", Toast.LENGTH_SHORT).show();
+                            Toast.makeText(LoginActivity.this, "로그인완료", Toast.LENGTH_SHORT).show();
                             Intent intent = new Intent(LoginActivity.this, PayActivity.class);
                             String paramId = id;
                             intent.putExtra("id",paramId);

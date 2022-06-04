@@ -35,7 +35,6 @@ public class FingerPrintActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_fingerprint);
         executor = ContextCompat.getMainExecutor(this);
-        String android_id = Settings.Secure.getString(this.getContentResolver(),Settings.Secure.ANDROID_ID);
         biometricPrompt = new BiometricPrompt(FingerPrintActivity.this,
                 executor, new BiometricPrompt.AuthenticationCallback() {
             @Override

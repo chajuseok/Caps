@@ -51,6 +51,7 @@ id chatbotlayout
 id constraintLayout
 id drawer_layout
 id editMessage
+id fingerPrint
 id helpButton
 id idText
 id image

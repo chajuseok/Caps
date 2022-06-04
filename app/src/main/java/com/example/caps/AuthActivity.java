@@ -2,13 +2,20 @@ package com.example.caps;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
+
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.res.AssetManager;
 import android.os.Bundle;
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.biometric.BiometricPrompt;
+import androidx.core.content.ContextCompat;
+
 import android.net.Uri;
 import android.os.Bundle;
+import android.provider.Settings;
+import android.util.Log;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
@@ -25,6 +32,8 @@ import java.net.Socket;
 import java.io.InputStream;
 import java.io.IOException;
 import java.net.URL;
+import java.util.concurrent.Executor;
+
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
@@ -39,18 +48,25 @@ import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 
 public class AuthActivity extends AppCompatActivity {
-    static String access_token = null;
-    static String user_seq_no = null;
+    String access_token = null;
+    String user_seq_no = null;
+    String id = null;
+    String password = null;
     private FirebaseAuth mFirebaseAuth; // 파이버베이스 인증
     private DatabaseReference mDatabaseRef; // 서버와 연동 실시간 db
+    boolean fingerPrint = false;
+    FirebaseUser firebaseUser;
+    UserAccount account;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_auth);
         setSupportActionBar(findViewById(R.id.toolbar));
+        String android_id = Settings.Secure.getString(this.getContentResolver(),Settings.Secure.ANDROID_ID);
         getSupportActionBar().setDisplayShowTitleEnabled(false);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true); // 뒤로가기 버튼, 디폴트로 true만 해도 백버튼이 생김
+        Log.d("boolean" , "" + fingerPrint);
 
 
         mFirebaseAuth = FirebaseAuth.getInstance();
@@ -66,21 +82,21 @@ public class AuthActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 //회원가입처리
-                String id = idText.getText().toString();
-                String password = passwordText.getText().toString();
+                id = idText.getText().toString();
+                password = passwordText.getText().toString();
 
                 //firebase auth 진행
                 mFirebaseAuth.createUserWithEmailAndPassword(id, password).addOnCompleteListener(AuthActivity.this, new OnCompleteListener<AuthResult>() {
                     @Override
                     public void onComplete(@NonNull Task<AuthResult> task) {
                         if(task.isSuccessful()){
-                            FirebaseUser firebaseUser = mFirebaseAuth.getCurrentUser();
-                            UserAccount account = new UserAccount();
+                            firebaseUser = mFirebaseAuth.getCurrentUser();
+                            account = new UserAccount();
                             account.setIdToken(firebaseUser.getUid()); //고유값
                             account.setEmailId(firebaseUser.getEmail());
                             account.setPassword(password);
+                            account.setAndroidId(android_id);
                             //setValue : database에 insert
-                            Auth();
                             Network th = new Network();
                             th.start();
                             try {
@@ -91,15 +107,9 @@ public class AuthActivity extends AppCompatActivity {
                             }
                             account.setAccessToken(access_token);
                             account.setUserSeqNo(user_seq_no);
-
-                            mDatabaseRef.child("UserAccount").child(firebaseUser.getUid()).setValue(account);
                             Toast.makeText(AuthActivity.this, "회원가입에 성공하셨습니다", Toast.LENGTH_SHORT).show();
+                            fingerPrintAlert();
 
-                            Intent intent = new Intent(AuthActivity.this, PayActivity.class);
-                            String paramId = id;
-                            intent.putExtra("id",paramId);
-                            AuthActivity.this.startActivity(intent);
-                            finish();
                         }
                         else{
                             Toast.makeText(AuthActivity.this, "회원가입에 실패하셨습니다", Toast.LENGTH_SHORT).show();
@@ -272,7 +282,94 @@ public class AuthActivity extends AppCompatActivity {
     {
         public void run()
         {
+            Auth();
             access_token = GetTok(GetCode());
         }
     }
+    public void fingerPrintAlert()
+    {
+        AlertDialog.Builder builder = new AlertDialog.Builder(AuthActivity.this);
+        builder.setTitle("알림");
+        builder.setMessage("로그인을 위해 지문을 사용하시겠어요?");
+        builder.setPositiveButton("예", new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialogInterface, int i) {
+                fingerPrintAuth();
+            }
+        });
+        builder.setNegativeButton("아니오", new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialogInterface, int i) {
+                Intent intent = new Intent(AuthActivity.this, PayActivity.class);
+                String paramId = id;
+                intent.putExtra("id",paramId);
+                AuthActivity.this.startActivity(intent);
+                finish();
+            }
+        });
+        builder.setNeutralButton("취소", new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialogInterface, int i) {
+                Intent intent = new Intent(AuthActivity.this, PayActivity.class);
+                String paramId = id;
+                intent.putExtra("id",paramId);
+                AuthActivity.this.startActivity(intent);
+                finish();
+            }
+        });
+        builder.create().show(); //보이기
+    }
+
+    public void fingerPrintAuth()
+    {
+        Executor executor;
+        BiometricPrompt biometricPrompt;
+        BiometricPrompt.PromptInfo promptInfo;
+
+        executor = ContextCompat.getMainExecutor(this);
+        biometricPrompt = new BiometricPrompt(AuthActivity.this,
+                executor, new BiometricPrompt.AuthenticationCallback() {
+            @Override
+            public void onAuthenticationError(int errorCode,
+                                              @NonNull CharSequence errString) {
+                super.onAuthenticationError(errorCode, errString);
+                Toast.makeText(getApplicationContext(),
+                        "기기에 먼저 지문을 등록해주세요" + errString, Toast.LENGTH_SHORT)
+                        .show();
+            }
+
+            @Override
+            public void onAuthenticationSucceeded(
+                    @NonNull BiometricPrompt.AuthenticationResult result) {
+                super.onAuthenticationSucceeded(result);
+                Toast.makeText(getApplicationContext(),
+                        "지문등록 완료", Toast.LENGTH_SHORT).show();
+                fingerPrint = true;
+                account.setfingerPrint(fingerPrint);
+                mDatabaseRef.child("UserAccount").child(firebaseUser.getUid()).setValue(account);
+                Intent intent = new Intent(AuthActivity.this, PayActivity.class);
+                String paramId = id;
+                intent.putExtra("id",paramId);
+                AuthActivity.this.startActivity(intent);
+                finish();
+            }
+
+            @Override
+            public void onAuthenticationFailed() {
+                super.onAuthenticationFailed();
+                Toast.makeText(getApplicationContext(), "지문인증이 실패했습니다",
+                        Toast.LENGTH_SHORT)
+                        .show();
+            }
+        });
+
+        promptInfo = new BiometricPrompt.PromptInfo.Builder()
+                .setTitle("Biometric login for my app")
+                .setSubtitle("Log in using your biometric credential")
+                .setNegativeButtonText("Use account password")
+                .build();
+        biometricPrompt.authenticate(promptInfo);
+    }
+
+
 }
