@@ -13,6 +13,7 @@ import android.provider.Settings;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageButton;
 import android.widget.Toast;
 
 import com.google.firebase.database.DataSnapshot;
@@ -38,7 +39,7 @@ public class MainActivity extends AppCompatActivity {
 
 
         Button loginButton = (Button) findViewById(R.id.loginButton);
-        Button fingerPrintButton =(Button) findViewById(R.id.fingerPrint);
+        ImageButton fingerPrintButton =(ImageButton)  findViewById(R.id.fingerPrint);
         Button registerButton = (Button) findViewById(R.id.registerButton);
         mDatabaseRef = FirebaseDatabase.getInstance().getReference("DB");
         mDatabaseRef.addValueEventListener(new ValueEventListener() {

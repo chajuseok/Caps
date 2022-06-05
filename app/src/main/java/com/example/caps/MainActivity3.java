@@ -52,8 +52,14 @@ public class MainActivity3 extends AppCompatActivity implements DialogflowBotRep
     Button backButton;
     ImageButton helpbtn;
     //계좌내역을 위해
+
+    // 송금예약을 위해
     String access_token;
     String fintech_use_num;
+    String num = "1231234"; //계좌번호
+    String t = "10000";
+    String mon = "5000";
+
 
     //dialogFlow
     private SessionsClient sessionsClient; // 세션 클라이언트
@@ -67,6 +73,7 @@ public class MainActivity3 extends AppCompatActivity implements DialogflowBotRep
 
     DrawerLayout drawerLayout;
     View drawerView;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -119,36 +126,12 @@ public class MainActivity3 extends AppCompatActivity implements DialogflowBotRep
         setUpBot();
 
         drawerLayout = (DrawerLayout) findViewById(R.id.drawer_layout);
-        //     drawerView = (View) findViewById(R.id.drawerView);
-        //   drawerLayout.addDrawerListener(listener);
-/*
-        backButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                drawerLayout.openDrawer(drawerView);
-            }
-        });
 
-
- */
 
         helpbtn = findViewById(R.id.helpButton);
         helpbtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-//                AlertDialog.Builder builder = new AlertDialog.Builder(MainActivity3.this);
-//                builder.setTitle("필요하신 기능을 입력하면 \n 화면으로 이동합니다. \n")
-//                        .setMessage("송금 \n" +
-//                                "계좌조회 \n" +
-//                                "거래내역 \n" )
-//                        .setPositiveButton("확인", new DialogInterface.OnClickListener()
-//                        {
-//                            @Override
-//                            public void onClick(DialogInterface dialogInterface, int i)
-//                            {  }
-//                        });
-//
-//                builder.show();
 
                 Intent intentStt;
                 intentStt = new Intent(RecognizerIntent.ACTION_RECOGNIZE_SPEECH);
@@ -224,6 +207,18 @@ public class MainActivity3 extends AppCompatActivity implements DialogflowBotRep
                 chatAdapter.notifyDataSetChanged();
                 Objects.requireNonNull(chatView.getLayoutManager()).scrollToPosition(messageList.size() - 1);
 
+                if(dialogflowBotReply.indexOf("예약") != -1){
+                    Toast.makeText(getApplicationContext(),"송금 예약",Toast.LENGTH_SHORT).show();
+
+                    Intent intent = new Intent(MainActivity3.this,MyService.class);
+                    intent.putExtra("access_token", access_token);
+                    intent.putExtra("fintech_use_num", fintech_use_num); // 주계좌를 0번
+                    intent.putExtra("bank_number", num);
+                    intent.putExtra("mon", mon);
+                    intent.putExtra("time", t); // 주계좌를 0번
+                    startService(intent);
+
+                }
 
                 if(dialogflowBotReply.indexOf("송금") != -1){
                     Intent a = new Intent(MainActivity3.this, WithDrawActivity.class);

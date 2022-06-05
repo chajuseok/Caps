@@ -11,14 +11,14 @@
     <ImageView
         android:id="@+id/imageButton"
         android:layout_width="match_parent"
-        android:layout_height="300dp"
+        android:layout_height="150dp"
         android:layout_marginTop="20dp"
         app:srcCompat="@drawable/logo"
         tools:layout_editor_absoluteX="11dp"
         tools:layout_editor_absoluteY="225dp" />
 
     <ImageButton
-        android:id="@+id/finger"
+        android:id="@+id/fingerPrint"
         android:layout_width="60dp"
         android:layout_height="75dp"
         android:layout_gravity="center"
