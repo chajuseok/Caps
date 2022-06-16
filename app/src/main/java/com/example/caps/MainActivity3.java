@@ -7,6 +7,7 @@ import androidx.drawerlayout.widget.DrawerLayout;
 import androidx.recyclerview.widget.RecyclerView;
 
 import android.Manifest;
+import android.app.Activity;
 import android.app.AlertDialog;
 import android.content.DialogInterface;
 import android.content.Intent;
@@ -59,6 +60,7 @@ public class MainActivity3 extends AppCompatActivity implements DialogflowBotRep
     String num = "1231234"; //계좌번호
     String t = "10000";
     String mon = "5000";
+    String id;
 
 
     //dialogFlow
@@ -80,9 +82,17 @@ public class MainActivity3 extends AppCompatActivity implements DialogflowBotRep
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main3);
 
+        if (Build.VERSION.SDK_INT >= 23) {
+            ActivityCompat.requestPermissions(this, new String[]{Manifest.permission.INTERNET,
+                    Manifest.permission.RECORD_AUDIO}, PERMISSION);
+        }
+
         Intent intent = getIntent();
         access_token = intent.getStringExtra("access_token");
         fintech_use_num = intent.getStringExtra("fintech_use_num");
+        id = intent.getStringExtra("id");
+
+
 
         chatView = findViewById(R.id.chatView);
         editMessage = findViewById(R.id.editMessage);
@@ -100,8 +110,9 @@ public class MainActivity3 extends AppCompatActivity implements DialogflowBotRep
             @Override
             public void onClick(View view) {
 
-                //Intent a = new Intent(MainActivity3.this, LoginActivity.class);
-                //MainActivity3.this.startActivity(a);
+                Intent a = new Intent(MainActivity3.this, PayActivity.class);
+                intent.putExtra("id",id);
+                MainActivity3.this.startActivity(a);
                 finish();
             }
         });
@@ -129,18 +140,16 @@ public class MainActivity3 extends AppCompatActivity implements DialogflowBotRep
 
 
         helpbtn = findViewById(R.id.helpButton);
+
+        Intent intentStt;
+        intentStt = new Intent(RecognizerIntent.ACTION_RECOGNIZE_SPEECH);
+        intentStt.putExtra(RecognizerIntent.EXTRA_CALLING_PACKAGE, getPackageName());
+        intentStt.putExtra(RecognizerIntent.EXTRA_LANGUAGE, "ko-KR");
+
         helpbtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
 
-                Intent intentStt;
-                intentStt = new Intent(RecognizerIntent.ACTION_RECOGNIZE_SPEECH);
-                intentStt.putExtra(RecognizerIntent.EXTRA_CALLING_PACKAGE, getPackageName());
-                intentStt.putExtra(RecognizerIntent.EXTRA_LANGUAGE, "ko-KR");
-                if (Build.VERSION.SDK_INT >= 23) {
-                    ActivityCompat.requestPermissions(MainActivity3.this, new String[]{Manifest.permission.INTERNET,
-                            Manifest.permission.RECORD_AUDIO}, PERMISSION);
-                }
                 mRecognizer = SpeechRecognizer.createSpeechRecognizer(MainActivity3.this);
                 mRecognizer.setRecognitionListener(listener);
                 mRecognizer.startListening(intentStt);
@@ -208,7 +217,7 @@ public class MainActivity3 extends AppCompatActivity implements DialogflowBotRep
                 Objects.requireNonNull(chatView.getLayoutManager()).scrollToPosition(messageList.size() - 1);
 
                 if(dialogflowBotReply.indexOf("예약") != -1){
-                    Toast.makeText(getApplicationContext(),"송금 예약",Toast.LENGTH_SHORT).show();
+                    Toast.makeText(getApplicationContext(),"송금 예약이 완료되었습니다.",Toast.LENGTH_SHORT).show();
 
                     Intent intent = new Intent(MainActivity3.this,MyService.class);
                     intent.putExtra("access_token", access_token);
@@ -328,8 +337,7 @@ public class MainActivity3 extends AppCompatActivity implements DialogflowBotRep
         @Override
         public void onResults(Bundle results) {
             // 말을 하면 ArrayList에 단어를 넣고 textView에 단어를 이어줍니다.
-            ArrayList<String> matches =
-                    results.getStringArrayList(SpeechRecognizer.RESULTS_RECOGNITION);
+            ArrayList<String> matches = results.getStringArrayList(SpeechRecognizer.RESULTS_RECOGNITION);
 
             for (int i = 0; i < matches.size(); i++) {
                 editMessage.setText(matches.get(i));

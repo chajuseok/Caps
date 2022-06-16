@@ -8,6 +8,7 @@ import android.content.Context;
 import android.content.Intent;
 import android.os.Handler;
 import android.os.IBinder;
+import android.util.Log;
 import android.widget.Toast;
 
 import java.io.BufferedReader;
@@ -23,11 +24,11 @@ public class MyService extends Service {
     Notification Notifi ;
 
     String t; // 시간
-    String access_token;
-    String fintech_use_num;
-    String bank_number;
-    String recv_user;
-    String money;
+    String access_token = "BearereyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhdWQiOiIxMTAxMDA1MjM5Iiwic2NvcGUiOlsiaW5xdWlyeSIsImxvZ2luIiwidHJhbnNmZXIiXSwiaXNzIjoiaHR0cHM6Ly93d3cub3BlbmJhbmtpbmcub3Iua3IiLCJleHAiOjE2NjIyODM4NjQsImp0aSI6IjQ5ZmY1ZjlhLTNmNjEtNGFkNC1hNTQ2LWNhMzliMmU5NTQ2MiJ9.OyPSdG0tLYprZeiS1bSUBwGnlqRtUM950qEdzif1-5s" ;
+    String fintech_use_num = "120220055688941030288130";
+    String bank_number = "3021055463511";
+    String recv_user = "김명은";
+    String money = "10000";
 
 
     public MyService() {
@@ -71,37 +72,21 @@ public class MyService extends Service {
             PendingIntent pendingIntent = PendingIntent.getActivity(MyService.this, 0, intent,PendingIntent.FLAG_UPDATE_CURRENT);
 
             Notifi = new Notification.Builder(getApplicationContext())
-                    .setContentTitle("Content Title")
-                    .setContentText("Content Text")
+                    .setContentTitle("송금 예약")
+                    .setContentText("송금 예약")
                     .setSmallIcon(R.drawable.bot)
                     .setTicker("알림!!!")
                     .setContentIntent(pendingIntent)
                     .build();
 
-            //소리추가
             Notifi.defaults = Notification.DEFAULT_SOUND;
-
-            //알림 소리를 한번만 내도록
             Notifi.flags = Notification.FLAG_ONLY_ALERT_ONCE;
-
-            //확인하면 자동으로 알림이 제거 되도록
             Notifi.flags = Notification.FLAG_AUTO_CANCEL;
-
-
             Notifi_M.notify( 777 , Notifi);
-
-            //토스트 띄우기
-            Toast.makeText(MyService.this, "송금 완료", Toast.LENGTH_LONG).show();
 
             Withdraw th = new Withdraw();
             th.start();
-            try {
-                th.join();
-            }catch(InterruptedException e)
-            {
-                e.printStackTrace();
-            }
-
+            Toast.makeText(MyService.this,recv_user + "님에게 송금완료", Toast.LENGTH_LONG).show();
         }
     };
 
@@ -145,6 +130,7 @@ public class MyService extends Service {
             //응답 내용
             String line = null;
             line = in.readLine();
+            Log.d("송금 내용", "" + line);
            // recv_user = line.substring(line.indexOf("dps_account_holder_name") + 26, line.indexOf("bank_tran_id") -3 );
             in.close();
         }catch(Exception e)
@@ -168,7 +154,6 @@ public class MyService extends Service {
         {
 
             Withdraw();
-            System.out.println("#@@@@@@@@@@@@@@@");
         }
     }
 }

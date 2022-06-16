@@ -3,6 +3,7 @@ package com.example.caps;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.RecyclerView;
 
+import android.app.Activity;
 import android.os.Bundle;
 import android.view.MenuItem;
 import android.widget.TextView;
@@ -33,6 +34,7 @@ public class inquiryActivity extends AppCompatActivity {
     Vector<String> content = new Vector<String>();
     Vector<String> inout_type = new Vector<String>();
     String rest;
+    String id;
 
 
 
@@ -52,6 +54,7 @@ public class inquiryActivity extends AppCompatActivity {
         inquiryView.setAdapter(inquiryAdapter);
         Intent intent = getIntent();
         access_token = intent.getStringExtra("access_token");
+        id = intent.getStringExtra("id");
         fintech_use_num = intent.getStringExtra("fintech_use_num");
 
         SavingInq saving = new SavingInq();
@@ -105,7 +108,7 @@ public class inquiryActivity extends AppCompatActivity {
             }
             in.close();
 
-            for(int i = 0; i<inout_type.size(); i++){
+            for(int i = 0; i<2; i++){
                 InquiryList.add(new InquiryData(inout_type.get(i), content.get(i), tran_amt.get(i)));
             }
 
@@ -160,8 +163,10 @@ public class inquiryActivity extends AppCompatActivity {
     public boolean onOptionsItemSelected(MenuItem item) {
         switch (item.getItemId()) {
             case android.R.id.home: { //toolbar의 back키 눌렀을 때 동작
-                // 액티비티 이동
-                finish();
+                Intent intent = new Intent(inquiryActivity.this, PayActivity.class);
+                intent.putExtra("id",id);
+                inquiryActivity.this.startActivity(intent);
+
                 return true;
             }
         }

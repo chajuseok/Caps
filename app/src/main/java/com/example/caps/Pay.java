@@ -6,9 +6,10 @@ public class Pay {
     private String bankId; // 계좌번호
     private String money; // 잔액
 
-    public Pay(String bankInfo, String money) {
+    public Pay(String bankInfo,String bankId ,String money) {
         this.bankInfo = bankInfo;
         this.money = money;
+        this.bankId= bankId;
     }
 
     public String getBankId() {

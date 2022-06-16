@@ -67,6 +67,7 @@ id message_send
 id money
 id moneyText
 id nameText
+id num
 id ocr
 id okButton
 id passwordText

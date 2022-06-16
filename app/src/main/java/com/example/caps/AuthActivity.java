@@ -3,6 +3,7 @@ package com.example.caps;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.app.Activity;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.res.AssetManager;
@@ -300,9 +301,7 @@ public class AuthActivity extends AppCompatActivity {
         builder.setNegativeButton("아니오", new DialogInterface.OnClickListener() {
             @Override
             public void onClick(DialogInterface dialogInterface, int i) {
-                Intent intent = new Intent(AuthActivity.this, PayActivity.class);
-                String paramId = id;
-                intent.putExtra("id",paramId);
+                Intent intent = new Intent(AuthActivity.this, MainActivity.class);
                 AuthActivity.this.startActivity(intent);
                 finish();
             }
@@ -310,9 +309,7 @@ public class AuthActivity extends AppCompatActivity {
         builder.setNeutralButton("취소", new DialogInterface.OnClickListener() {
             @Override
             public void onClick(DialogInterface dialogInterface, int i) {
-                Intent intent = new Intent(AuthActivity.this, PayActivity.class);
-                String paramId = id;
-                intent.putExtra("id",paramId);
+                Intent intent = new Intent(AuthActivity.this, MainActivity.class);
                 AuthActivity.this.startActivity(intent);
                 finish();
             }
@@ -347,9 +344,7 @@ public class AuthActivity extends AppCompatActivity {
                 fingerPrint = true;
                 account.setfingerPrint(fingerPrint);
                 mDatabaseRef.child("UserAccount").child(firebaseUser.getUid()).setValue(account);
-                Intent intent = new Intent(AuthActivity.this, PayActivity.class);
-                String paramId = id;
-                intent.putExtra("id",paramId);
+                Intent intent = new Intent(AuthActivity.this, MainActivity.class);
                 AuthActivity.this.startActivity(intent);
                 finish();
             }
@@ -364,9 +359,8 @@ public class AuthActivity extends AppCompatActivity {
         });
 
         promptInfo = new BiometricPrompt.PromptInfo.Builder()
-                .setTitle("Biometric login for my app")
-                .setSubtitle("Log in using your biometric credential")
-                .setNegativeButtonText("Use account password")
+                .setTitle("본인 인증")
+                .setNegativeButtonText("취소")
                 .build();
         biometricPrompt.authenticate(promptInfo);
     }

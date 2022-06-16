@@ -78,12 +78,13 @@ public class PayActivity extends AppCompatActivity {
             @Override
             public void onDataChange(@NonNull DataSnapshot snapshot) {
                 String value = snapshot.getValue().toString();
+
                 user_seq_no = value.substring(value.indexOf(id) - 20,value.indexOf(id) -10);
-                //access_token = "BearereyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhdWQiOiIxMTAxMDA1MzUwIiwic2NvcGUiOlsiaW5xdWlyeSIsImxvZ2luIiwidHJhbnNmZXIiXSwiaXNzIjoiaHR0cHM6Ly93d3cub3BlbmJhbmtpbmcub3Iua3IiLCJleHAiOjE2NjE0NDMzOTcsImp0aSI6IjNhYjYxNWFmLTUwMTMtNGEyNS1iNzg4LTRhM2RjZTMzYTdkZCJ9.-Nu4Jf_yX6F_CN4N73jlJ-4I1WAz8ZIfz-rRsOi1ckA"; // 주석
-                access_token = "BearereyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhdWQiOiIxMTAxMDA1MjM5Iiwic2NvcGUiOlsiaW5xdWlyeSIsImxvZ2luIiwidHJhbnNmZXIiXSwiaXNzIjoiaHR0cHM6Ly93d3cub3BlbmJhbmtpbmcub3Iua3IiLCJleHAiOjE2NjIxMDc2MjEsImp0aSI6IjUxMjdhYzM0LTYxMWQtNGExOS1iM2I4LWQ1NzlmYjE2NDM5YyJ9.lyJ9Ut1bnu3EBowyOopc9Cawvq6c2m_neMCfdO9Jsdk"; // 주열
-              //  access_token = value.substring(value.indexOf(id) + id.length()+14, value.indexOf(id) + id.length()+ 313 );
-                Log.d("user_seq_no", "" + user_seq_no);
-                Log.d("access_token", "" + access_token);
+                access_token = "BearereyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhdWQiOiIxMTAxMDA1MjM5Iiwic2NvcGUiOlsiaW5xdWlyeSIsImxvZ2luIiwidHJhbnNmZXIiXSwiaXNzIjoiaHR0cHM6Ly93d3cub3BlbmJhbmtpbmcub3Iua3IiLCJleHAiOjE2NjIyODM4NjQsImp0aSI6IjQ5ZmY1ZjlhLTNmNjEtNGFkNC1hNTQ2LWNhMzliMmU5NTQ2MiJ9.OyPSdG0tLYprZeiS1bSUBwGnlqRtUM950qEdzif1-5s";
+             //access_token = "BearereyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhdWQiOiIxMTAxMDA1MjM5Iiwic2NvcGUiOlsiaW5xdWlyeSIsImxvZ2luIiwidHJhbnNmZXIiXSwiaXNzIjoiaHR0cHM6Ly93d3cub3BlbmJhbmtpbmcub3Iua3IiLCJleHAiOjE2NjIxMDc2MjEsImp0aSI6IjUxMjdhYzM0LTYxMWQtNGExOS1iM2I4LWQ1NzlmYjE2NDM5YyJ9.lyJ9Ut1bnu3EBowyOopc9Cawvq6c2m_neMCfdO9Jsdk"; // 주열
+                //access_token = value.substring(value.indexOf(id) + id.length()+14, value.indexOf(id) + id.length()+ 313 );
+          //      Log.d("user_seq_no", "" + user_seq_no);
+           //     Log.d("access_token", "" + access_token);
                 UserInq user = new UserInq();
                 user.start();
                 try {
@@ -94,7 +95,7 @@ public class PayActivity extends AppCompatActivity {
                 }
                 for(int i=0; i<fintechNum.size(); i++)
                 {
-                    Log.d("fin_tech", "" + fintechNum.get(i));
+                   // Log.d("fin_tech", "" + fintechNum.get(i));
                     AccountInq account = new AccountInq(fintechNum.get(i));
                     account.start();
                     try {
@@ -107,7 +108,7 @@ public class PayActivity extends AppCompatActivity {
                 }
                 for(int i=0; i<balanceAmt.size(); i++)
                 {
-                    accountList.add(new Pay(bankName.get(i), balanceAmt.get(i)));
+                    accountList.add(new Pay(bankName.get(i) , accountNum.get(i), balanceAmt.get(i)));
                 }
                 RecyclerDecoration spaceDecoration = new RecyclerDecoration(30);
                 accountView.addItemDecoration(spaceDecoration);
@@ -128,6 +129,7 @@ public class PayActivity extends AppCompatActivity {
                 //
                 Intent intent = new Intent(PayActivity.this, inquiryActivity.class);
                 intent.putExtra("access_token", access_token);
+                intent.putExtra("id", id);
                 intent.putExtra("fintech_use_num", fintechNum.get(pos));
                 PayActivity.this.startActivity(intent);
             }
@@ -138,6 +140,7 @@ public class PayActivity extends AppCompatActivity {
 
                 Intent intent = new Intent(PayActivity.this, WithDrawActivity.class);
                 intent.putExtra("access_token", access_token);
+                intent.putExtra("id", id);
                 intent.putExtra("fintech_use_num", fintechNum.get(pos));
                 PayActivity.this.startActivity(intent);
             }
@@ -153,6 +156,7 @@ public class PayActivity extends AppCompatActivity {
             public void onClick(View view) {
                 Intent intent = new Intent(PayActivity.this, MainActivity3.class);
                 intent.putExtra("access_token", access_token);
+                intent.putExtra("id", id);
                 intent.putExtra("fintech_use_num", fintechNum.get(0)); // 주계좌를 0번
                 PayActivity.this.startActivity(intent);
             }

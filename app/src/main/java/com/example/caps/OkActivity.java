@@ -18,6 +18,7 @@ public class OkActivity extends AppCompatActivity {
     Button finishButton;
     String money;
     String recv_user;
+    String id;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -36,13 +37,16 @@ public class OkActivity extends AppCompatActivity {
 
         money = intent.getStringExtra("money"); // 보낸 금액
         recv_user = intent.getStringExtra("recv_user"); // 받는 분
+        id = intent.getStringExtra("id");
         nameText.setText(recv_user);
         moneyText.setText(money + "원");
 
         finishButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
+                Intent intent = new Intent(OkActivity.this, PayActivity.class);
+                intent.putExtra("id",id);
+                OkActivity.this.startActivity(intent);
                 finish();
             }
         });

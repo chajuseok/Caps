@@ -21,7 +21,7 @@ android {
     defaultConfig {
         applicationId "com.example.caps"
         minSdk 18
-        targetSdk 32
+        targetSdk 31
         versionCode 1
         versionName "1.0"
         multiDexEnabled true
@@ -50,6 +50,7 @@ dependencies {
     implementation 'com.theartofdev.edmodo:android-image-cropper:2.8.0'
     implementation 'androidx.recyclerview:recyclerview:1.2.1'
     implementation 'androidx.biometric:biometric:1.1.0'
+    implementation 'androidx.work:work-runtime:2.7.1'
 
     //firebase
     implementation 'com.google.firebase:firebase-auth:21.0.3'

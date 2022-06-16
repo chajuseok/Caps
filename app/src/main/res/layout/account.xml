@@ -6,7 +6,7 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="80dp"
         android:orientation="horizontal"
         android:gravity="center_vertical"
         android:layout_weight="1" >
@@ -29,17 +29,27 @@
                 android:layout_marginTop="5dp"
                 android:layout_width="match_parent"
                 android:fontFamily="@font/fon"
-                android:textSize="20dp"
+                android:textSize="15dp"
                 android:layout_height="0dp"
                 android:layout_weight="1"
                 android:text="국민은행" />
+            <TextView
+                android:layout_width="match_parent"
+                android:id="@+id/num"
+                android:layout_height="0dp"
+                android:fontFamily="@font/fon"
+                android:textSize="15dp"
+                android:layout_weight="1"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:text="2000원"/>
 
             <TextView
                 android:layout_width="match_parent"
                 android:id="@+id/money"
                 android:layout_height="0dp"
                 android:fontFamily="@font/fon"
-                android:textSize="20dp"
+                android:textSize="15dp"
                 android:layout_weight="1"
                 android:layout_marginTop="5dp"
                 android:layout_marginBottom="5dp"

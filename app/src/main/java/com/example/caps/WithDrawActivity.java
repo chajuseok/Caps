@@ -69,6 +69,7 @@ public class WithDrawActivity extends AppCompatActivity {
     String access_token;
     String recv_user;
     String bank_info = "";
+    String id;
     private static final int REQUEST_CAMERA_CODE = 100;
 
     @Override
@@ -81,6 +82,7 @@ public class WithDrawActivity extends AppCompatActivity {
         Intent intent = getIntent();
         fintech_use_num = intent.getStringExtra("fintech_use_num");
         access_token = intent.getStringExtra("access_token");
+        id = intent.getStringExtra("id");
         bank = findViewById(R.id.bank_number);
         moneye= findViewById(R.id.money);
         setSupportActionBar(findViewById(R.id.toolbar));
@@ -116,6 +118,7 @@ public class WithDrawActivity extends AppCompatActivity {
                 }
                 Intent intent = new Intent(WithDrawActivity.this, OkActivity.class);
                 intent.putExtra("money", money);
+                intent.putExtra("id", id);
                 intent.putExtra("recv_user", recv_user);
                 WithDrawActivity.this.startActivity(intent);
                 finish();
@@ -140,6 +143,10 @@ public class WithDrawActivity extends AppCompatActivity {
                     }catch(InterruptedException e)
                     {
                         e.printStackTrace();
+                    }
+                    for(int i = 0; i<list.size(); i++)
+                    {
+                        Log.d("OCR 인식결과", ""+ list.get(i));
                     }
                     for(int i = 0; i<list.size(); i++)
                     {

@@ -34,7 +34,7 @@ public class AccountAdapter extends RecyclerView.Adapter<AccountAdapter.AccountM
     @Override
     public void onBindViewHolder(@NonNull AccountMyViewHolder holder, int position) {
         String bankInfo = accountList.get(position).getBankInfo();
-
+        String num = accountList.get(position).getBankId();
         String money = accountList.get(position).getMoney();
         holder.bank1.setVisibility(View.VISIBLE);
         holder.btn1.setVisibility(View.VISIBLE);
@@ -42,6 +42,7 @@ public class AccountAdapter extends RecyclerView.Adapter<AccountAdapter.AccountM
         holder.bankInfo.setVisibility(View.VISIBLE);
         holder.bankInfo.setVisibility(View.VISIBLE);
         holder.money.setVisibility(View.VISIBLE);
+        holder.num.setText(num);
         holder.bankInfo.setText(bankInfo);
         holder.money.setText(money);
 
@@ -71,6 +72,7 @@ public class AccountAdapter extends RecyclerView.Adapter<AccountAdapter.AccountM
     class AccountMyViewHolder extends RecyclerView.ViewHolder{
         TextView bankInfo;
         TextView money;
+        TextView num;
         Button btn1;
         Button btn2;
         ImageView bank1;
@@ -80,6 +82,7 @@ public class AccountAdapter extends RecyclerView.Adapter<AccountAdapter.AccountM
             super(itemView);
             bankInfo = itemView.findViewById(R.id.bankInfo);
             money = itemView.findViewById(R.id.money);
+            num = itemView.findViewById(R.id.num);
             btn1 = itemView.findViewById(R.id.btn1);
             btn2 = itemView.findViewById(R.id.btn2);
             bank1 = itemView.findViewById(R.id.bank1);
