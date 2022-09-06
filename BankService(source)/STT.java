@@ -23,7 +23,7 @@ public class STT
 			connection.setRequestMethod("POST");
 			connection.setRequestProperty("Content-Type", "application/octet-stream");
 			connection.setRequestProperty("Transfer-Encoding", "chunked");
-			connection.setRequestProperty("Authorization", "KakaoAK c0826b5f67478adfc61a2c3c039c68fe");
+			connection.setRequestProperty("Authorization", "##");
 			connection.setDoOutput(true);
 			connection.setDoInput(true);
 			
